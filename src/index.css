@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #0d1117;
+    color: #e2e8f0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Subtle scanline texture */
+  @media (prefers-reduced-motion: no-preference) {
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.03) 2px,
+        rgba(0, 0, 0, 0.03) 4px
+      );
+      pointer-events: none;
+      z-index: 9999;
+    }
+  }
+
+  /* Focus ring */
+  :focus-visible {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0d1117;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2d3748;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4a5568;
+  }
+
+  /* Selection color */
+  ::selection {
+    background-color: rgba(245, 158, 11, 0.3);
+    color: #e2e8f0;
+  }
+}
+
+@layer utilities {
+  .font-mono-data {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  }
+
+  /* Override prose code blocks to not apply border-radius */
+  .prose pre {
+    border-radius: 0 !important;
+  }
+
+  .prose code {
+    border-radius: 0 !important;
+  }
+
+  /* New intel feed item highlight: amber top-border flash fading over 2s */
+  @keyframes animate-highlight {
+    0%   { border-top-color: rgba(245, 158, 11, 0.4); }
+    100% { border-top-color: transparent; }
+  }
+
+  .animate-highlight {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: rgba(245, 158, 11, 0.4);
+    animation: animate-highlight 2s ease-out forwards;
+  }
+}

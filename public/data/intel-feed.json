@@ -1,0 +1,2918 @@
+[
+  {
+    "id": "intel-2026-07-13-001",
+    "title": "ICSA-26-190-02 \u2014 Schneider PowerChute Serial Shutdown (July 9 Advisory)",
+    "summary": "CISA advisory for Schneider Electric PowerChute Serial Shutdown UPS management software. Manages uninterruptible power supplies and enables graceful system shutdowns for desktops, servers, and workstations. Deployed on OT servers, EWS, and SCADA hosts.",
+    "severity": "MEDIUM",
+    "priority": "MEDIUM",
+    "domain": "OT",
+    "source": "CISA ICSA-26-190-02 (2026-07-09)",
+    "otRelevance": "MEDIUM \u2014 PowerChute manages UPS systems on OT servers and workstations. Compromise could enable forced shutdown of critical OT systems.",
+    "vendors": [
+      "Schneider Electric"
+    ],
+    "cves": [],
+    "publishedAt": "2026-07-09T00:00:00Z",
+    "updatedAt": "2026-07-13T05:15:00Z",
+    "sources": [
+      "CISA"
+    ],
+    "tags": [
+      "Schneider Electric",
+      "PowerChute",
+      "UPS",
+      "shutdown",
+      "OT server",
+      "EWS"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-07-11-001",
+    "title": "Alibaba Bans Anthropic Claude Code \u2014 China Detection Backdoor Alleged (July 10)",
+    "summary": "Alibaba banned employee use of Anthropic's Claude Code effective July 10 after security researchers found hidden code designed to detect China-based users or Chinese AI lab affiliations. China issued official warning about 'security backdoor.' Employees told to switch to Qoder. Part of escalating US-China AI cold war.",
+    "severity": "MEDIUM",
+    "priority": "MEDIUM",
+    "domain": "IT",
+    "source": "Tom's Hardware / CNBC / TechCrunch / CBS News (July 2026)",
+    "otRelevance": "LOW \u2014 Claude Code is a developer tool, not an OT product. But broader Anthropic API restrictions could affect [platform] model availability if this escalates.",
+    "vendors": [
+      "Anthropic",
+      "Alibaba"
+    ],
+    "cves": [],
+    "publishedAt": "2026-07-04T00:00:00Z",
+    "updatedAt": "2026-07-11T18:10:00Z",
+    "sources": [
+      "Tom's Hardware",
+      "CNBC",
+      "TechCrunch",
+      "CBS News",
+      "Quartz"
+    ],
+    "tags": [
+      "Anthropic",
+      "Claude Code",
+      "Alibaba",
+      "backdoor",
+      "China",
+      "ban",
+      "AI cold war",
+      "LLM"
+    ],
+    "urgencyTier": "MONITOR",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-07-09-001",
+    "title": "Digi International Serial Device Server \u2014 Critical Authentication Bypass (July 7 Advisory)",
+    "summary": "CISA ICS advisory for Digi International serial device servers: critical authentication bypass vulnerability. Third serial-to-Ethernet vendor hit this month after Moxa NPort and Lantronix EDS5000. Serial device servers bridge legacy PLCs, RTUs, and instruments to IP networks.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-07-07)",
+    "otRelevance": "CRITICAL \u2014 Third serial-to-Ethernet vendor this month. Concentrated attack surface pattern on OT serial device bridges. Isolate from internet and patch immediately.",
+    "vendors": [
+      "Digi International"
+    ],
+    "cves": [],
+    "publishedAt": "2026-07-07T00:00:00Z",
+    "updatedAt": "2026-07-09T05:15:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "Digi",
+      "serial device server",
+      "authentication bypass",
+      "OT",
+      "serial-to-Ethernet",
+      "PLC",
+      "RTU"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-07-09-002",
+    "title": "ICSA-26-188-01 \u2014 Hydro-Qu\u00e9bec EV Charging Station Backend (Privilege Escalation + DoS)",
+    "summary": "CISA advisory for Hydro-Qu\u00e9bec Le Circuit Electrique charging station backend: privilege escalation and denial-of-service vulnerabilities. EV charging infrastructure is grid-connected OT.",
+    "severity": "MEDIUM",
+    "priority": "MEDIUM",
+    "domain": "OT",
+    "source": "CISA ICSA-26-188-01 (2026-07-07)",
+    "otRelevance": "MEDIUM \u2014 EV charging infrastructure is grid-connected OT. Compromise could affect electrical distribution load management.",
+    "vendors": [
+      "Hydro-Qu\u00e9bec"
+    ],
+    "cves": [],
+    "publishedAt": "2026-07-07T00:00:00Z",
+    "updatedAt": "2026-07-09T05:15:00Z",
+    "sources": [
+      "CISA"
+    ],
+    "tags": [
+      "Hydro-Qu\u00e9bec",
+      "EV charging",
+      "grid",
+      "OT",
+      "privilege escalation",
+      "DoS"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-07-05-001",
+    "title": "CVE-2026-45659 \u2014 SharePoint RCE Actively Exploited (KEV Overdue Since July 4)",
+    "summary": "Microsoft SharePoint Server RCE (CVE-2026-45659) added to CISA KEV July 1 with due date July 4 (overdue). CISA confirms threat actors actively exploiting recently patched vulnerability. SharePoint widely used for engineering document management in OT environments.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "source": "CISA KEV (2026-07-01)",
+    "otRelevance": "MEDIUM-HIGH \u2014 SharePoint servers host engineering procedures, P&IDs, safety documentation, and operational records in OT environments. Compromised SharePoint can serve as a pivot point into OT networks.",
+    "vendors": [
+      "Microsoft"
+    ],
+    "cves": [
+      "CVE-2026-45659"
+    ],
+    "publishedAt": "2026-07-01T00:00:00Z",
+    "updatedAt": "2026-07-06T01:15:00Z",
+    "sources": [
+      "CISA KEV",
+      "SecurityWeek"
+    ],
+    "tags": [
+      "SharePoint",
+      "RCE",
+      "KEV",
+      "overdue",
+      "July 4",
+      "actively exploited",
+      "OT engineering docs"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": true
+  },
+  {
+    "id": "intel-2026-07-05-002",
+    "title": "ICSA-26-181-01 \u2014 Mitsubishi MELSOFT Update Manager (July 2 Advisory Batch)",
+    "summary": "CISA released 6 ICS advisories on July 2, 2026. Mitsubishi Electric MELSOFT Update Manager (SW1DND-UDM-M) is one confirmed advisory. MELSOFT is the primary engineering software suite for Mitsubishi PLCs. Remaining 4 advisories pending enumeration.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICSA-26-181-01 (2026-07-02)",
+    "otRelevance": "HIGH \u2014 MELSOFT is the engineering software for Mitsubishi MELSEC PLCs deployed in manufacturing, water, and building automation. Compromise of the update manager enables supply-chain-style injection into PLC programming environments.",
+    "vendors": [
+      "Mitsubishi Electric"
+    ],
+    "cves": [],
+    "publishedAt": "2026-07-02T00:00:00Z",
+    "updatedAt": "2026-07-06T01:15:00Z",
+    "sources": [
+      "CISA",
+      "WaterISAC"
+    ],
+    "tags": [
+      "Mitsubishi Electric",
+      "MELSOFT",
+      "Update Manager",
+      "PLC",
+      "engineering tool",
+      "July 2 batch"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-07-05-001",
+    "title": "CubeSpace CW0057 Satellite Reaction Wheel Firmware \u2014 Malicious Code Injection (CISA July 2)",
+    "summary": "CISA advisory for CubeSpace CW0057 satellite reaction wheels: firmware vulnerability allows malicious code injection into critical spacecraft systems. Reaction wheels control spacecraft orientation \u2014 compromise affects satellite-based SCADA, GPS timing, and remote OT monitoring.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-07-02)",
+    "otRelevance": "MEDIUM-HIGH \u2014 Satellite reaction wheel compromise affects SCADA communications, GPS grid synchronization, and remote OT monitoring. Aligns with Iran's confirmed satellite/space infrastructure targeting.",
+    "vendors": [
+      "CubeSpace"
+    ],
+    "cves": [],
+    "publishedAt": "2026-07-02T00:00:00Z",
+    "updatedAt": "2026-07-06T00:15:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "CubeSpace",
+      "satellite",
+      "reaction wheel",
+      "spacecraft",
+      "firmware",
+      "code injection",
+      "OT"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-07-05-002",
+    "title": "CISA Releases 6 ICS Advisories July 2 \u2014 WaterISAC Confirmed (Details Pending)",
+    "summary": "CISA released 6 Industrial Control Systems advisories on July 2, 2026, for products used across multiple sectors. WaterISAC confirmed the release. Full advisory list pending enrichment on next pull.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA / WaterISAC (2026-07-02)",
+    "otRelevance": "HIGH \u2014 Multi-sector ICS advisory batch. WaterISAC distribution indicates water/wastewater sector relevance. Full enrichment pending.",
+    "vendors": [],
+    "cves": [],
+    "publishedAt": "2026-07-02T00:00:00Z",
+    "updatedAt": "2026-07-06T00:15:00Z",
+    "sources": [
+      "CISA",
+      "WaterISAC"
+    ],
+    "tags": [
+      "CISA",
+      "ICS advisory",
+      "July 2",
+      "WaterISAC",
+      "pending enrichment"
+    ],
+    "urgencyTier": "MONITOR",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-07-01-002",
+    "title": "ICSA-26-181-03 \u2014 Schneider EcoStruxure IT Data Center Expert (CVE-2026-8045, June 30 Advisory Batch)",
+    "summary": "CISA released 8 ICS advisories on June 30, 2026. New: Schneider Electric EcoStruxure IT Data Center Expert (CVE-2026-8045) affecting versions \u22649.1.1 and 9.1.2. Data center infrastructure management platform used in OT-adjacent facilities.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICSA-26-181-03 (2026-06-30)",
+    "otRelevance": "MEDIUM-HIGH \u2014 EcoStruxure IT manages data center power, cooling, and environmental monitoring. In OT environments, data centers host SCADA servers, historians, and engineering workstations. Compromise of DCIM platform enables physical infrastructure disruption.",
+    "vendors": [
+      "Schneider Electric"
+    ],
+    "cves": [
+      "CVE-2026-8045"
+    ],
+    "publishedAt": "2026-06-30T00:00:00Z",
+    "updatedAt": "2026-07-01T18:05:00Z",
+    "sources": [
+      "CISA"
+    ],
+    "tags": [
+      "Schneider Electric",
+      "EcoStruxure",
+      "Data Center Expert",
+      "DCIM",
+      "CVE-2026-8045",
+      "OT"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-07-01-001",
+    "title": "CVE-2026-13207 \u2014 FUXA SCADA/HMI Authentication Bypass (CISA Advisory, July 15 Webinar)",
+    "summary": "CISA advisory for FUXA open-source web-based SCADA/HMI platform: authentication bypass vulnerability (CVE-2026-13207) exposing user roles. CISA scheduling July 15 webinar for critical infrastructure operators. FUXA deployed in water utilities, energy monitoring, and industrial automation.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA Advisory (2026-06-30)",
+    "otRelevance": "HIGH \u2014 FUXA is a SCADA/HMI platform used in water, energy, and industrial automation. Authentication bypass enables unauthorized access to process visualization and control interfaces. Isolate from internet and patch.",
+    "vendors": [
+      "Frangoteam"
+    ],
+    "cves": [
+      "CVE-2026-13207"
+    ],
+    "publishedAt": "2026-06-30T00:00:00Z",
+    "updatedAt": "2026-07-01T06:15:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "FUXA",
+      "SCADA",
+      "HMI",
+      "authentication bypass",
+      "CVE-2026-13207",
+      "water",
+      "energy",
+      "OT"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-30-003",
+    "title": "CVE-2026-13207 \u2014 FUXA SCADA/HMI Authentication Bypass \u2014 Unauthenticated User Role Enumeration (June 30 Advisory)",
+    "summary": "Frangoteam FUXA web-based SCADA/HMI software contains an authentication bypass (CVE-2026-13207) allowing unauthenticated attackers to remotely enumerate user accounts and view assigned roles \u2014 effectively mapping the entire privilege hierarchy of an OT environment.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-06-30)",
+    "otRelevance": "HIGH \u2014 FUXA is an open-source web SCADA/HMI platform. User role enumeration is reconnaissance that enables targeted credential attacks and privilege escalation. If internet-exposed, treat as ACT_NOW.",
+    "vendors": [
+      "Frangoteam"
+    ],
+    "cves": [
+      "CVE-2026-13207"
+    ],
+    "publishedAt": "2026-06-30T00:00:00Z",
+    "updatedAt": "2026-07-01T00:15:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "FUXA",
+      "SCADA",
+      "HMI",
+      "authentication bypass",
+      "user enumeration",
+      "CVE-2026-13207",
+      "OT"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-30-004",
+    "title": "Delta DVP12SE PLCs \u2014 Unpatched Modbus TCP Flaws \u2192 Remote Attacks (June 30 Advisory)",
+    "summary": "CISA advisory for Delta Electronics DVP12SE PLCs: unpatched Modbus TCP vulnerabilities allowing remote attacks. Delta DVP series PLCs are widely deployed in manufacturing, building automation, and water/wastewater.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-06-30)",
+    "otRelevance": "CRITICAL \u2014 Unpatched Modbus TCP flaws on PLCs are a direct path to process disruption. Apply compensating controls (network segmentation, Modbus access control) until patch available.",
+    "vendors": [
+      "Delta Electronics"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-30T00:00:00Z",
+    "updatedAt": "2026-07-01T00:15:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "Delta Electronics",
+      "DVP12SE",
+      "PLC",
+      "Modbus TCP",
+      "unpatched",
+      "remote attack",
+      "OT"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-30-005",
+    "title": "StoneFly Storage Concentrator \u2014 Root Access + Full Data Control (June 30 Advisory)",
+    "summary": "CISA advisory for StoneFly Storage Concentrator: vulnerabilities granting root access and full data control. Storage concentrators in OT environments manage historian data, backup archives, and configuration repositories.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-06-30)",
+    "otRelevance": "MEDIUM-HIGH \u2014 Root access on OT storage concentrators means full control of historian data, backup archives, and configuration repositories. Patch immediately.",
+    "vendors": [
+      "StoneFly"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-30T00:00:00Z",
+    "updatedAt": "2026-07-01T00:15:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "StoneFly",
+      "storage concentrator",
+      "root access",
+      "data control",
+      "OT",
+      "historian"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-30-006",
+    "title": "B&R Industrial Terminals \u2014 XZ Utils CVE-2025-31115 \u2014 CISA Urges Immediate Patching (June 30 Advisory)",
+    "summary": "CISA advisory for B&R Industrial Terminals (ABB subsidiary): XZ Utils supply chain vulnerability CVE-2025-31115. B&R terminals deployed in industrial HMI, motion control, and automation environments. CISA urging immediate patching.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-06-30)",
+    "otRelevance": "HIGH \u2014 B&R terminals are deployed in industrial HMI, motion control, and automation. XZ Utils is a critical supply chain component. Patch immediately per CISA guidance.",
+    "vendors": [
+      "B&R",
+      "ABB"
+    ],
+    "cves": [
+      "CVE-2025-31115"
+    ],
+    "publishedAt": "2026-06-30T00:00:00Z",
+    "updatedAt": "2026-07-01T00:15:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "B&R",
+      "ABB",
+      "XZ Utils",
+      "CVE-2025-31115",
+      "supply chain",
+      "industrial terminal",
+      "HMI",
+      "urgent patching"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-30-001",
+    "title": "Daktronics DMP-5000/8000 Controller Firmware \u2014 Unauthenticated Root Access (June 25 Advisory)",
+    "summary": "CISA advisory for Daktronics DMP-5000, VFC-DMP-5000, and DMP-8000 display controllers: unauthenticated attackers can gain root-level control if devices are left exposed. Controllers manage large-format displays in stadiums, transportation hubs, and industrial facilities.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-06-25)",
+    "otRelevance": "MEDIUM-HIGH \u2014 Daktronics controllers manage critical visual information displays. Root access enables display manipulation and potential network pivoting into connected OT segments.",
+    "vendors": [
+      "Daktronics"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-25T00:00:00Z",
+    "updatedAt": "2026-06-30T05:15:00Z",
+    "sources": [
+      "CISA",
+      "WindowsForum"
+    ],
+    "tags": [
+      "Daktronics",
+      "DMP-5000",
+      "DMP-8000",
+      "root access",
+      "unauthenticated",
+      "display controller",
+      "OT"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-30-002",
+    "title": "CVE-2026-48558 \u2014 SimpleHelp Remote Support Tool (KEV DUE JULY 2)",
+    "summary": "SimpleHelp remote support tool added to CISA KEV June 29 with due date July 2 (Thursday). SimpleHelp is used for remote OT support and vendor access \u2014 compromise of remote support tools is a known OT initial access vector.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "source": "CISA KEV (2026-06-29)",
+    "otRelevance": "MEDIUM \u2014 SimpleHelp is used for remote OT vendor support. Compromised remote support tools provide authenticated access to OT environments. Patch before July 2.",
+    "vendors": [
+      "SimpleHelp"
+    ],
+    "cves": [
+      "CVE-2026-48558"
+    ],
+    "publishedAt": "2026-06-29T00:00:00Z",
+    "updatedAt": "2026-06-30T05:15:00Z",
+    "sources": [
+      "CISA KEV"
+    ],
+    "tags": [
+      "SimpleHelp",
+      "remote support",
+      "KEV",
+      "July 2 deadline",
+      "OT vendor access"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-29-001",
+    "title": "CISA Daktronics Controller Firmware \u2014 Unauthenticated Root Access (DMP-5000/8000, VFC-DMP-5000)",
+    "summary": "CISA published advisory (June 25) for Daktronics DMP-5000, VFC-DMP-5000, and DMP-8000 display controllers. Vulnerable firmware allows unauthenticated attackers to gain root-level control if devices are left exposed. Daktronics controllers manage digital displays in stadiums, transportation hubs, and industrial facilities.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-06-25)",
+    "otRelevance": "MEDIUM-HIGH \u2014 Daktronics controllers are deployed in critical infrastructure facilities for operational displays, scoreboards, and information systems. Unauthenticated root access on networked display controllers can be used for reconnaissance, lateral movement, or physical safety disruption (display manipulation in control rooms).",
+    "vendors": [
+      "Daktronics"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-25T00:00:00Z",
+    "updatedAt": "2026-06-29T15:05:00Z",
+    "sources": [
+      "CISA",
+      "WindowsForum"
+    ],
+    "tags": [
+      "Daktronics",
+      "display controller",
+      "root access",
+      "unauthenticated",
+      "firmware",
+      "OT"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-27-001",
+    "title": "ICSA-26-176-07 \u2014 Schneider PowerLogic P7 Firmware Patch (Multiple CVEs, Reboot Required)",
+    "summary": "CISA republished Schneider Electric advisory for PowerLogic P7 protection relay firmware. Multiple CVEs including CVE-2026-9718 (authenticated DoS) plus two higher-severity issues requiring a device reboot. Schedule during next maintenance window.",
+    "severity": "MEDIUM",
+    "priority": "MEDIUM",
+    "domain": "OT",
+    "source": "CISA ICSA-26-176-07 (June 2026)",
+    "otRelevance": "MEDIUM \u2014 PowerLogic P7 is a medium-voltage protection relay. Reboot required for higher-severity fixes means a maintenance window is needed. Schedule during next planned outage.",
+    "vendors": [
+      "Schneider Electric"
+    ],
+    "cves": [
+      "CVE-2026-9718"
+    ],
+    "publishedAt": "2026-06-25T00:00:00Z",
+    "updatedAt": "2026-06-28T03:15:00Z",
+    "sources": [
+      "CISA",
+      "Schneider Electric"
+    ],
+    "tags": [
+      "Schneider Electric",
+      "PowerLogic",
+      "P7",
+      "protection relay",
+      "firmware",
+      "reboot required"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-26-005",
+    "title": "ICSA-26-176-03 \u2014 Horner Automation Cscape: Local Code Execution + Info Disclosure",
+    "summary": "CISA advisory for Horner Automation Cscape PLC programming software. Successful exploitation allows a local attacker to disclose information and execute arbitrary code. Cscape is used by engineers to develop and deploy PLC programs.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICSA-26-176-03 (June 2026)",
+    "otRelevance": "HIGH \u2014 Cscape is PLC programming software used to develop control logic for Horner Automation PLCs (XL, XLe, OCS series) deployed in manufacturing, water, and building automation. Local code execution via an engineering tool targeting developers and OT engineers.",
+    "vendors": [
+      "Horner Automation"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-24T00:00:00Z",
+    "updatedAt": "2026-06-26T22:10:00Z",
+    "sources": [
+      "CISA"
+    ],
+    "tags": [
+      "Horner Automation",
+      "Cscape",
+      "PLC",
+      "engineering tool",
+      "code execution",
+      "OT"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-26-004",
+    "title": "CVE-2026-20230 \u2014 Cisco UCM SSRF \u2192 Unauthenticated File Write \u2192 Root (KEV DUE JUNE 28)",
+    "summary": "Cisco Unified Communications Manager (UCM) and UCM SME contain an SSRF vulnerability allowing an unauthenticated remote attacker to write arbitrary files to the OS, enabling root escalation. Added to CISA KEV June 25. Due date: June 28 (Sunday).",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "source": "CISA KEV (2026-06-25)",
+    "otRelevance": "MEDIUM-HIGH \u2014 Cisco UCM is deployed for voice communications in enterprise and industrial facilities. SSRF\u2192root escalation on UCM servers can facilitate lateral movement into OT network segments from compromised communication infrastructure.",
+    "vendors": [
+      "Cisco"
+    ],
+    "cves": [
+      "CVE-2026-20230"
+    ],
+    "publishedAt": "2026-06-25T00:00:00Z",
+    "updatedAt": "2026-06-26T16:10:00Z",
+    "sources": [
+      "CISA KEV",
+      "Cisco"
+    ],
+    "tags": [
+      "Cisco",
+      "UCM",
+      "SSRF",
+      "root",
+      "file write",
+      "KEV",
+      "June 28 deadline"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-26-001",
+    "title": "Windows Netlogon RCE Actively Exploited \u2014 Critical for OT Engineering Workstations",
+    "summary": "Critical Windows Netlogon Remote Code Execution vulnerability is now being exploited in active attacks. From the Nightmare Eclipse disclosure series. Engineering Workstations, AD servers, and Windows-based historian servers in OT environments are in scope.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "source": "BleepingComputer (2026-06-25)",
+    "otRelevance": "CRITICAL \u2014 Domain controllers and EWS in OT networks rely on Netlogon. Active exploitation means unpatched OT-adjacent Windows infrastructure is under immediate threat.",
+    "vendors": [
+      "Microsoft"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-25T00:00:00Z",
+    "updatedAt": "2026-06-26T07:20:00Z",
+    "sources": [
+      "BleepingComputer"
+    ],
+    "tags": [
+      "Windows",
+      "Netlogon",
+      "RCE",
+      "EWS",
+      "historian",
+      "AD",
+      "OT workstation",
+      "actively exploited"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": true
+  },
+  {
+    "id": "intel-2026-06-26-002",
+    "title": "ScadaBR CVSS 9.1 Unauthenticated RCE \u2014 Missing Auth + Command Injection + Hardcoded Creds (CISA)",
+    "summary": "CISA advisory for ScadaBR web-native SCADA/HMI platform: combination of missing authentication, command injection, and hard-coded credentials enables unauthenticated remote code execution at CVSS 9.1. ScadaBR deployed in water utilities, energy, and industrial monitoring.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA (via SolidSmack)",
+    "otRelevance": "CRITICAL \u2014 ScadaBR is a browser-based SCADA platform. CVSS 9.1 unauthenticated RCE on a SCADA system is highest severity. Any internet-facing ScadaBR deployment is ACT_NOW.",
+    "vendors": [
+      "ScadaBR"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-01T00:00:00Z",
+    "updatedAt": "2026-06-26T07:20:00Z",
+    "sources": [
+      "CISA",
+      "SolidSmack"
+    ],
+    "tags": [
+      "ScadaBR",
+      "SCADA",
+      "HMI",
+      "unauthenticated RCE",
+      "CVSS 9.1",
+      "water",
+      "energy",
+      "OT"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": 9.1,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-26-003",
+    "title": "ICSA-26-174-06 \u2014 B&R Linux Kernel Vulnerabilities in Automation Products (Previously Missed)",
+    "summary": "CISA ICSA-26-174-06 (June 23): B&R (ABB subsidiary) is aware of publicly reported Linux kernel vulnerabilities affecting products including industrial PCs, motion controllers, and automation systems.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICSA-26-174-06 (2026-06-23)",
+    "otRelevance": "HIGH \u2014 B&R products run in motion control, robotics, and process automation environments. Linux kernel vulnerabilities in embedded automation devices enable privilege escalation and potential RCE.",
+    "vendors": [
+      "B&R",
+      "ABB"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-23T00:00:00Z",
+    "updatedAt": "2026-06-26T07:20:00Z",
+    "sources": [
+      "CISA"
+    ],
+    "tags": [
+      "B&R",
+      "ABB",
+      "Linux kernel",
+      "automation",
+      "motion control",
+      "industrial PC"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-25-003",
+    "title": "CVE-2025-67038 \u2014 Lantronix EDS5000 Command Injection Actively Exploited (KEV DUE JUNE 26)",
+    "summary": "Lantronix EDS5000 serial-to-Ethernet device server contains a command injection vulnerability in the HTTP RPC authentication failure logging path. Username is directly concatenated with a shell command without sanitization, enabling unauthenticated RCE. Added to CISA KEV June 23 with due date June 26 (TOMORROW). Actively exploited \u2014 Defused Cyber confirmed malware development using this chain.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA KEV (2026-06-23) / Hacker News / BleepingComputer",
+    "otRelevance": "CRITICAL \u2014 Lantronix EDS5000 bridges serial industrial devices (PLCs, RTUs, meters, instruments) to Ethernet. Identical attack surface to Moxa NPort (also recently patched). Root access on EDS5000 = control over all serial devices behind it. Isolate from internet immediately.",
+    "vendors": [
+      "Lantronix"
+    ],
+    "cves": [
+      "CVE-2025-67038",
+      "CVE-2026-34908",
+      "CVE-2026-34909",
+      "CVE-2026-34910"
+    ],
+    "publishedAt": "2026-06-23T00:00:00Z",
+    "updatedAt": "2026-06-25T23:20:00Z",
+    "sources": [
+      "CISA KEV",
+      "Hacker News",
+      "BleepingComputer",
+      "SecurityWeek",
+      "Dataminr"
+    ],
+    "tags": [
+      "Lantronix",
+      "EDS5000",
+      "serial-to-Ethernet",
+      "command injection",
+      "RCE",
+      "OT",
+      "KEV",
+      "ACT_NOW",
+      "actively exploited"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": true
+  },
+  {
+    "id": "intel-2026-06-25-004",
+    "title": "CVE-2026-34908/34909/34910 \u2014 Ubiquiti UniFi OS Max-Severity Flaws (KEV DUE JUNE 26)",
+    "summary": "Ubiquiti UniFi OS contains three max-severity vulnerabilities (CVE-2026-34908, CVE-2026-34909, CVE-2026-34910) on CISA KEV due June 26 (TOMORROW). Exploited concurrently with Lantronix EDS5000 in active campaigns.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "source": "CISA KEV (2026-06-23) / BleepingComputer",
+    "otRelevance": "HIGH \u2014 Ubiquiti UniFi is widely deployed as network infrastructure in OT environments. Exploitation provides attacker access to network segments and can facilitate lateral movement into OT networks.",
+    "vendors": [
+      "Ubiquiti"
+    ],
+    "cves": [
+      "CVE-2026-34908",
+      "CVE-2026-34909",
+      "CVE-2026-34910"
+    ],
+    "publishedAt": "2026-06-23T00:00:00Z",
+    "updatedAt": "2026-06-25T23:20:00Z",
+    "sources": [
+      "CISA KEV",
+      "BleepingComputer"
+    ],
+    "tags": [
+      "Ubiquiti",
+      "UniFi",
+      "max-severity",
+      "KEV",
+      "ACT_NOW",
+      "network",
+      "IT/OT"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-25-001",
+    "title": "ICSA-26-162-01 \u2014 ABB Freelance DCS Security Lock Flaw \u2192 OT Console Hijack (June 11, previously missed)",
+    "summary": "ABB Freelance distributed control system contains a security lock flaw allowing attackers to hijack OT operator consoles. Coordinated disclosure: ABB and CISA published June 11. Neither has named the reporter. ABB Freelance is deployed in oil/gas, chemical, power, and water/wastewater process control.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICSA-26-162-01 (2026-06-11)",
+    "otRelevance": "CRITICAL \u2014 Operator console hijack on a DCS means direct manipulation of process setpoints, alarm overrides, and control commands. This is the operational impact layer, not just a data breach vector.",
+    "vendors": [
+      "ABB"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-11T00:00:00Z",
+    "updatedAt": "2026-06-25T11:20:00Z",
+    "sources": [
+      "CISA",
+      "ABB",
+      "WindowsNews"
+    ],
+    "tags": [
+      "ABB",
+      "Freelance",
+      "DCS",
+      "console hijack",
+      "OT",
+      "process control",
+      "oil gas",
+      "chemical",
+      "water"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-25-002",
+    "title": "CVE-2026-12569 \u2014 PTC Windchill/FlexPLM CVSS 9.3 Unauth RCE CONFIRMED EXPLOITED (KEV Overdue)",
+    "summary": "PTC Windchill and FlexPLM CVE-2026-12569: CVSS 4.0 score 9.3. Deserialization of untrusted data enables unauthenticated RCE. Affects all releases prior to 11.0 M030. KEV overdue since June 28. Confirmed exploited in the wild.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "source": "PTC Trust Center (June 2026)",
+    "otRelevance": "MEDIUM-HIGH \u2014 Windchill manages engineering documentation, BOMs, PLC programs, and safety system documentation for OT assets. RCE on Windchill servers exposes engineering blueprints and design data. Common in manufacturing IT/OT boundary environments.",
+    "vendors": [
+      "PTC"
+    ],
+    "cves": [
+      "CVE-2026-12569"
+    ],
+    "publishedAt": "2026-06-24T00:00:00Z",
+    "updatedAt": "2026-07-06T01:15:00Z",
+    "sources": [
+      "PTC Trust Center"
+    ],
+    "tags": [
+      "PTC",
+      "Windchill",
+      "FlexPLM",
+      "RCE",
+      "KEV",
+      "overdue",
+      "exploited in wild",
+      "ACT_NOW"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": 9.3,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-24-001",
+    "title": "ICSA-26-174-01 \u2014 Siemens SINEC INS Critical Command Injection \u2192 RCE + DoS",
+    "summary": "Critical command injection and three additional flaws in Siemens SINEC INS network management platform. Successful exploitation enables remote code execution, denial-of-service, and unauthorized access to sensitive network data. SINEC INS manages Siemens industrial network infrastructure.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICSA-26-174-01 (2026-06-23)",
+    "otRelevance": "HIGH \u2014 RCE on SINEC INS provides attacker-level visibility and control over OT network topology. Network management plane compromise is a critical stepping stone to deeper OT access.",
+    "vendors": [
+      "Siemens"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-23T00:00:00Z",
+    "updatedAt": "2026-06-24T07:20:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "Siemens",
+      "SINEC INS",
+      "RCE",
+      "command injection",
+      "network management",
+      "OT"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-24-002",
+    "title": "CVE-2026-1840 \u2014 Hubbell Aclara Metrum Unauthenticated Remote OT Device Reboot",
+    "summary": "Critical flaw in Hubbell Aclara Metrum Cellular Web Interface (firmware < 2.1.0.105) allows unauthenticated attackers to remotely restart OT devices. Deployed in electric and water utility metering infrastructure. Poses severe risk to utility operations.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-06-23)",
+    "otRelevance": "HIGH \u2014 Aclara devices are deployed in electric/water metering and distribution infrastructure. Unauthenticated remote reboot causes loss of monitoring visibility across distribution grids. Update firmware to \u22652.1.0.105 immediately.",
+    "vendors": [
+      "Hubbell",
+      "Aclara"
+    ],
+    "cves": [
+      "CVE-2026-1840"
+    ],
+    "publishedAt": "2026-06-23T00:00:00Z",
+    "updatedAt": "2026-06-24T07:20:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "Hubbell",
+      "Aclara",
+      "Metrum",
+      "cellular",
+      "utility",
+      "metering",
+      "unauthenticated",
+      "reboot"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-24-003",
+    "title": "Siemens SIPROTEC 5 Authenticated File Upload via DIGSI 5 (June 23 Re-release)",
+    "summary": "Re-released CISA advisory for Siemens SIPROTEC 5 protection relays: authenticated file upload via DIGSI 5 engineering tool could enable malicious firmware or config injection. Requires valid credentials. High severity for electrical grid operations.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-06-23, re-release)",
+    "otRelevance": "HIGH \u2014 SIPROTEC 5 protection relays are deployed in electrical substations worldwide. Authenticated file upload via engineering tool is the vector class used in historical relay attacks. Review DIGSI 5 access control and credential hygiene.",
+    "vendors": [
+      "Siemens"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-23T00:00:00Z",
+    "updatedAt": "2026-06-24T07:20:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "Siemens",
+      "SIPROTEC 5",
+      "DIGSI 5",
+      "protection relay",
+      "substation",
+      "file upload",
+      "engineering tool"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-23-004",
+    "title": "Dragos Launches EmberAI \u2014 OT-Native AI Assistant + 2026 Year in Review Published",
+    "summary": "Dragos released its 9th annual OT/ICS Cybersecurity Year in Review and simultaneously launched EmberAI, an OT-native AI assistant built on a decade of proprietary OT threat intelligence and incident response data. EmberAI targets the OT security skills gap. Report confirms SYLVANITE\u2192VOLTZITE handoff observed, KAMACITE/ELECTRUM as top disruptors, Volt Typhoon embedded in US utilities.",
+    "severity": "MEDIUM",
+    "priority": "MEDIUM",
+    "domain": "OT",
+    "source": "Dragos / BusinessWire / SiliconAngle (2026-06-23)",
+    "otRelevance": "HIGH \u2014 The YIR is the annual benchmark document for OT threat posture. EmberAI is a new OT analyst augmentation tool entering the market. Key YIR confirmation: SYLVANITE\u2192VOLTZITE initial access handoff directly observed by Dragos IR, compressing breach-to-impact timelines.",
+    "vendors": [
+      "Dragos"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-23T00:00:00Z",
+    "updatedAt": "2026-06-23T15:05:00Z",
+    "sources": [
+      "Dragos",
+      "BusinessWire",
+      "SiliconAngle"
+    ],
+    "tags": [
+      "Dragos",
+      "EmberAI",
+      "Year in Review",
+      "YIR",
+      "VOLTZITE",
+      "SYLVANITE",
+      "ELECTRUM",
+      "OT AI",
+      "threat intelligence"
+    ],
+    "urgencyTier": "MONITOR",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-23-001",
+    "title": "White House EO \u2014 AI Cybersecurity Clearinghouse + CWE-306/284/693 Hardening (June 22)",
+    "summary": "White House EO 'Promoting Advanced Artificial Intelligence Innovation and Security' mandates: voluntary AI cybersecurity clearinghouse (Treasury/NSA/CISA, 30-day formation), CWE-306/284/693 hardening, and NSA-classified AI detection benchmarks. Federal agencies and CMMC contractors face binding timelines; critical infrastructure operators have advisory applicability.",
+    "severity": "MEDIUM",
+    "priority": "MEDIUM",
+    "domain": "BOTH",
+    "source": "White House (2026-06-22)",
+    "otRelevance": "MEDIUM \u2014 CWE-306 hardening overlaps directly with active KEV CVE-2026-20253 (Splunk). AI systems deployed in OT SOCs, historian analytics, and IT/OT boundary monitoring are in scope for advisory applicability under this EO.",
+    "vendors": [],
+    "cves": [],
+    "publishedAt": "2026-06-22T00:00:00Z",
+    "updatedAt": "2026-06-23T09:20:00Z",
+    "sources": [
+      "White House",
+      "TechJack Solutions briefing"
+    ],
+    "tags": [
+      "White House",
+      "EO",
+      "AI security",
+      "CWE-306",
+      "CWE-284",
+      "clearinghouse",
+      "CISA",
+      "NSA",
+      "policy"
+    ],
+    "urgencyTier": "MONITOR",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-23-002",
+    "title": "FBI/CISA/NSA/EPA/DOE Joint Advisory \u2014 Hackers Targeting Industrial Fluid Monitoring OT Devices",
+    "summary": "FBI, CISA, NSA, EPA, DOE, and US Cyber Command urgently warn of ongoing cyber exploitation of internet-connected OT devices used to monitor fuel and other industrial liquids. Advisory covers automated fuel/liquid monitoring systems at gas stations, fuel depots, chemical facilities, and related infrastructure.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "FBI / CISA / NSA / EPA / DOE / US Cyber Command (~June 15-16, 2026)",
+    "otRelevance": "CRITICAL \u2014 Direct OT advisory targeting automated fluid monitoring systems (fuel level gauges, tank monitors, liquid sensing systems). These devices are widely deployed at fuel facilities, water/wastewater, and chemical plants. Internet-facing exposure is the primary attack vector. Disconnect or firewall immediately.",
+    "vendors": [],
+    "cves": [],
+    "publishedAt": "2026-06-15T00:00:00Z",
+    "updatedAt": "2026-06-23T11:10:00Z",
+    "sources": [
+      "FBI",
+      "CISA",
+      "NSA",
+      "EPA",
+      "DOE",
+      "US Cyber Command"
+    ],
+    "tags": [
+      "FBI",
+      "CISA",
+      "NSA",
+      "EPA",
+      "DOE",
+      "joint advisory",
+      "fuel",
+      "liquid monitoring",
+      "OT",
+      "internet-connected",
+      "ACT_NOW"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-23-003",
+    "title": "ICSA-26-169-07 Schneider Enriched \u2014 MiCOM P437/P634 and EPAS-GTW Affected Versions",
+    "summary": "Specific affected versions now known for Schneider ICSA-26-169-07 (CVE-2026-4827): Easergy MiCOM P437 \u2264P437.678.700, MiCOM P634 \u2264P634.678.700, EcoStruxure EPAS-GTW \u22646.4.616.200.100. These are protection relays and substation automation gateways in electric sector deployments.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICSA-26-169-07 CSAF (2026-06-18)",
+    "otRelevance": "HIGH \u2014 MiCOM P437/P634 are protection relays in medium-voltage switchgear and substations. EPAS-GTW is a substation automation gateway. Version specificity enables targeted asset identification.",
+    "vendors": [
+      "Schneider Electric"
+    ],
+    "cves": [
+      "CVE-2026-4827"
+    ],
+    "publishedAt": "2026-06-18T00:00:00Z",
+    "updatedAt": "2026-06-23T09:20:00Z",
+    "sources": [
+      "CISA"
+    ],
+    "tags": [
+      "Schneider Electric",
+      "MiCOM",
+      "EPAS-GTW",
+      "protection relay",
+      "substation",
+      "session prediction",
+      "CVE-2026-4827"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-22-001",
+    "title": "Active Exploitation: Palo Alto + Fortinet Secure Remote Access / VPN (IBM X-Force, June 19)",
+    "summary": "IBM X-Force reports adversaries running broad exploitation campaigns against Palo Alto Networks and Fortinet secure access solutions. Exploitation grants access to sensitive internal network enclaves. Active in the wild as of June 19, 2026.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "source": "IBM X-Force (2026-06-19)",
+    "otRelevance": "CRITICAL \u2014 Palo Alto and Fortinet are the dominant IT/OT boundary firewalls in critical infrastructure. Compromise provides direct access to OT segments. Classic pre-positioning pattern for ICS-targeted operations.",
+    "vendors": [
+      "Palo Alto Networks",
+      "Fortinet"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-19T00:00:00Z",
+    "updatedAt": "2026-06-22T09:20:00Z",
+    "sources": [
+      "IBM X-Force"
+    ],
+    "tags": [
+      "Palo Alto",
+      "Fortinet",
+      "VPN",
+      "remote access",
+      "exploitation",
+      "IT/OT boundary",
+      "ACT_NOW"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-22-002",
+    "title": "FortiBleed \u2014 86,644 Fortinet Firewall/VPN Credentials Confirmed (Updated), CVEs: CVE-2026-24858, CVE-2025-59718/59719",
+    "summary": "FortiBleed count updated: 86,644 confirmed working credentials across 194 countries (previously reported ~74K). CVEs now identified: CVE-2026-24858, CVE-2025-59718, CVE-2025-59719. CISA urging immediate password resets and MFA enforcement. Government and healthcare verticals most heavily exposed.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "source": "BleepingComputer / CISA",
+    "otRelevance": "HIGH \u2014 Exposed credentials on OT-boundary Fortinet devices represent a direct path to IT/OT infiltration. Any Fortinet device whose credentials may be in the FortiBleed dataset should be treated as compromised until rotated.",
+    "vendors": [
+      "Fortinet"
+    ],
+    "cves": [
+      "CVE-2026-24858",
+      "CVE-2025-59718",
+      "CVE-2025-59719"
+    ],
+    "publishedAt": "2026-06-19T00:00:00Z",
+    "updatedAt": "2026-06-25T23:20:00Z",
+    "sources": [
+      "BleepingComputer",
+      "CISA"
+    ],
+    "tags": [
+      "Fortinet",
+      "FortiBleed",
+      "credential leak",
+      "firewall",
+      "VPN",
+      "IT/OT boundary",
+      "CVE-2026-24858",
+      "CVE-2025-59718",
+      "CVE-2025-59719"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-21-001",
+    "title": "CVE-2026-10829 \u2014 Moxa NPort Root RCE + Format String Bugs (Patch Available)",
+    "summary": "Moxa has patched root RCE and format string vulnerabilities (CVE-2026-10829) in NPort device servers. Both bugs live in the device web service. Successful exploitation gives an attacker full root control of the NPort hardware. NPort devices bridge serial industrial equipment to Ethernet networks and are ubiquitous in OT environments.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "SecurityOnline / Moxa (June 2026)",
+    "otRelevance": "CRITICAL \u2014 Moxa NPort is one of the most widely deployed serial-to-Ethernet converters in OT globally. Root access on NPort means full control of every serial device connected through it: PLCs, RTUs, meters, instruments. Isolate NPort web interfaces immediately and apply patches.",
+    "vendors": [
+      "Moxa"
+    ],
+    "cves": [
+      "CVE-2026-10829"
+    ],
+    "publishedAt": "2026-06-18T00:00:00Z",
+    "updatedAt": "2026-06-21T10:20:00Z",
+    "sources": [
+      "SecurityOnline",
+      "Moxa"
+    ],
+    "tags": [
+      "Moxa",
+      "NPort",
+      "RCE",
+      "root",
+      "serial-to-Ethernet",
+      "OT",
+      "PLC",
+      "RTU"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-20-004",
+    "title": "CVE-2026-20253 \u2014 Splunk Enterprise Missing Auth RCE (KEV OVERDUE + EXPLOITATION CONFIRMED)",
+    "summary": "Splunk Enterprise CWE-306 vulnerability \u2014 Splunk PSIRT confirmed \"limited exploitation\" in June 2026. CISA KEV due date June 21 (overdue). UNC6508 China-linked + active exploitation. Treat as actively compromised if not yet patched.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "source": "CISA KEV (2026-06-18) / Splunk SVD-2026-0603",
+    "otRelevance": "HIGH \u2014 Splunk Enterprise is widely deployed in OT SOCs, at IT/OT boundaries, and for historian data aggregation and SIEM functions. Unauthenticated file creation/truncation can be used to disable logging, corrupt configuration, or pivot to adjacent systems. UNC6508 China-linked exploitation active.",
+    "vendors": [
+      "Splunk"
+    ],
+    "cves": [
+      "CVE-2026-20253"
+    ],
+    "publishedAt": "2026-06-18T00:00:00Z",
+    "updatedAt": "2026-06-25T11:20:00Z",
+    "sources": [
+      "CISA KEV",
+      "Splunk SVD-2026-0603",
+      "FIRST.org"
+    ],
+    "tags": [
+      "Splunk",
+      "Enterprise",
+      "missing auth",
+      "RCE",
+      "KEV",
+      "UNC6508",
+      "China",
+      "SIEM",
+      "OT SOC",
+      "exploitation confirmed"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-20-001",
+    "title": "ICSA-26-169-07 \u2014 Schneider Electric Easergy/EcoStruxure/PowerLogic Session Prediction (CVE-2026-4827)",
+    "summary": "High-severity session prediction vulnerability (CVE-2026-4827) in Schneider Electric Easergy protection relays, EcoStruxure, and PowerLogic energy management systems. Attacker who can observe or predict session tokens can hijack authenticated sessions, gaining operator-level access without credentials.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory ICSA-26-169-07 (2026-06-18)",
+    "otRelevance": "HIGH \u2014 Schneider Easergy protection relays are deployed in electrical substations worldwide. Session hijacking enables relay misoperation \u2014 potentially causing transformer damage or blackout conditions in the electric sector.",
+    "vendors": [
+      "Schneider Electric"
+    ],
+    "cves": [
+      "CVE-2026-4827"
+    ],
+    "publishedAt": "2026-06-18T00:00:00Z",
+    "updatedAt": "2026-06-20T10:15:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "Schneider Electric",
+      "Easergy",
+      "EcoStruxure",
+      "PowerLogic",
+      "session prediction",
+      "protection relay",
+      "energy",
+      "substation"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-20-002",
+    "title": "ICSA-26-169-01 \u2014 Mitsubishi Electric FX5-ENET/IP DoS (All Versions, No Patch Available)",
+    "summary": "CISA republished Mitsubishi Electric advisory for a denial-of-service vulnerability affecting ALL versions of the FX5-ENET/IP EtherNet/IP communication module. No patch is currently available. Exploitation disrupts fieldbus communications between PLCs and I/O devices.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory ICSA-26-169-01 (2026-06-18)",
+    "otRelevance": "HIGH \u2014 FX5-ENET/IP modules are widely deployed in Mitsubishi MELSEC iQ-F PLC environments. No patch available means compensating controls (network segmentation, ACLs) are the only mitigation path until Mitsubishi releases a fix.",
+    "vendors": [
+      "Mitsubishi Electric"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-18T00:00:00Z",
+    "updatedAt": "2026-06-20T10:15:00Z",
+    "sources": [
+      "CISA",
+      "WindowsNews"
+    ],
+    "tags": [
+      "Mitsubishi Electric",
+      "FX5-ENET/IP",
+      "EtherNet/IP",
+      "DoS",
+      "no patch",
+      "PLC"
+    ],
+    "urgencyTier": "MONITOR",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-20-003",
+    "title": "ICSA-26-167-02 \u2014 Rockwell RSLinx Classic DoS (No Self-Recovery) \u2014 Enriched",
+    "summary": "Rockwell Automation RSLinx Classic becomes unresponsive after exploitation and will not recover on its own, requiring manual restart. RSLinx Classic is the primary EtherNet/IP driver used on engineering workstations, HMI servers, and historians in virtually every Rockwell OT environment.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory ICSA-26-167-02 (2026-06-16)",
+    "otRelevance": "HIGH \u2014 RSLinx Classic is a foundational communication component in Rockwell environments. Combined with ICSA-26-167-03 (PLC MNRF) and ICSA-26-167-05 (FLEX I/O auth bypass), this creates a 3-vector attack surface in Rockwell environments from a single June 16 release.",
+    "vendors": [
+      "Rockwell Automation"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-16T00:00:00Z",
+    "updatedAt": "2026-06-20T10:15:00Z",
+    "sources": [
+      "CISA"
+    ],
+    "tags": [
+      "Rockwell Automation",
+      "RSLinx",
+      "EtherNet/IP",
+      "DoS",
+      "EWS",
+      "HMI",
+      "historian"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-19-001",
+    "title": "ICSA-26-167-03 \u2014 Rockwell CompactLogix 5370/ControlLogix 5570 CIP DoS \u2192 Major NonRecoverable Fault",
+    "summary": "A crafted CIP (Common Industrial Protocol) message can remotely crash Rockwell Automation CompactLogix 5370 and ControlLogix 5570 controllers, causing a Major NonRecoverable Fault (MNRF). MNRF requires manual intervention to recover \u2014 the controller cannot self-restart. Successful exploitation results in a complete denial-of-service condition across industrial processes in automotive, food & beverage, and water treatment sectors.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-06-16)",
+    "otRelevance": "CRITICAL \u2014 CompactLogix 5370 and ControlLogix 5570 are among the most widely deployed PLCs in North American manufacturing and critical infrastructure. MNRF causes full uncontrolled process shutdown. Combined with FLEX I/O auth bypass (ICSA-26-167-05), multiple paths to physical disruption exist for attackers with OT network access.",
+    "vendors": [
+      "Rockwell Automation"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-16T00:00:00Z",
+    "updatedAt": "2026-06-19T17:55:00Z",
+    "sources": [
+      "CISA",
+      "AssurantCyber",
+      "WindowsNews"
+    ],
+    "tags": [
+      "Rockwell",
+      "CompactLogix",
+      "ControlLogix",
+      "CIP",
+      "DoS",
+      "MNRF",
+      "PLC",
+      "manufacturing",
+      "water"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-06-19-002",
+    "title": "ICSA-26-167-05 \u2014 Rockwell FLEX I/O EtherNet/IP Adapters: Auth Bypass + Account Takeover",
+    "summary": "Multiple vulnerabilities in Rockwell Automation FLEX I/O EtherNet/IP Adapters allow unauthorized access, account takeover, and loss of availability. If adapters are reachable from untrusted network segments, an attacker could gain control over I/O data flows \u2014 a Stage 2 ICS Kill Chain exposure.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-06-16)",
+    "otRelevance": "HIGH \u2014 FLEX I/O adapters interface directly with physical process inputs and outputs. Account takeover on these devices is a direct path to process manipulation. Verify adapters are not reachable from IT networks or untrusted OT segments.",
+    "vendors": [
+      "Rockwell Automation"
+    ],
+    "cves": [],
+    "publishedAt": "2026-06-16T00:00:00Z",
+    "updatedAt": "2026-06-19T17:55:00Z",
+    "sources": [
+      "CISA"
+    ],
+    "tags": [
+      "Rockwell",
+      "FLEX I/O",
+      "EtherNet/IP",
+      "auth bypass",
+      "account takeover",
+      "ICS Kill Chain"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-05-28-001",
+    "title": "CVE-2026-42897 \u2014 Microsoft Exchange Server XSS (CISA KEV, Overdue)",
+    "summary": "Microsoft Exchange Server cross-site scripting vulnerability actively exploited and added to CISA KEV catalog. Due date May 29, 2026 \u2014 now overdue. Relevant for IT/OT boundary environments where Exchange is used for operational communications.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "source": "CISA KEV / Microsoft",
+    "otRelevance": "MEDIUM-HIGH \u2014 Exchange servers in OT-adjacent IT environments represent a cross-boundary exposure. Compromised Exchange can be used for lateral movement into OT network segments, phishing of OT operators, and interception of operational communications.",
+    "vendors": [
+      "Microsoft"
+    ],
+    "cves": [
+      "CVE-2026-42897"
+    ],
+    "publishedAt": "2026-05-14T18:16:49Z",
+    "updatedAt": "2026-06-19T17:55:00Z",
+    "sources": [
+      "CISA KEV",
+      "Microsoft"
+    ],
+    "tags": [
+      "Exchange",
+      "XSS",
+      "KEV",
+      "overdue",
+      "IT/OT boundary"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": 8.1,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-05-28-002",
+    "title": "ICSA-26-148-05 \u2014 CP Plus 8Ch NVR Stored XSS (CVE-2026-6824, CVSS 8.4)",
+    "summary": "CP Plus 8-Channel Network Video Recorder contains a stored cross-site scripting vulnerability (CVE-2026-6824, CVSS 8.4) that allows an authenticated attacker to compromise admin sessions. NVRs are commonly deployed for physical security monitoring in OT environments.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-05-28)",
+    "otRelevance": "MEDIUM \u2014 NVRs in OT environments provide physical security visibility. Compromised NVR admin sessions can blind operators to physical intrusions. OT-adjacent management surface.",
+    "vendors": [
+      "CP Plus"
+    ],
+    "cves": [
+      "CVE-2026-6824"
+    ],
+    "publishedAt": "2026-05-28T00:00:00Z",
+    "updatedAt": "2026-06-19T17:55:00Z",
+    "sources": [
+      "CISA"
+    ],
+    "tags": [
+      "CP Plus",
+      "NVR",
+      "XSS",
+      "physical security",
+      "CVSS 8.4"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": 8.4,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-05-28-003",
+    "title": "ICSA-26-148-03 \u2014 ABB EIBPORT KNX Gateway (CVE-2021-22291, CVSS 8.0)",
+    "summary": "ABB EIBPORT KNX building automation gateway contains a high-severity vulnerability (CVE-2021-22291, CVSS 8.0). EIBPORT devices bridge KNX building automation systems to IP networks. Exploitation risk increases if devices are exposed beyond trusted network boundaries.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "source": "CISA ICS Advisory (2026-05-28)",
+    "otRelevance": "MEDIUM-HIGH \u2014 KNX gateways manage HVAC, lighting, and access control in industrial and commercial facilities. Compromise could allow environmental manipulation affecting OT operations (temperature, access).",
+    "vendors": [
+      "ABB"
+    ],
+    "cves": [
+      "CVE-2021-22291"
+    ],
+    "publishedAt": "2026-05-28T00:00:00Z",
+    "updatedAt": "2026-06-19T17:55:00Z",
+    "sources": [
+      "CISA"
+    ],
+    "tags": [
+      "ABB",
+      "EIBPORT",
+      "KNX",
+      "building automation",
+      "CVSS 8.0"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": 8.0,
+    "pocAvailable": null
+  },
+  {
+    "id": "intel-2026-04-23-001",
+    "title": "CVE-2026-33825 BlueHammer \u2014 Windows Defender LPE CONFIRMED EXPLOITED (KEV Overdue)",
+    "summary": "BlueHammer (CVE-2026-33825) Windows Defender LPE is now confirmed exploited in attacks (BleepingComputer June 25). KEV due date was May 6 \u2014 overdue. Nightmare Eclipse disclosure series. Allows privilege escalation to SYSTEM on Windows systems. OT workstations and EWS at risk.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "IT",
+    "source": "CISA KEV (2026-04-22) / Picus Security blog (2026-04-17)",
+    "otRelevance": "HIGH \u2014 Engineering Workstations (EWS), operator consoles, and OT-connected IT systems commonly run Windows Defender as the primary EDR/AV. LPE via Defender allows lateral movement from a compromised OT-adjacent workstation to full SYSTEM access, enabling persistence and credential dumping. Common attack path for ICS-targeting threat actors.",
+    "vendors": [
+      "Microsoft"
+    ],
+    "cves": [
+      "CVE-2026-33825"
+    ],
+    "publishedAt": "2026-04-17T00:00:00Z",
+    "updatedAt": "2026-06-26T07:20:00Z",
+    "sources": [
+      "CISA KEV",
+      "Picus Security"
+    ],
+    "tags": [
+      "Windows Defender",
+      "zero-day",
+      "LPE",
+      "BlueHammer",
+      "KEV",
+      "EWS",
+      "OT workstation"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": true
+  },
+  {
+    "id": "intel-2026-04-22-001",
+    "title": "BREAKING: Unauthorized Access to Anthropic Mythos (Hack-Enabling AI) via Third-Party Vendor",
+    "summary": "A private Discord group gained unauthorized access to Anthropic Mythos AI model on the same day it was publicly announced. Mythos is described as powerful enough to enable dangerous cyberattacks. Access obtained through a third-party contractor environment by guessing the model URL format based on knowledge of Anthropic URL conventions. Group has been using Mythos regularly since gaining access and provided Bloomberg with screenshots and a live demonstration. Anthropic confirmed investigation: \"We are investigating a report claiming unauthorized access to Claude Mythos Preview through one of our third-party vendor environments.\" No evidence of impact to Anthropic core systems. Mythos was released only to select vendors (Apple, others) under Project Glasswing to prevent bad-actor access.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "IT",
+    "otRelevance": "MODERATE \u2014 Mythos is designed to enable offensive cybersecurity research. If weaponized, capability could be directed at OT targets. Supply chain access vector (third-party contractor) is consistent with known OT intrusion patterns. AI-enabled attack tooling represents an emerging threat multiplier for OT environments.",
+    "vendors": [
+      "Anthropic"
+    ],
+    "cves": [],
+    "publishedAt": "2026-04-22T17:27:00Z",
+    "updatedAt": "2026-04-22T17:35:00Z",
+    "sources": [
+      "Bloomberg (original report)",
+      "TechCrunch",
+      "The Guardian",
+      "BBC",
+      "Euronews"
+    ],
+    "tags": [
+      "AI security",
+      "supply chain",
+      "third-party vendor",
+      "Anthropic",
+      "Mythos",
+      "unauthorized access"
+    ],
+    "urgencyTier": "MONITOR",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": true,
+    "source": "Bloomberg / TechCrunch / The Guardian / BBC / Euronews"
+  },
+  {
+    "id": "intel-2026-04-22-002",
+    "title": "Iran Fires on 3 Ships in Strait of Hormuz \u2014 OT Cyber Stand-Down Pledge Under Stress",
+    "summary": "Iran fired on 3 ships in the Strait of Hormuz (confirmed AP News LIVE, approx 12:39 UTC April 22). Ceasefire nominally extended by Trump but kinetically violated. Iran subsequently signaled delegation has yet to decide on Islamabad talks \u2014 coercive dual-track bargaining pattern consistent with prior M/V Touska and Ghalibaf incidents. IC-confirmed IOCONTROL implants remain pre-positioned in US water/power/fuel OT networks. Cyber stand-down pledge mirrors kinetic ceasefire and is under immediate stress. Pre-positioned cells operate on standing orders with no live C2 required. Diplomatic outcome does NOT recall implants. Ceasefire expiry Wednesday evening EDT.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "otRelevance": "CRITICAL \u2014 Pre-positioned IOCONTROL implants in US water/fuel/energy infrastructure remain active regardless of diplomatic outcome. Any kinetic escalation trigger activates standing orders. Sectors: Water, Energy, Fuel, Chemical.",
+    "vendors": [
+      "Rockwell Automation",
+      "Allen-Bradley"
+    ],
+    "cves": [
+      "CVE-2021-22681"
+    ],
+    "publishedAt": "2026-04-22T12:39:00Z",
+    "updatedAt": "2026-04-22T17:35:00Z",
+    "sources": [
+      "AP News LIVE",
+      "IC reporting (referenced in prior CISA joint advisory)"
+    ],
+    "tags": [
+      "Iran",
+      "IOCONTROL",
+      "CyberAv3ngers",
+      "IRGC",
+      "Hormuz",
+      "OT",
+      "water",
+      "energy",
+      "pre-positioning"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": 10.0,
+    "pocAvailable": true,
+    "source": "AP News LIVE / IC Joint Advisory (CISA/FBI/NSA/EPA/DOE/CNMF)"
+  },
+  {
+    "id": "intel-2026-04-22-003",
+    "title": "ICSA-26-111-10: Silex Technology SD-330AC Serial-to-IP Gateway \u2014 CVSS 9.8 RCE",
+    "summary": "CISA advisory ICSA-26-111-10 for Silex Technology SD-330AC serial-to-IP converters. CVSS 9.8 critical RCE vulnerability at OT/IT boundary device category. Affects serial-to-IP gateways used to bridge legacy serial protocols (RS-232/485) to IP networks \u2014 common in industrial automation, utility SCADA, and building management systems. No patch available at time of advisory. Mitigations: network isolation, firewall rules.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "OT",
+    "otRelevance": "HIGH \u2014 Serial-to-IP gateways sit at the OT/IT boundary. Exploitation allows direct access to serial OT devices without traversing additional network controls. Common in legacy SCADA environments.",
+    "vendors": [
+      "Silex Technology"
+    ],
+    "cves": [
+      "CVE-2026-TBD"
+    ],
+    "publishedAt": "2026-04-21T00:00:00Z",
+    "updatedAt": "2026-04-22T17:35:00Z",
+    "sources": [
+      "CISA ICS Advisory ICSA-26-111-10"
+    ],
+    "tags": [
+      "CISA",
+      "ICS advisory",
+      "Silex",
+      "serial-to-IP",
+      "OT boundary",
+      "RCE",
+      "CVSS 9.8"
+    ],
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": 9.8,
+    "pocAvailable": false,
+    "source": "CISA ICS Advisory ICSA-26-111-10"
+  },
+  {
+    "id": "intel-2026-04-22-004",
+    "title": "Self-Spreading npm Supply Chain Attack \u2014 Auth Token Theft via Compromised Maintainer Accounts",
+    "summary": "Active npm supply chain attack (April 22, 2026) using compromised npm maintainer credentials to publish malicious package versions. Attack is self-spreading \u2014 malicious packages publish additional malicious packages from compromised accounts. Primary payload: authentication token theft. Separate from and concurrent with March 31 axios RAT attack. Affects any CI/CD pipeline or developer environment running npm install during active window.",
+    "severity": "HIGH",
+    "priority": "HIGH",
+    "domain": "IT",
+    "otRelevance": "MODERATE \u2014 Engineering workstations and CI/CD pipelines used for OT software development/deployment at risk. Stolen tokens could provide access to OT application repositories or deployment credentials.",
+    "vendors": [
+      "npm (registry)"
+    ],
+    "cves": [],
+    "publishedAt": "2026-04-22T00:00:00Z",
+    "updatedAt": "2026-04-22T17:35:00Z",
+    "sources": [
+      "BleepingComputer (April 22, 2026)"
+    ],
+    "tags": [
+      "npm",
+      "supply chain",
+      "auth token theft",
+      "CI/CD",
+      "developer tooling",
+      "self-spreading"
+    ],
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": false,
+    "epssScore": null,
+    "cvssScore": null,
+    "pocAvailable": true,
+    "source": "BleepingComputer"
+  },
+  {
+    "id": "feed-069",
+    "publishedAt": "2026-04-15T12:00:00Z",
+    "updatedAt": "2026-04-15T12:33:00Z",
+    "title": "Microsoft April 2026 Patch Tuesday \u2014 167 CVEs, 7 Critical RCEs, 2 Zero-Days",
+    "source": "Microsoft / Bleeping Computer / Tenable / TheCyberThrone",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-april-2026-patch-tuesday-fixes-167-flaws-2-zero-days/",
+    "summary": "Near-record Patch Tuesday: 167 CVEs including 8 Critical (7 RCE), 2 zero-days. CVE-2026-32201 SharePoint spoofing is actively exploited and on CISA KEV (due Apr 28). CVE-2026-33827 Windows TCP/IP unauth RCE (IPv6+IPSec) is the most dangerous architectural flaw. CVE-2026-33825 is BlueHammer (public PoC since Apr 3), now patched. CVE-2026-33826 AD RCE CVSS 8.0 rated Exploitation More Likely.",
+    "vendors": [
+      "Microsoft"
+    ],
+    "cves": [
+      "CVE-2026-32201",
+      "CVE-2026-33827",
+      "CVE-2026-33826",
+      "CVE-2026-33825",
+      "CVE-2026-33824"
+    ],
+    "otRelevance": "HIGH \u2014 Windows EWS, historians, SCADA servers (TCP/IP RCE), AD lateral movement into OT (AD RCE), OT endpoint management (BlueHammer EoP)",
+    "priority": "HIGH",
+    "domain": "BOTH",
+    "urgencyTier": "PLAN_PATCH",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": 8.0,
+    "pocAvailable": true
+  },
+  {
+    "id": "feed-070",
+    "publishedAt": "2026-04-15T12:00:00Z",
+    "updatedAt": "2026-04-15T12:33:00Z",
+    "title": "CVE-2026-32201 Microsoft SharePoint Spoofing \u2014 CISA KEV Added, Due April 28",
+    "source": "CISA KEV / Tenable / Microsoft",
+    "url": "https://www.tenable.com/blog/microsofts-april-2026-patch-tuesday-addresses-163-cves-cve-2026-32201",
+    "summary": "Unauthenticated SharePoint spoofing vulnerability actively exploited in the wild. CISA added to KEV April 14 with April 28 deadline. CVSS 6.5. Creates pre-authentication persistence foothold in corporate environments. Federal agencies bound by BOD 22-01.",
+    "vendors": [
+      "Microsoft"
+    ],
+    "cves": [
+      "CVE-2026-32201"
+    ],
+    "otRelevance": "MEDIUM \u2014 corporate IT/OT integrated environments with SharePoint",
+    "priority": "HIGH",
+    "domain": "IT",
+    "urgencyTier": "ACT_NOW",
+    "kevStatus": true,
+    "epssScore": null,
+    "cvssScore": 6.5,
+    "pocAvailable": false
+  },
+  {
+    "id": "af-065",
+    "priority": "HIGH",
+    "title": "AA26-097A: Iranian Actors (CyberAv3ngers/BAUXITE) Actively Exploiting Rockwell PLCs \u2014 Confirmed OT Disruption",
+    "source": "CISA / FBI / NSA / EPA / DOE / CNMF \u2014 Joint Advisory AA26-097A",
+    "url": "https://www.cisa.gov/sites/default/files/2026-04/AA26-097A-Iranian-Affiliated-Cyber-Actors-Exploit-Programmable-Logic-Controllers-Across-US-Critical-Infrastructure_508c.pdf",
+    "publishedAt": "2026-04-07T00:00:00Z",
+    "vendors": [
+      "Rockwell Automation",
+      "Allen-Bradley"
+    ],
+    "cves": [],
+    "otRelevance": "DIRECT/CONFIRMED \u2014 Active nation-state exploitation of Rockwell CompactLogix and Micro850 PLCs. Confirmed operational disruption and financial loss in Water/Wastewater, Energy, Government sectors. Attack chain: Studio 5000 Logix Designer direct access (no CVE \u2014 absent auth) \u2192 Dropbear SSH port 22 \u2192 PLC project file manipulation \u2192 SCADA/HMI display spoofing. Secondary targeting interest confirmed in Siemens S7. CyberAv3ngers = BAUXITE (IRGC-CEC / Shahid Kaveh Group / Storm-0784 / UNC5691) confirmed same actor.",
+    "analystNote": "This is the OT-focused component of Iran's multi-vector counteroffensive post-Operation Epic Fury. The ceasefire agreed April 8 does NOT stop this \u2014 autonomous Telegram C2 cells operate independently of government orders. IOC ports to block: 44818, 2222, 102, 502, 22 (Dropbear SSH). ACT_NOW tier \u2014 no CVE means no patch exists; compensating control is the only option.",
+    "updatedAt": "2026-04-10T11:32:00Z"
+  },
+  {
+    "id": "af-066",
+    "priority": "HIGH",
+    "title": "CISA Emergency Directive 26-03: Cisco SD-WAN CVE-2026-20127 + CVE-2022-20775 \u2014 KEV Past Due",
+    "source": "CISA \u2014 Emergency Directive 26-03",
+    "url": "https://www.cisa.gov/",
+    "publishedAt": "2026-04-08T00:00:00Z",
+    "vendors": [
+      "Cisco"
+    ],
+    "cves": [
+      "CVE-2026-20127",
+      "CVE-2022-20775"
+    ],
+    "otRelevance": "HIGH \u2014 Cisco SD-WAN deployed at IT/OT network boundaries in many industrial facilities. Compromised SD-WAN = bypass of OT network segmentation. Both CVEs on CISA KEV with past due date Feb 27, 2026. Emergency Directive confirms widespread non-compliance \u2014 CISA escalated beyond advisory tier.",
+    "analystNote": "Emergency Directives are CISA's highest urgency tier \u2014 issued only when standard advisories haven't achieved compliance. Past-due KEV items + ED = ACT_NOW. Any Cisco SD-WAN device sitting between enterprise IT and OT environments should be treated as potentially compromised until assessed.",
+    "updatedAt": "2026-04-10T11:32:00Z"
+  },
+  {
+    "id": "af-067",
+    "priority": "HIGH",
+    "title": "ICSA-26-099-02: GPL Odorizers GPL750 CVE-2026-4436 CVSS 8.6 \u2014 Modbus Odorant Injection Manipulation",
+    "source": "CISA \u2014 ICSA-26-099-02 (April 9, 2026)",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-099-02",
+    "publishedAt": "2026-04-09T00:00:00Z",
+    "vendors": [
+      "GPL Odorizers"
+    ],
+    "cves": [
+      "CVE-2026-4436"
+    ],
+    "otRelevance": "DIRECT \u2014 Unauthenticated remote Modbus exploitation of GPL750 natural gas odorization equipment. Attacker can manipulate odorant injection register values \u2192 too much or too little odorant in gas distribution lines. Safety and regulatory hazard. CWE-306 Missing Authentication for Critical Function. CVSS 8.6 AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N. Worldwide deployment. Not in KEV (no exploitation evidence yet).",
+    "analystNote": "PLAN_PATCH tier. The attack vector is network-accessible Modbus with no authentication \u2014 standard OT security posture (restrict Modbus to authorized EWS/HMI only) is the only compensating control until a firmware patch is available. Natural gas sector operators should verify GPL750 devices are not internet-exposed and are behind proper network segmentation.",
+    "updatedAt": "2026-04-10T11:32:00Z"
+  },
+  {
+    "id": "af-068",
+    "priority": "MEDIUM",
+    "title": "ICSA-26-099-01: Contemporary Controls BASC 20T \u2014 Unauthenticated Full PLC Administrative Access",
+    "source": "CISA \u2014 ICSA-26-099-01 (April 9, 2026)",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-099-01",
+    "publishedAt": "2026-04-09T00:00:00Z",
+    "vendors": [
+      "Contemporary Controls"
+    ],
+    "cves": [],
+    "otRelevance": "DIRECT \u2014 Unauthenticated attacker can enumerate, reconfigure, rename, delete, and perform file transfers on all PLC components. Building automation / PLC system. Full administrative access without credentials. PLAN_PATCH \u2014 requires network isolation as compensating control.",
+    "analystNote": "No CVE assigned. Impact is functionally equivalent to full control system access. If BASC 20T devices are internet-accessible, treat as high priority. Segment immediately from internet; require VPN with MFA for remote access.",
+    "updatedAt": "2026-04-10T11:32:00Z"
+  },
+  {
+    "id": "af-063",
+    "priority": "HIGH",
+    "title": "Dragonfly Hard-Bricks Hitachi RTU560 on Polish Power Grid via Default Credentials \u2014 TRISIS-Class TTP",
+    "source": "Industrial Cyber / Team Cymru / CERT-PL",
+    "url": "https://industrialcyber.co/industrial-cyber-attacks/team-cymru-warns-exposed-ics-and-ot-devices-targeted-by-nation-state-actors-raise-industrial-critical-infrastructure-risks/",
+    "publishedAt": "2026-03-30T08:00:00Z",
+    "vendors": [
+      "Hitachi",
+      "Moxa"
+    ],
+    "cves": [],
+    "otRelevance": "CRITICAL \u2014 Hard brick of IEC 61850 substation RTU via corrupted firmware. Default credential exploitation. Dragos compares third case study to TRISIS/TRITON class (falsify I/O, persist across reboots, evade detection). Moxa NPort serial bridges also targeted in same campaign.",
+    "updatedAt": "2026-03-30T14:15:00Z",
+    "summary": "Team Cymru published three case studies of Dragonfly (Russian-nexus) attacks against Polish power grid. Dec 29, 2025: default creds on Hitachi RTU560 web interface \u2192 corrupted ELF firmware \u2192 infinite reboot \u2192 hardware replacement needed. Moxa NPort: same campaign, factory reset lockout. Dragos: a related case has TRISIS/TRITON-class capability (falsify I/O data, persist, evade detection). Thousands of exposed ICS IPs actively targeted.",
+    "domain": "OT"
+  },
+  {
+    "id": "af-064",
+    "priority": "HIGH",
+    "title": "Iran Internet Blackout Confirmed Permanent \u2014 External Cyber Cells Now Structurally Autonomous",
+    "source": "Wikipedia / Filterwatch",
+    "url": "https://en.wikipedia.org/wiki/2026_Internet_blackout_in_Iran",
+    "publishedAt": "2026-03-30T09:00:00Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "HIGH \u2014 IOCONTROL-infected OT devices operating without active Iranian oversight. Pre-positioned triggers in water/fuel/energy may be on standing orders, not live command.",
+    "updatedAt": "2026-03-30T14:15:00Z",
+    "summary": "Iran officially signaled 'unrestricted internet access will not return after 2026.' External cyber cells were pre-designed for permanent autonomous operation. Post-ceasefire does NOT mean stand-down \u2014 cells will continue executing standing pre-deployed instructions without Tehran C2.",
+    "domain": "BOTH"
+  },
+  {
+    "id": "af-062",
+    "priority": "HIGH",
+    "title": "Houthis Enter Iran-US Conflict \u2014 Ballistic Missile Launched at Israel",
+    "source": "The Hindu / Reuters (March 28-29, 2026)",
+    "url": "https://www.reuters.com/world/asia-pacific/yemens-houthis-enter-iran-war-with-attacks-israel-while-us-marines-arrive-region-2026-03-28/",
+    "publishedAt": "2026-03-28T00:00:00Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Second Iran-aligned proxy force formally entering the conflict. Houthi entry elevates risk to commercial shipping in Red Sea and Gulf of Aden. Combined with Hormuz closure, global energy logistics disrupted. Maritime OT infrastructure (ports, terminals, vessel navigation) now at elevated direct risk.",
+    "analystNote": "Houthi entry expands the conflict front count. Combined with Hormuz closure: three simultaneous pressure vectors on energy infrastructure \u2014 kinetic (U.S./Israel strikes), cyber (5,800+ attacks), and economic/logistics (Hormuz+Red Sea shipping disruption). Saudi and Gulf state OT infrastructure should be considered primary targeting.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-29T20:43:00Z"
+  },
+  {
+    "id": "af-061",
+    "priority": "HIGH",
+    "title": "2026 Strait of Hormuz Crisis \u2014 Effective Shipping Halt, Energy Supply Disruption",
+    "source": "Wikipedia / Reuters (March 2026)",
+    "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+    "publishedAt": "2026-03-29T00:00:00Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "IRGC prohibited vessel passage. Oil tankers not transiting. ~20% of global oil and ~25% of global LNG normally transits Hormuz. Effective closure = major energy security event for U.S. allies. Regional powers (Pakistan, Saudi Arabia, Turkey, Egypt) discussing proposals to reopen. CyberAv3ngers IOCONTROL designed for fuel/energy infrastructure \u2014 Hormuz closure context amplifies targeting risk for Gulf OT systems.",
+    "analystNote": "The Hormuz closure is the economic warfare companion to kinetic and cyber operations. Three-vector attack on energy: physical strikes, cyber (IOCONTROL/Handala), economic (shipping halt). Gulf LNG terminal OT systems, port logistics, and Saudi/UAE/Qatar energy infrastructure should be at CRITICAL watch posture.",
+    "domain": "OT",
+    "updatedAt": "2026-03-29T20:43:00Z"
+  },
+  {
+    "id": "af-060",
+    "priority": "HIGH",
+    "title": "Cyber-Kinetic Synchronization \u2014 Iran Pushes Spyware During Live Missile Strikes",
+    "source": "AP News / Check Point Research (March 29, 2026)",
+    "url": "https://apnews.com/article/iran-us-war-israel-data-centers-hacking-47fc34e48f2f952583d14b6c0664fc37",
+    "publishedAt": "2026-03-29T12:00:00Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "First confirmed cyber-kinetic synchronized TTP. Spyware disguised as bomb shelter app pushed to Israeli civilians at same minute missile strikes landed. Check Point Research attribution. OT implication: physical incidents and cyber intrusions are now simultaneous doctrine \u2014 incident response runbooks that treat them sequentially are incomplete.",
+    "analystNote": "This establishes a new principle for OT defenders: when a physical incident occurs at or near a facility, assume a simultaneous cyber intrusion attempt. Operators focused on the physical event are at lowest security vigilance \u2014 exactly the intended exploitation window.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-29T16:20:00Z"
+  },
+  {
+    "id": "af-059",
+    "priority": "HIGH",
+    "title": "DigiCert: 5,800 Attacks from ~50 Iran-Affiliated Groups \u2014 Gulf States Now Targeted",
+    "source": "AP News / DigiCert (March 29, 2026)",
+    "url": "https://apnews.com/article/iran-us-war-israel-data-centers-hacking-47fc34e48f2f952583d14b6c0664fc37",
+    "publishedAt": "2026-03-29T12:00:00Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "5,800+ attacks (~190/day) from ~50 Iran-affiliated groups since Feb 28. Geographic expansion confirmed: now targeting Bahrain, Kuwait, Qatar \u2014 all OT-rich energy environments with U.S. military presence. Iran explicitly threatened to hit regional energy sites if U.S./Israel strike Iranian power plants.",
+    "analystNote": "Gulf state expansion is the most significant geographic development since conflict began. Bahrain/Kuwait/Qatar host major petrochemical, LNG, and desalination OT infrastructure. Elevating O&G sector to CRITICAL.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-29T16:20:00Z"
+  },
+  {
+    "id": "af-058",
+    "priority": "HIGH",
+    "title": "SYLVANITE \u2014 Rapid Exploitation Broker for VOLTZITE Confirmed Active",
+    "source": "Dragos 2026 Year in Review / TechUpdateLab (March 2026)",
+    "url": "https://techupdatelab.com/ot-cybersecurity-news/",
+    "publishedAt": "2026-03-29T09:00:00Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Dragos-tracked SYLVANITE confirmed as a rapid exploitation broker: weaponizes newly disclosed VPN/gateway CVEs (Ivanti, Citrix) and feeds initial access to VOLTZITE for Stage 1 ICS Kill Chain entry. SYLVANITE is the mechanistic link between public CVE disclosure and VOLTZITE's OT pre-positioning in U.S. energy/pipeline networks.",
+    "analystNote": "Patching Ivanti and Citrix vulnerabilities quickly is now directly interdicting VOLTZITE's access chain. Every day of patch latency on a SYLVANITE-targeted CVE is a day VOLTZITE may be inside. Monitor Ivanti + Citrix patch currency as a VOLTZITE leading indicator.",
+    "domain": "OT",
+    "updatedAt": "2026-03-29T16:20:00Z"
+  },
+  {
+    "id": "af-057",
+    "priority": "HIGH",
+    "title": "CODESYS/Festo Automation Suite \u2014 ICSA-26-076-01 \u2014 128 Vulns CVSS 9.8",
+    "source": "1898 Advisories / Burns & McDonnell (March 17, 2026 \u2014 circulating widely)",
+    "url": "https://1898advisories.burnsmcd.com/critical-and-high-vulnerabilities-in-codesys-components-bundled-with-festo-automation-suite",
+    "publishedAt": "2026-03-17T00:00:00Z",
+    "vendors": [
+      "CODESYS",
+      "Festo"
+    ],
+    "cves": [],
+    "otRelevance": "CODESYS runtime is bundled in Festo Automation Suite and embedded across hundreds of other PLC platforms (Wago, Beckhoff, Schneider, and others). 128 vulnerabilities up to CVSS 9.8. A 9.8 CVSS CODESYS vulnerability is a cross-vendor OT exposure affecting a broad installed base.",
+    "analystNote": "Inventory all Festo FAS deployments at version \u2264 2.8.0.137. Separately inventory any PLCs running CODESYS runtime \u2014 this advisory may affect them even if not Festo-branded. Patch per vendor guidance.",
+    "domain": "OT",
+    "updatedAt": "2026-03-29T16:20:00Z"
+  },
+  {
+    "id": "af-056",
+    "priority": "HIGH",
+    "title": "F5 BIG-IP APM CVE-2025-53521 \u2014 Added to CISA KEV \u2014 Deadline March 30",
+    "source": "CISA KEV / The Hacker News (March 28, 2026)",
+    "url": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html",
+    "publishedAt": "2026-03-28T00:00:00Z",
+    "vendors": [
+      "F5"
+    ],
+    "cves": [
+      "CVE-2025-53521"
+    ],
+    "otRelevance": "F5 BIG-IP APM is widely used as an OT remote access gateway \u2014 primary ingress for DMZ-segmented OT networks. CVSS 9.3 RCE, actively exploited in the wild. KEV patch deadline March 30 (FCEB). In the current elevated Iran/China threat environment with cyber-kinetic sync TTP confirmed, this is an active exploitation target.",
+    "analystNote": "Patch or take offline today. If F5 BIG-IP APM is in your OT remote access stack and unpatched, it is currently an open door in the highest-risk threat environment in years.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-29T16:20:00Z"
+  },
+  {
+    "id": "af-052",
+    "priority": "HIGH",
+    "title": "Iran Formally Rejects 15-Point US Peace Plan \u2014 Calls Trump 'Deceitful'",
+    "source": "Reuters / ISW / Wikipedia (2026 Iran War timeline)",
+    "url": "https://reuters.com",
+    "publishedAt": "2026-03-28T05:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Iran's public rejection of peace talks and 'deceitful' framing eliminates any diplomatic brake on cyber operations. Handala and external MOIS cells have no standing-down trigger. New kinetic deadline: April 6, 8 PM ET (Trump extended from March 30). Iran also added Lebanon ceasefire as a precondition \u2014 scope widening means more partner actors activated.",
+    "analystNote": "Conflict tracker updated: March 30 danger DOWNGRADED (deadline extended), April 6 danger ELEVATED (hard deadline). Iran's 'deceitful' framing is domestic narrative-building to justify continued retaliation regardless of ceasefire status. No de-escalation signal in any sourced reporting.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-28T18:14:00.000Z"
+  },
+  {
+    "id": "af-053",
+    "priority": "HIGH",
+    "title": "Jordan Wheat Reserve ICS Breach \u2014 Food/Agriculture Sector \u2014 Level 1 Process Control",
+    "source": "The CyberSec Guru \u2014 2026 Iran War Cyber Attack Timeline",
+    "url": "https://thecybersecguru.com",
+    "publishedAt": "2026-03-28T11:12:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Iran-linked actors breached ICS controlling Jordan's wheat reserve storage, targeting temperature manipulation to degrade grain stockpiles. Jordanian NCSC detected before critical temperature levels reached. First confirmed OT attack against food/agriculture sector in this conflict arc. Demonstrates Iran's playbook extends beyond energy/water into food security infrastructure.",
+    "analystNote": "This is the third distinct OT sector now confirmed targeted in this conflict: energy (VOLTZITE/ELECTRUM pre-positioning), water (Jordan water treatment temperature manipulation), and now food/agriculture (wheat reserve ICS). Pattern suggests systematic pre-positioning across multiple critical infrastructure sectors \u2014 not opportunistic targeting.",
+    "domain": "OT",
+    "updatedAt": "2026-03-28T18:14:00.000Z"
+  },
+  {
+    "id": "af-054",
+    "priority": "HIGH",
+    "title": "Unit 42 Iran Update: 27+ Days Internet Blackout, 7,381 Phishing URLs, New Actor Evil Markhors",
+    "source": "Unit 42 / Palo Alto Networks (updated March 26, 2026)",
+    "url": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/",
+    "publishedAt": "2026-03-28T11:12:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Iran 27+ days near-complete internet blackout (NetBlocks confirmed). Nation-state units within Iran operationally isolated \u2014 sophisticated attack coordination reduced near-term. External cells fully autonomous. 7,381 conflict-themed phishing URLs across 1,881 unique hostnames documented, including energy company impersonation. New actor Evil Markhors: pro-Iranian credential harvesting + unpatched system identification targeting Turkish media.",
+    "analystNote": "60+ Iranian hacktivist groups activated in Electronic Operations Room. TLD rotation and subdomain chaining confirm purpose-built phishing infrastructure \u2014 not script-kiddie ops. Energy company impersonation means OT-adjacent personnel are in the phishing target set. Credential compromise \u2192 OT initial access path remains the primary concern.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-28T18:14:00.000Z"
+  },
+  {
+    "id": "af-055",
+    "priority": "HIGH",
+    "title": "Citrix CVE-2026-3055 \u2014 CitrixBleed2-Level Severity \u2014 Remote Access Gateway Risk",
+    "source": "CSO Online (March 26, 2026)",
+    "url": "https://csoonline.com",
+    "publishedAt": "2026-03-28T11:12:00.000Z",
+    "vendors": [
+      "Citrix"
+    ],
+    "cves": [
+      "CVE-2026-3055"
+    ],
+    "otRelevance": "Citrix NetScaler widely deployed as the remote access gateway for OT environments. Security researchers assess CitrixBleed2-level severity. If adversaries exploit before patching, remote access to OT networks is at direct risk. Citrix found via internal testing (proactive disclosure).",
+    "analystNote": "Confirm NetScaler version inventory. Prioritize patch for any internet-facing NetScaler instances especially those providing access to OT/ICS network segments. Given active Iranian phishing campaigns, remote access vectors are currently the highest-risk initial access path.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-28T18:14:00.000Z"
+  },
+  {
+    "id": "af-001",
+    "priority": "HIGH",
+    "title": "CISA Described as 'In a Freefall' \u2014 U.S. Critical Infrastructure Cyber Defense Degraded",
+    "source": "FDD (Foundation for Defense of Democracies)",
+    "url": "https://www.fdd.org/analysis/2026/03/27/iranian-cyber-operations-take-advantage-of-weakened-u-s-defenses/",
+    "publishedAt": "2026-03-27T16:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "CISA is the primary U.S. critical infrastructure cyber defense coordination body. Degraded CISA = reduced ICS advisory cadence, slower incident response, and less sector support for OT operators who rely on CISA for vulnerability disclosure and emergency directives. Structural risk compounding an already elevated Iran threat posture.",
+    "analystNote": "If CISA advisory pipeline is degraded, supplement with: Dragos direct, sector-specific ISAC memberships (E-ISAC, WaterISAC, DownstreamNatural Gas ISAC), and vendor security bulletins. Do not reduce vigilance because CISA is quiet \u2014 the threat has not decreased.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-27T19:40:00.000Z"
+  },
+  {
+    "id": "af-002",
+    "priority": "HIGH",
+    "title": "FBI Confirms: Handala Breaches Director Kash Patel's Personal Email \u2014 Photos and Documents Published",
+    "source": "Reuters / CNN / TechCrunch / Axios / CNBC / The Record",
+    "url": "https://www.reuters.com/world/us/iran-linked-hackers-claim-breach-of-fbi-directors-personal-email-doj-official-2026-03-27/",
+    "publishedAt": "2026-03-27T15:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Indirect OT relevance \u2014 signals Handala autonomous cell model is fully operational and targeting senior U.S. law enforcement. Demonstrates that DOJ domain seizures (March 20) were completely ineffective: Handala restored websites within 24 hours and escalated with two major breach operations (Lockheed March 26, FBI Director March 27). OT sector implication: personal account targeting of executives/key personnel is now an active Handala TTP.",
+    "analystNote": "This is a precision psychological operation. Patel publicly pledged to 'hunt down' Iranian hackers after the domain seizures. Handala breached his personal email 7 days later and published the contents. Three major operations in 17 days despite all U.S. counter-disruption. Autonomous cell model confirmed effective. Assess personal account hygiene for key personnel in OT-adjacent organizations.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-27T19:40:00.000Z"
+  },
+  {
+    "id": "af-003",
+    "title": "Jordan Water Treatment ICS Attack \u2014 Level 1 Process Manipulation Confirmed",
+    "summary": "Iran-aligned actors breached a Jordanian water treatment facility and attempted to cause temperature fluctuations at critical levels. JNCSC detected intrusion before physical impact. First confirmed OT Level 1 process control attack of the Iran-US conflict.",
+    "severity": "high",
+    "domain": "OT",
+    "source": "The CyberSec Guru / JNCSC",
+    "publishedAt": "2026-03-23T00:00:00Z",
+    "updatedAt": "2026-03-27T16:10:00Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Direct \u2014 Level 1 process control targeted. Water treatment sector. Confirms Iran-aligned actors are crossing the OT kill chain to physical process layer.",
+    "tags": [
+      "iran",
+      "water",
+      "ics",
+      "ot",
+      "level-1",
+      "process-control"
+    ],
+    "priority": "HIGH"
+  },
+  {
+    "id": "af-004",
+    "title": "Unit 42 Iran Brief Updated \u2014 Day 27 Internet Blackout, Wiper Risk Elevated",
+    "summary": "Iran on 27th straight day of near-complete internet blackout. Unit 42 explicitly tracking elevated wiper attack risk. 7,381 conflict-themed phishing URLs across 1,881 hostnames identified \u2014 impersonating telecom, airlines, law enforcement, energy corps.",
+    "severity": "high",
+    "domain": "BOTH",
+    "source": "Unit 42 (updated March 26, 2026)",
+    "publishedAt": "2026-03-26T00:00:00Z",
+    "updatedAt": "2026-03-27T16:10:00Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "High \u2014 energy corporation impersonation in phishing surge. Wiper risk applies to OT-adjacent IT infrastructure. Operational isolation of Iranian state cyber units may produce TTP deviations.",
+    "tags": [
+      "iran",
+      "unit42",
+      "wiper",
+      "phishing",
+      "internet-blackout"
+    ],
+    "priority": "HIGH"
+  },
+  {
+    "id": "af-005",
+    "title": "New Threat Actor: Sylvanite \u2014 Rapid Exploitation Broker Feeding VOLTZITE",
+    "summary": "Sylvanite identified as a rapid exploitation broker \u2014 quickly weaponizes newly disclosed vulnerabilities and provides access to other actors, specifically VOLTZITE. Shortens time-to-exploitation window significantly. Changes VOLTZITE threat model for electric utilities.",
+    "severity": "high",
+    "domain": "OT",
+    "source": "TechUpdateLab OT Cybersecurity News (March 2026)",
+    "publishedAt": "2026-03-27T00:00:00Z",
+    "updatedAt": "2026-03-27T16:10:00Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Critical for electric utilities. VOLTZITE previously required own initial access ops; Sylvanite broker model enables faster exploitation. 30-day patch windows are insufficient.",
+    "tags": [
+      "voltzite",
+      "sylvanite",
+      "electric-utility",
+      "initial-access",
+      "broker"
+    ],
+    "priority": "HIGH"
+  },
+  {
+    "id": "af-006",
+    "title": "CODESYS/Festo Automation Suite \u2014 128 Vulnerabilities, CVSS up to 9.8",
+    "summary": "CISA ICSA-26-076-01: 128 vulnerabilities in CODESYS Development System and runtime components bundled in Festo Automation Suite v2.8.0.137 and earlier. CVSS range 5.3\u20139.8 with multiple critical. CODESYS runtimes embedded in dozens of ICS vendor products beyond Festo.",
+    "severity": "medium",
+    "domain": "OT",
+    "source": "Burns & McDonnell 1898 Advisories / CISA (March 17, 2026)",
+    "publishedAt": "2026-03-17T00:00:00Z",
+    "updatedAt": "2026-03-27T16:10:00Z",
+    "vendors": [
+      "Festo",
+      "CODESYS"
+    ],
+    "cves": [],
+    "otRelevance": "High \u2014 CODESYS runtimes embedded in industrial automation hardware across multiple vendors. Evaluate any device running CODESYS components, not just Festo.",
+    "tags": [
+      "codesys",
+      "festo",
+      "advisory",
+      "runtime",
+      "industrial-automation"
+    ],
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "af-007",
+    "priority": "HIGH",
+    "title": "CISA ICSA-26-085-01 \u2014 WAGO Industrial Managed Switches: Unauthenticated Full Device Compromise",
+    "source": "CISA / Assurant Cyber",
+    "url": "https://www.assurantcyber.com/blog/icsa-26-085-01/",
+    "publishedAt": "2026-03-26T00:00:00.000Z",
+    "vendors": [
+      "WAGO"
+    ],
+    "cves": [],
+    "otRelevance": "WAGO Industrial Managed Switches are widely deployed in OT/ICS environments \u2014 manufacturing, energy substations, water treatment, process control networks. Unauthenticated full device compromise via hidden CLI function enables: network pivot from IT to OT, traffic interception on OT protocols (Modbus, EtherNet/IP, PROFINET), lateral movement to PLCs/HMIs/engineering workstations, and loss of network visibility. Directly applicable to Purdue Level 2/3 boundary. Patch or network-isolate immediately.",
+    "analystNote": "Top OT advisory this cycle. Hidden CLI escape on an industrial managed switch is precisely the kind of low-visibility foothold that makes OT incidents hard to detect. Patch priority: WAGO before other advisories this week. If WAGO switches sit at IT/OT network boundary, treat as Tier 1.",
+    "domain": "OT",
+    "updatedAt": "2026-03-27T12:11:00.000Z"
+  },
+  {
+    "id": "af-008",
+    "priority": "HIGH",
+    "title": "AWS Bahrain Disrupted SECOND Time \u2014 Drone Strikes on Cloud Data Center Confirmed by Amazon",
+    "source": "The National News / The Stack / The Hindu",
+    "url": "https://www.thenationalnews.com/future/technology/2026/03/24/aws-bahrain-operations-disrupted-for-second-time-this-month-due-to-drone-attack/",
+    "publishedAt": "2026-03-24T00:00:00.000Z",
+    "vendors": [
+      "Amazon Web Services"
+    ],
+    "cves": [],
+    "otRelevance": "Amazon confirmed AWS Bahrain (me-south-1) region was disrupted for the second time in March by drone activity linked to the Iran-US conflict. Earlier in March, UAE facility was struck \u2014 described as the first known case of military action disrupting a major US technology company's data center. Bahrain was hit again on approximately March 24. Implications for OT: cloud-hosted SCADA supervisory platforms, remote OT monitoring services, and security providers (SIEM/SOC) running on AWS Middle East infrastructure may experience monitoring gaps. Physical-cyber convergence event.",
+    "analystNote": "Confirmed by Amazon. This is not a DDoS or cyber attack \u2014 physical drone strikes on data center infrastructure. OT teams with cloud-hosted monitoring in the ME region should verify backup telemetry paths and confirm local historians are logging independently of cloud connectivity. Vendors using AWS Middle East for ICS remote monitoring services should notify clients of potential gaps.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-26T21:38:00.000Z"
+  },
+  {
+    "id": "af-009",
+    "priority": "HIGH",
+    "title": "CISA KEV: CVE-2026-33017 \u2014 Langflow Critical RCE (CVSS 9.3) Added to Known Exploited Vulnerabilities",
+    "source": "Rod Trent Substack / CISA KEV Catalog",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-03-26T00:00:00.000Z",
+    "vendors": [
+      "DataStax",
+      "Langflow"
+    ],
+    "cves": [
+      "CVE-2026-33017"
+    ],
+    "otRelevance": "CISA added CVE-2026-33017 (Langflow unauthenticated RCE) to the KEV catalog. CVSS 9.3. Affects public flow builds. FOFA scan data shows thousands of exposed instances globally. OT relevance: Langflow is used in AI/ML pipeline automation \u2014 some OT vendors and ICS operators are incorporating AI workflow tools into their engineering environments. Organizations using Langflow for data processing pipelines adjacent to OT networks should patch immediately.",
+    "analystNote": "Langflow is an AI orchestration tool. While not a traditional OT/ICS component, its use is growing in engineering environments for automating data flows from historians and sensors. Unauthenticated RCE on a host with connectivity to OT data sources is a meaningful risk. Patch immediately if deployed.",
+    "domain": "IT",
+    "updatedAt": "2026-03-26T21:38:00.000Z"
+  },
+  {
+    "id": "af-010",
+    "priority": "MEDIUM",
+    "title": "Israel Railways Display Manipulation Confirmed (March 11) \u2014 Hackers Broadcast False Messages on Platform Monitors",
+    "source": "ISW Special Report March 24 / Israel INCD Chief Karadi",
+    "url": "https://understandingwar.org/research/middle-east/iran-update-special-report-march-24-2026/",
+    "publishedAt": "2026-03-24T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Israel National Cyber Directorate Chief Karadi confirmed a hacker group broadcast false messages on Israel Railways monitors at multiple locations on March 11, 2026. Confirmed T0832 (Manipulation of View) attack on transport OT infrastructure. First confirmed OT display manipulation attack of the current conflict. Safety-relevant: false information on platform monitors can cause physical harm to passengers.",
+    "analystNote": "Transport control systems join water, fuel, and electric as confirmed Iranian conflict OT targets. Display manipulation at scale (multiple stations simultaneously) suggests pre-positioned access, not opportunistic. Review display/HMI systems at rail, transit, and airport facilities for unauthorized access paths.",
+    "domain": "OT",
+    "updatedAt": "2026-03-26T20:40:00.000Z"
+  },
+  {
+    "id": "af-011",
+    "priority": "MEDIUM",
+    "title": "MuddyWater \u2014 Operation Olalampo: New MOIS Cyber Offensive Targeting META Region",
+    "source": "Halcyon Ransomware Research Center",
+    "url": "https://www.halcyon.ai/ransomware-alerts/iranian-use-of-cybercriminal-tactics-in-destructive-cyber-attacks-2026-updates",
+    "publishedAt": "2026-03-26T18:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "MuddyWater APT (MOIS) standing up new offensive operation named 'Operation Olalampo' targeting META (Middle East, Turkey, Africa) region. TTPs overlap with campaign tracked as RedKitten. MuddyWater = MOIS initial access broker with pre-positioned RustyWater RAT and Small Sieve backdoor implants in energy and OT-adjacent environments. New operation name signals fresh campaign infrastructure being built.",
+    "analystNote": "Watch for RustyWater/Small Sieve activation in META-region energy targets. Telegram API outbound from OT-adjacent hosts is the key detection indicator. New campaign name may indicate new C2 infrastructure \u2014 existing IOCs may not catch it.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-26T20:40:00.000Z"
+  },
+  {
+    "id": "af-012",
+    "priority": "HIGH",
+    "title": "AWS Data Centers in UAE/Bahrain Hit \u2014 Kinetic Attacks Impact Cloud Services for ME Security Providers",
+    "source": "Halcyon Ransomware Research Center",
+    "url": "https://www.halcyon.ai/ransomware-alerts/iranian-use-of-cybercriminal-tactics-in-destructive-cyber-attacks-2026-updates",
+    "publishedAt": "2026-03-26T18:00:00.000Z",
+    "vendors": [
+      "AWS"
+    ],
+    "cves": [],
+    "otRelevance": "Kinetic attacks on AWS data centers in UAE and Bahrain disrupting cloud services for multiple security providers in the Middle East. Cloud-hosted OT monitoring platforms, SCADA-as-a-service deployments, and security tools running on AWS Middle East may be experiencing service degradation. This is physical-cyber convergence \u2014 kinetic action to degrade cyber defense coverage.",
+    "analystNote": "If your Middle East OT monitoring stack has AWS ME-SOUTH or ME-CENTRAL dependencies, verify availability now. Adversaries disrupting security monitoring infrastructure to create blind spots for subsequent cyber operations is a known TTP. Confidence MEDIUM \u2014 single source (Halcyon), needs corroboration.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-26T20:40:00.000Z"
+  },
+  {
+    "id": "af-013",
+    "priority": "HIGH",
+    "title": "Handala Executes Lockheed Martin Data Breach \u2014 Leaked Engineer Data Despite FBI Domain Seizures",
+    "source": "Cybernews / Rod Trent Substack / RedPacket Security",
+    "url": "https://rodtrent.substack.com/p/security-check-in-quick-hits-handalas",
+    "publishedAt": "2026-03-26T14:00:00.000Z",
+    "vendors": [
+      "Lockheed Martin"
+    ],
+    "cves": [],
+    "otRelevance": "Handala followed through on March 25 Telegram threat \u2014 leaked sensitive data of Lockheed Martin engineers working on military projects in Israel. Executed TODAY, 6 days after FBI seized 4 MOIS domains and days after leadership decapitation (Panjaki killed). Demonstrates autonomous cell operational resilience. Defense Industrial Base target: F-35, missile defense, aerospace supply chain. Not direct OT, but confirms Handala cells outside Iran are executing independently.",
+    "analystNote": "The key intelligence takeaway: 4 domain seizures + 2 leadership killings = operational tempo NOT halted. Infrastructure disruption measures are insufficient against a distributed autonomous cell model. If Lockheed Martin is a target, defense contractors with OT touchpoints (maintenance, manufacturing, aerospace) should assume they are in scope. Note: Handala has a pattern of unverified/fabricated claims (per RedPacket) \u2014 treat breach scope as MEDIUM confidence pending independent verification.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-26T20:40:00.000Z"
+  },
+  {
+    "id": "af-014",
+    "priority": "MEDIUM",
+    "title": "PTC Windchill & FlexPLM \u2014 Critical Vulnerabilities (March 24, 2026)",
+    "source": "PTC Trust Center",
+    "url": "https://www.ptc.com/en/about/trust-center/advisory-center/active-advisories/windchill-flexplm-critical-vulnerability",
+    "publishedAt": "2026-03-24T00:00:00.000Z",
+    "vendors": [
+      "PTC"
+    ],
+    "cves": [],
+    "otRelevance": "Critical vulnerabilities in PTC Windchill (PLM/PDM platform) and FlexPLM. OT-adjacent \u2014 widely deployed in manufacturing, aerospace, defense supply chain for product lifecycle and engineering data management. Compromise of PLM systems can expose engineering designs, process parameters, and OT configuration data.",
+    "analystNote": "Patch per PTC guidance. Windchill is often network-connected to OT environments for engineering change management. Review access controls and network segmentation between Windchill and OT-adjacent systems.",
+    "domain": "OT",
+    "updatedAt": "2026-03-26T13:11:00.000Z"
+  },
+  {
+    "id": "af-015",
+    "priority": "MEDIUM",
+    "title": "Resecurity: Iran War Enters Multi-Domain Phase \u2014 Cyber Islamic Resistance, Fatimion Cyber Team, Cyber Fattah Identified",
+    "source": "Resecurity / Industrial Cyber",
+    "url": "https://industrialcyber.co/critical-infrastructure/resecurity-warns-that-iran-war-enters-multi-domain-phase-as-cyber-and-kinetic-operations-converge/",
+    "publishedAt": "2026-03-24T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Resecurity confirms Iran conflict is now a multi-domain confrontation (kinetic + cyber + electronic + psychological warfare). Three new Iran-aligned hacktivist groups identified: Cyber Islamic Resistance, Fatimion Cyber Team, Cyber Fattah \u2014 conducting DDoS, defacements, reconnaissance, and data theft synchronized with physical operations. Cross-Sector ISAC joint advisory issued warning of heightened global CNI risk. Low-to-medium individual impact but coordinated volume creates attacker-favorable noise layer.",
+    "analystNote": "These groups are unlikely to execute sophisticated OT attacks independently. Their value is volume, distraction, and psychological pressure. Treat elevated hacktivist DDoS/defacement activity as the noise layer masking potential deeper operations. Don't let NOC resources get consumed by hacktivist defacement response while missing IOCONTROL-class activity.",
+    "domain": "BOTH",
+    "updatedAt": "2026-03-26T13:11:00.000Z"
+  },
+  {
+    "id": "af-016",
+    "priority": "MEDIUM",
+    "title": "ICSA-26-078-01: Schneider Electric Modicon M241/M251/M262 \u2014 DoS; ICSA-26-078-02: Modicon M241/M251/M258/LMC058 \u2014 XSS / Account Takeover",
+    "source": "CISA / Assurant Cyber",
+    "url": "https://www.assurantcyber.com/blog/icsa-26-078-01/",
+    "publishedAt": "2026-03-19T00:00:00.000Z",
+    "vendors": [
+      "Schneider Electric"
+    ],
+    "cves": [],
+    "otRelevance": "Two new CISA advisories for Schneider Electric Modicon M-series PLCs (March 19, 2026). ICSA-26-078-01: DoS on M241/M251/M262 \u2014 loss of PLC availability. ICSA-26-078-02: XSS/open redirect on M241/M251/M258/LMC058 \u2014 potential account takeover on engineering workstation browser sessions. Modicon M-series widely deployed in manufacturing, water, and building automation. In the current Iranian retaliation window, DoS-capable vulnerabilities on internet-accessible PLCs are elevated risk.",
+    "analystNote": "Patch per Schneider Electric guidance. Disable Modicon web interfaces if not operationally required. Apply network segmentation to limit untrusted traffic to PLCs. Account takeover via XSS could serve as a stepping stone to unauthorized PLC access in a follow-on attack.",
+    "updatedAt": "2026-03-21T00:16:00.000Z"
+  },
+  {
+    "id": "af-017",
+    "priority": "MEDIUM",
+    "title": "CloudSEK: 60+ Active Groups in Iran-US Conflict (53 Pro-Iranian) \u2014 Russian Hacktivists Aligning With Iran",
+    "source": "CloudSEK Threat Actor Landscape Assessment",
+    "url": "https://www.cloudsek.com/blog/a-threat-actor-landscape-assessment-of-ics-ot-targeting-in-the-2026-iran-us-conflict-and-the-scale-of-the-risk",
+    "publishedAt": "2026-03-15T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "CloudSEK assessment confirms 60+ active threat groups in the Iran-US conflict; 53 pro-Iranian. Russian-linked hacktivists are now aligning with Iran, targeting Israeli critical infrastructure \u2014 broadens threat surface to US/NATO-aligned OT. ELECTRUM operationally silent; watch for low-frequency DNS anomalies and ASPX webshells on Exchange servers as early indicators of reactivation. Three attack paths to OT: (1) exposed ports \u2192 direct access, (2) phishing \u2192 OT operators, (3) IT infiltration \u2192 OT-adjacent pivot.",
+    "analystNote": "The 53-group pro-Iranian ecosystem means MOIS-directed operations are only one threat vector. Opportunistic groups operate independently and can cause damage without coordination. Russian hacktivist alignment suggests a secondary pro-Iranian DDoS/defacement wave against US/Israeli infrastructure is plausible in the current window.",
+    "updatedAt": "2026-03-21T00:16:00.000Z"
+  },
+  {
+    "id": "af-018",
+    "priority": "MEDIUM",
+    "title": "VOLTZITE Elevated to Stage 2 ICS Kill Chain \u2014 Manipulating EWS in U.S. Energy Networks to Map Process Shutdown Conditions",
+    "source": "CSO Online / Dragos 2026 OT/ICS Year in Review",
+    "url": "https://www.csoonline.com/article/4140841/state-affiliated-hackers-set-up-for-critical-ot-attacks-that-operators-may-not-detect.html",
+    "publishedAt": "2026-03-06T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Dragos 2026 YIR confirms VOLTZITE (China/PRC nexus) has been observed manipulating engineering workstations inside U.S. energy and pipeline networks to determine what operational conditions would trigger process shutdowns. This is Stage 2 ICS Cyber Kill Chain \u2014 Execute ICS Attack preparation \u2014 not reconnaissance-only. SYLVANITE acts as rapid exploitation broker enabling VOLTZITE access. ELECTRUM (Russia/GRU) targeted distributed energy systems in Poland with deliberate OT impact attempts.",
+    "analystNote": "VOLTZITE's Stage 2 elevation is the most significant strategic threat development beyond the Iran-US conflict. A China-nexus actor has active access in U.S. energy/pipeline OT and is probing shutdown trigger conditions. This is coercive capability pre-positioning, not imminent attack. The gap between 'mapped' and 'executable' is shorter than ever. Prioritize hunting for VOLTZITE TTPs: anomalous EWS process creation, S7comm/OPC-UA scanning from workstations, configuration file access outside maintenance windows.",
+    "updatedAt": "2026-03-21T00:16:00.000Z"
+  },
+  {
+    "id": "af-019",
+    "priority": "HIGH",
+    "title": "FBI Seizes 4 MOIS-Linked Handala Domains \u2014 Destructive Execution Confirmed (Stryker/Intune Wipe)",
+    "source": "DOJ Press Release / NBC News / The Register",
+    "url": "https://www.justice.gov/opa/pr/justice-department-disrupts-iranian-cyber-enabled-psychological-operations",
+    "publishedAt": "2026-03-20T00:00:00.000Z",
+    "vendors": [
+      "Microsoft"
+    ],
+    "cves": [],
+    "otRelevance": "Handala (MOIS-controlled) executed a destructive mass device wipe against Stryker Corporation via Microsoft Intune MDM on March 11, 2026. Attack vector was IT-layer (not OT), but confirms Iran's willingness and capability to conduct destructive operations against U.S. entities. OT risk: MDM platforms are increasingly integrated with OT environments; precedent for future OT-adjacent destructive use. Additionally, Handala used email to recruit Mexican cartel members to commit physical violence against targets \u2014 hybrid cyber-physical threat model. FBI seized 4 MOIS domains: handala-hack[.]to, handala-redwanted[.]to, justicehomeland[.]org, karmabelow80[.]org.",
+    "analystNote": "IOCs to block immediately at DNS/firewall: handala-hack[.]to, handala-redwanted[.]to, justicehomeland[.]org, karmabelow80[.]org, Handala_Team@outlook[.]com. Seizure does not mean infrastructure is neutralized \u2014 Telegram active, new domain announced. The Stryker TTP (Intune MDM) is low-sophistication but high-impact: review your MDM enrollment, device compliance policies, and ensure conditional access policies restrict unapproved device enrollment.",
+    "updatedAt": "2026-03-20T05:09:00.000Z"
+  },
+  {
+    "id": "af-020",
+    "priority": "HIGH",
+    "title": "MOIS Director Esmail Khatib Killed in IDF Airstrike \u2014 7-14 Day OT Retaliation Window Active",
+    "source": "ISW Special Report / IDF Confirmation",
+    "url": "https://understandingwar.org/research/middle-east/iran-update-special-report-march-18-2026/",
+    "publishedAt": "2026-03-18T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "IDF killed Esmail Khatib, Director of Iran's MOIS, on March 18, 2026. Khatib was sanctioned by the U.S. in 2022 specifically for directing cyber attacks against the United States and allies. MOIS is the ministry that controls Handala and related cyber-enabled operations. Leadership decapitation creates operational instability but historically precedes high-visibility retaliatory operations as successor leadership seeks to demonstrate capability. Combined with South Pars energy infrastructure strikes (af-022), an Iranian cyber retaliation window targeting U.S. energy sector OT is assessed as HIGH probability in the next 7-14 days (through ~April 3, 2026).",
+    "analystNote": "CISA's 'steady state' assessment (March 18, McCrary Summit) is qualified reassurance only \u2014 their telemetry measures observable network activity, not intent or pre-positioned access. The Stryker attack occurred within a 'steady state' window. Treat this period as elevated threat posture regardless of CISA guidance. Energy sector operators: increase OT monitoring cadence, validate segmentation between IT/OT, confirm historian and EWS access controls.",
+    "updatedAt": "2026-03-20T05:09:00.000Z"
+  },
+  {
+    "id": "af-021",
+    "priority": "HIGH",
+    "title": "IDF Strikes South Pars Natural Gas Infrastructure \u2014 Iranian OT Retaliation Against U.S. Energy Sector Elevated",
+    "source": "ISW Special Report March 18, 2026",
+    "url": "https://understandingwar.org/research/middle-east/iran-update-special-report-march-18-2026/",
+    "publishedAt": "2026-03-18T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "IDF struck South Pars natural gas field and Asaluyeh processing hub in Bushehr Province on March 18 \u2014 central to Iran's domestic energy supply and export revenue (gas exports to Iraq and Turkey disrupted). Dragos 2026 YIR documents a pattern: kinetic attacks on Iranian energy infrastructure historically precede retaliatory Iranian cyber operations against U.S. and European energy systems. Iranian-nexus groups (PYROXENE, PAPAGALLO) now demonstrate OT control loop mapping capability \u2014 not just IT-layer prepositioning. Electric and O&G sectors are at CRITICAL risk posture through at least April 3.",
+    "analystNote": "Priority actions for energy sector operators: (1) Audit internet-exposed OT devices \u2014 Claroty Team82 data shows surge in opportunistic CPS attacks, (2) Confirm historian server access controls, especially Honeywell Experion and GE Vernova, (3) Review remote access VPN logs for anomalous engineering workstation sessions, (4) Ensure protection relay configurations are backed up offline. If you have NERC CIP obligations, escalate threat posture to internal security council.",
+    "updatedAt": "2026-03-20T05:09:00.000Z"
+  },
+  {
+    "id": "af-022",
+    "priority": "MEDIUM",
+    "title": "Claroty Team82: 200+ Opportunistic Attacks on CPS by 20+ Threat Groups \u2014 Manufacturing & Water Highest",
+    "source": "Claroty Team82 / PR Newswire",
+    "url": "https://claroty.com/resources/reports/analyzing-cps-attack-trends",
+    "publishedAt": "2026-03-18T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Claroty Team82 research documents 200+ attacks by 20+ opportunistic threat actor groups against cyber-physical systems. Manufacturing and water sectors show highest attack concentration. Finding: geopolitical events (Iran-US conflict) are driving opportunistic actors toward critical infrastructure direct access \u2014 not just ransomware/financial motivation. Key risk: internet-exposed OT devices (HMIs, SCADA, engineering workstations) remain the primary attack surface for opportunistic groups.",
+    "analystNote": "The shift from opportunistic ransomware targeting to direct CPS access attempts is a significant threat model evolution. Review your internet-exposed asset inventory via Shodan or your OT asset management platform. Any internet-directly-reachable HMI, historian, or engineering workstation is an active target. Prioritize network segmentation validation and remote access consolidation.",
+    "updatedAt": "2026-03-20T05:09:00.000Z"
+  },
+  {
+    "id": "af-023",
+    "priority": "HIGH",
+    "title": "Rockwell Automation Logix \u2014 Auth Bypass Actively Exploited (CISA KEV)",
+    "source": "CISA KEV / Burns & McDonnell 1898 Advisories",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-03-16T00:00:00.000Z",
+    "vendors": [
+      "Rockwell Automation"
+    ],
+    "cves": [
+      "CVE-2021-22681"
+    ],
+    "otRelevance": "Most widely deployed PLC family in U.S. critical infrastructure \u2014 electric, O&G, manufacturing, water. Authentication bypass via insufficiently protected cryptographic key in ControlLogix, CompactLogix, GuardLogix, MicroLogix. CVSS 9.8 actively exploited during confirmed Iranian footholds in U.S. networks. Federal deadline March 26 (BOD 22-01). NERC CIP implications for electric sector.",
+    "analystNote": "Highest urgency item in current landscape: CVSS 9.8 active exploitation + Iran-US conflict escalation + 7-day federal deadline. This is the exact PLC family in the VOLTZITE intrusion investigation and Framework 3 (Manufacturing) demo scenario.",
+    "updatedAt": "2026-03-19T03:01:00.000Z"
+  },
+  {
+    "id": "af-024",
+    "priority": "HIGH",
+    "title": "Hikvision IP Cameras/NVRs \u2014 Improper Authentication Actively Exploited (CISA KEV)",
+    "source": "CISA KEV",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-03-06T00:00:00.000Z",
+    "vendors": [
+      "Hikvision"
+    ],
+    "cves": [
+      "CVE-2017-7921"
+    ],
+    "otRelevance": "Widely deployed in physical security at OT facilities \u2014 substations, refineries, water treatment plants. Compromised cameras provide adversary visibility into control room layouts and physical processes. CISA KEV active exploitation confirmed. Federal deadline March 26.",
+    "analystNote": "Often overlooked as 'just cameras' \u2014 but physical security cameras at OT facilities are an intelligence collection asset. Adversaries map control room layouts and operator procedures via compromised camera feeds.",
+    "updatedAt": "2026-03-19T03:01:00.000Z"
+  },
+  {
+    "id": "af-025",
+    "priority": "HIGH",
+    "title": "Iran-US Conflict \u2014 Confirmed Backdoors Installed on U.S. Critical Infrastructure Networks",
+    "source": "Axios / Symantec / Carbon Black / ISACs",
+    "url": "https://www.axios.com/2026/03/17/iran-us-israel-cyberattacks-critical-infrastructure",
+    "publishedAt": "2026-03-17T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Symantec and Carbon Black confirmed Iranian actors installed backdoors on U.S. company networks in late February 2026. ISACs issued multi-sector advisory warning of digital retaliation. Russian-linked hacktivists aligned with Iran targeting Israeli critical infrastructure. This confirms the move from prepositioning to active intrusion.",
+    "analystNote": "Inflection point: pre-Feb 28 = prepositioning. Post-Feb 28 = established footholds. IDF struck Iranian energy infrastructure and killed Intelligence Minister Khatib on March 18 \u2014 Iranian retaliation calculus has shifted significantly.",
+    "updatedAt": "2026-03-19T03:01:00.000Z"
+  },
+  {
+    "id": "af-026",
+    "priority": "HIGH",
+    "title": "Siemens SIMATIC S7-1500 PLC \u2014 Authentication Bypass (CISA ICS Advisory)",
+    "source": "CISA / Siemens PSIRT",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-24-011-01",
+    "publishedAt": "2026-03-18T06:00:00.000Z",
+    "vendors": [
+      "Siemens"
+    ],
+    "cves": [
+      "CVE-2024-43647",
+      "CVE-2024-43648"
+    ],
+    "otRelevance": "Affects SIMATIC S7-1500 PLCs widely deployed in electric power generation, water treatment, and manufacturing. Authentication bypass allows unauthenticated remote code execution on PLC runtime, enabling adversaries to manipulate process control logic without operator awareness. VOLTZITE TTPs include targeting Siemens S7 series devices in electric utility SCADA environments.",
+    "analystNote": "Cross-reference VOLTZITE intrusion investigation (INV-001) \u2014 IDS anomalies on S7comm traffic pattern consistent with VOLTZITE scanning TTPs observed following this advisory publication. Patch all S7-1500 instances, prioritizing those with any corporate network exposure.",
+    "updatedAt": "2026-03-18T08:30:00.000Z"
+  },
+  {
+    "id": "af-027",
+    "priority": "HIGH",
+    "title": "Operation Epic Fury \u2014 Iran-Aligned Actors Share ICS/PLC Screenshots as Proof of Energy System Access",
+    "source": "SOCRadar",
+    "url": "https://socradar.io/blog/cyber-reflections-us-israel-iran-war/",
+    "publishedAt": "2026-03-13T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Multiple Iran-aligned actors escalated against U.S. critical infrastructure on March 2. ICS and PLC screenshots shared as alleged proof of access to energy systems. Some claims may be influence-driven; others indicate legitimate access. Pattern consistent with Iran-nexus actors proving capability to their constituency.",
+    "analystNote": "Even unverified screenshots have operational impact \u2014 they validate targeting and create downstream fear in operators. Any confirmed PLC access in energy sector warrants immediate investigation. Z-Pentest SCADA/ICS claims remain unverified per Tenable.",
+    "updatedAt": "2026-03-18T08:33:00.000Z"
+  },
+  {
+    "id": "af-028",
+    "priority": "HIGH",
+    "title": "KAMACITE Renewed Activity: North American Electric Grid EMS/SCADA Targeting",
+    "source": "Dragos WorldView",
+    "url": "https://www.dragos.com/blog/industry-news/",
+    "publishedAt": "2026-03-17T14:00:00.000Z",
+    "vendors": [
+      "Schneider Electric",
+      "GE Vernova",
+      "ABB"
+    ],
+    "cves": [
+      "CVE-2024-37391"
+    ],
+    "otRelevance": "Dragos observed KAMACITE conducting reconnaissance against electric utility EMS/SCADA systems in the U.S. and Canada. TTPs include spearphishing targeting OT engineers, exploitation of historian server vulnerabilities, and lateral movement toward control system DMZ segments. Substations using legacy GE Vernova EMS platforms at elevated risk.",
+    "analystNote": "KAMACITE activity spike correlates with geopolitical escalation. Prioritize audit of EMS historian access logs and verify network segmentation at IT/OT boundaries at all substations. See KAMACITE investigation (INV-002) for active campaign tracking. CVE-2024-37391 requires verification against NVD.",
+    "updatedAt": "2026-03-17T16:45:00.000Z"
+  },
+  {
+    "id": "af-029",
+    "priority": "HIGH",
+    "title": "Rockwell Automation FactoryTalk Optix HMI \u2014 Three-CVE Attack Chain (CISA Advisory)",
+    "source": "CISA",
+    "url": "https://www.cisa.gov/news-events/ics-advisories",
+    "publishedAt": "2026-03-15T18:00:00.000Z",
+    "vendors": [
+      "Rockwell Automation"
+    ],
+    "cves": [
+      "CVE-2024-7591",
+      "CVE-2024-7592",
+      "CVE-2024-7593"
+    ],
+    "otRelevance": "Three chained vulnerabilities in Rockwell FactoryTalk Optix HMI platform allow unauthenticated remote attackers to achieve persistent access to HMI servers. CISA confirmed exploitation in at least three critical infrastructure organizations. HMIs are the operator interface to physical processes \u2014 persistent access enables manipulation of process setpoints and alarm suppression.",
+    "analystNote": "Three-CVE chain: CVE-2024-7591 = initial access (auth bypass), CVE-2024-7592 = privilege escalation, CVE-2024-7593 = persistence (backdoor account creation). Patch immediately. If patching not feasible, isolate all FactoryTalk Optix instances from network access.",
+    "updatedAt": "2026-03-15T20:30:00.000Z"
+  },
+  {
+    "id": "af-030",
+    "priority": "HIGH",
+    "title": "Iranian Actors Actively Exploiting 5 CVEs Post-Operation Epic Fury",
+    "source": "Tenable",
+    "url": "https://www.tenable.com/blog/cyber-retaliation-analyzing-iranian-cyber-activity-following-operation-epic-fury",
+    "publishedAt": "2026-03-11T00:00:00.000Z",
+    "vendors": [],
+    "cves": [
+      "CVE-2023-6895",
+      "CVE-2025-34067"
+    ],
+    "otRelevance": "5 CVEs identified as actively exploited by Iranian-linked actors following Operation Epic Fury. 3 of 5 now on CISA KEV. CVE-2023-6895 and CVE-2025-34067 not yet on KEV at time of publication. Full CVE list pending detailed fetch.",
+    "analystNote": "PENDING: Full CVE list and vendor attribution needs detail fetch from Tenable article. CVE-2025-34067 not on KEV \u2014 may indicate recently discovered exploitation in the wild.",
+    "updatedAt": "2026-03-18T08:33:00.000Z"
+  },
+  {
+    "id": "af-031",
+    "priority": "MEDIUM",
+    "title": "Schneider Electric EcoStruxure Foxboro DCS \u2014 Unpatched RCE in FoxAPI Handler",
+    "source": "CloudSEK",
+    "url": "https://cloudsek.com/threat-intelligence/",
+    "publishedAt": "2026-03-16T09:30:00.000Z",
+    "vendors": [
+      "Schneider Electric"
+    ],
+    "cves": [
+      "CVE-2024-8891"
+    ],
+    "otRelevance": "RCE vulnerability in Schneider EcoStruxure Foxboro DCS FoxAPI communication handler allows network-adjacent authenticated attacker to execute arbitrary code as SYSTEM on DCS engineering workstation. Schneider developing patch (ETA ~45 days). Active exploitation indicators observed in petroleum refining sector.",
+    "analystNote": "No patch available \u2014 mitigate immediately: restrict FoxAPI network access to control subnet only; disable remote FoxAPI authentication if not operationally required; increase logging on DCS engineering workstations. CVE-2024-8891 requires verification against NVD. See active investigation INV-004.",
+    "updatedAt": "2026-03-16T11:00:00.000Z"
+  },
+  {
+    "id": "af-032",
+    "priority": "MEDIUM",
+    "title": "Siemens SICAM SIAPP SDK \u2014 Denial of Service (ICSA-26-076-04)",
+    "source": "CISA",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-076-04",
+    "publishedAt": "2026-03-17T00:00:00.000Z",
+    "vendors": [
+      "Siemens"
+    ],
+    "cves": [],
+    "otRelevance": "Attacker can disrupt customer-developed SIAPP or simulation environment. Affects operators who built custom apps on Siemens industrial app platform. Simulation disruption impacts operator training and disaster recovery testing.",
+    "analystNote": "Advisory ID: ICSA-26-076-04. Published March 17, 2026. Supply chain consideration: operators using custom SIAPPs may have unique exposure based on their app design.",
+    "updatedAt": "2026-03-19T03:01:00.000Z"
+  },
+  {
+    "id": "af-033",
+    "priority": "MEDIUM",
+    "title": "Schneider Electric EcoStruxure DCE \u2014 Hard-Coded Credentials (ICSA-26-076-03)",
+    "source": "CISA",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-076-03",
+    "publishedAt": "2026-03-17T00:00:00.000Z",
+    "vendors": [
+      "Schneider Electric"
+    ],
+    "cves": [],
+    "otRelevance": "Hard-coded credentials in EcoStruxure IT Data Center Expert (DCE) \u2014 manages power distribution, cooling, and PDUs. Risk is persistent access if SOCKS Proxy feature has ever been enabled by customer.",
+    "analystNote": "Hard-coded creds are a long-tail risk. Any customer who ever enabled the SOCKS Proxy feature is exposed. Requires admin credentials + proxy feature enabled. Off-by-default reduces immediate blast radius.",
+    "updatedAt": "2026-03-19T03:01:00.000Z"
+  },
+  {
+    "id": "af-034",
+    "priority": "MEDIUM",
+    "title": "ABB Ability Symphony Plus DCS \u2014 Improper Input Validation, Denial of Service Risk",
+    "source": "CISA",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-24-044-01",
+    "publishedAt": "2026-03-14T12:00:00.000Z",
+    "vendors": [
+      "ABB"
+    ],
+    "cves": [
+      "CVE-2024-6102"
+    ],
+    "otRelevance": "Symphony Plus DCS widely deployed in power generation, water treatment, and pulp/paper. Improper input validation enables denial-of-service against the DCS server, potentially causing loss of view/control for operators. Operational impact depends on whether redundant DCS controllers are configured.",
+    "analystNote": "DoS on DCS can result in loss of view and loss of control \u2014 high OT impact even without data compromise. Verify redundant controller failover configuration before deprioritizing. CVE-2024-6102 requires NVD verification.",
+    "updatedAt": "2026-03-14T14:00:00.000Z"
+  },
+  {
+    "id": "af-035",
+    "priority": "MEDIUM",
+    "title": "Honeywell Experion PKS Historian \u2014 SQL Injection, Data Exfiltration Risk",
+    "source": "CISA",
+    "url": "https://www.cisa.gov/news-events/ics-advisories",
+    "publishedAt": "2026-03-13T10:00:00.000Z",
+    "vendors": [
+      "Honeywell"
+    ],
+    "cves": [
+      "CVE-2024-5834",
+      "CVE-2024-5835"
+    ],
+    "otRelevance": "SQL injection in Honeywell Experion PKS historian enables exfiltration of process data \u2014 setpoints, historian trends, alarm configurations. KAMACITE has demonstrated specific interest in historian data for OT network mapping. Historian access often bridges IT/OT network segments.",
+    "analystNote": "Historian SQL injection is particularly valuable to pre-positioned adversaries mapping process behavior for targeted attack development. KAMACITE TTPs specifically include historian exploitation. CVEs require NVD verification.",
+    "updatedAt": "2026-03-13T12:00:00.000Z"
+  },
+  {
+    "id": "af-036",
+    "priority": "MEDIUM",
+    "title": "Honeywell IQ 4X Building Management System \u2014 Advisory",
+    "source": "CISA",
+    "url": "https://www.cisa.gov/news-events/ics-advisories",
+    "publishedAt": "2026-03-11T00:00:00.000Z",
+    "vendors": [
+      "Honeywell"
+    ],
+    "cves": [],
+    "otRelevance": "Vulnerability in Honeywell BMS controlling HVAC, access control, and power management in critical infrastructure facilities including data centers and industrial buildings.",
+    "analystNote": "Advisory detail pending full fetch. Published ~March 11.",
+    "updatedAt": "2026-03-18T08:33:00.000Z"
+  },
+  {
+    "id": "af-037",
+    "priority": "MEDIUM",
+    "title": "Mitsubishi Electric MELSEC iQ-R Series PLC \u2014 Path Traversal in Engineering Software",
+    "source": "CISA",
+    "url": "https://www.cisa.gov/news-events/ics-advisories",
+    "publishedAt": "2026-03-12T08:00:00.000Z",
+    "vendors": [
+      "Mitsubishi Electric"
+    ],
+    "cves": [
+      "CVE-2024-4483"
+    ],
+    "otRelevance": "Path traversal in GX Works3 engineering software for MELSEC iQ-R series PLCs. Attacker with access to engineering network can read/write arbitrary files on engineering workstation, enabling exfiltration of PLC programs and potential project file manipulation.",
+    "analystNote": "Engineering workstations are high-value targets \u2014 they hold PLC programs, network topology, and process configuration. Path traversal enabling project file access is a stepping stone to logic modification. CVE-2024-4483 requires NVD verification.",
+    "updatedAt": "2026-03-12T10:00:00.000Z"
+  },
+  {
+    "id": "af-038",
+    "priority": "MEDIUM",
+    "title": "Siemens SIDIS Prime \u2014 Multiple Component Vulnerabilities (ICSA-26-071-03)",
+    "source": "CISA",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-071-03",
+    "publishedAt": "2026-03-12T00:00:00.000Z",
+    "vendors": [
+      "Siemens"
+    ],
+    "cves": [],
+    "otRelevance": "Multiple inherited vulnerabilities in Siemens SIDIS Prime industrial IoT platform (OpenSSL, SQLite, Node.js components). Component vulnerability pattern common in ICS products that embed open-source software without regular update cycles.",
+    "analystNote": "Supply chain / component risk pattern. Advisory ID: ICSA-26-071-03.",
+    "updatedAt": "2026-03-18T08:33:00.000Z"
+  },
+  {
+    "id": "af-039",
+    "priority": "MEDIUM",
+    "title": "Water Sector Alert: Attempted Unauthorized Access to Municipal Water Treatment SCADA",
+    "source": "WaterISAC / CloudSEK",
+    "url": "https://www.cisa.gov/news-events/ics-advisories",
+    "publishedAt": "2026-03-13T15:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "Attempted unauthorized access to internet-facing water treatment HMI via Tor exit node. 4-minute authenticated session (default credentials). Read-only activity observed \u2014 no setpoint modifications confirmed. Pattern consistent with SYLVANITE opportunistic scanning of internet-exposed industrial HMIs. Southwest U.S. utilities most affected.",
+    "analystNote": "See active investigation INV-003. Even without process manipulation, authenticated access to water treatment HMI represents a successful initial access event requiring immediate remediation. Remove default credentials and implement IP allowlisting on all internet-facing HMIs.",
+    "updatedAt": "2026-03-13T17:00:00.000Z"
+  },
+  {
+    "id": "af-040",
+    "priority": "LOW",
+    "title": "Delta Electronics CNCSoft-G2 HMI \u2014 Remote Code Execution (ICSA-26-064-01)",
+    "source": "CISA",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-064-01",
+    "publishedAt": "2026-03-05T00:00:00.000Z",
+    "vendors": [
+      "Delta Electronics"
+    ],
+    "cves": [],
+    "otRelevance": "RCE vulnerability in Delta Electronics CNCSoft-G2 HMI software for CNC machine programming and monitoring in manufacturing. HMI RCE enables operator interface manipulation and process setpoint access.",
+    "analystNote": "Advisory ID: ICSA-26-064-01. Primarily relevant to manufacturing sector with Delta Electronics HMI deployments.",
+    "updatedAt": "2026-03-18T08:33:00.000Z"
+  },
+  {
+    "id": "af-041",
+    "priority": "LOW",
+    "title": "Emerson DeltaV DCS \u2014 Information Disclosure in Web API",
+    "source": "CISA",
+    "url": "https://www.cisa.gov/news-events/ics-advisories",
+    "publishedAt": "2026-03-10T09:00:00.000Z",
+    "vendors": [
+      "Emerson"
+    ],
+    "cves": [
+      "CVE-2024-3217"
+    ],
+    "otRelevance": "Minor information disclosure in Emerson DeltaV DCS web API exposes process data to unauthenticated network-adjacent attackers. Low exploitability \u2014 requires network access to DCS segment. DeltaV widely deployed in oil & gas, pharmaceutical, and power generation.",
+    "analystNote": "Low immediate risk but information disclosure can support adversary reconnaissance \u2014 process variable names, tag structures, and historian query endpoints can inform targeted attack development. CVE-2024-3217 requires NVD verification.",
+    "updatedAt": "2026-03-10T11:00:00.000Z"
+  },
+  {
+    "id": "af-042",
+    "priority": "MEDIUM",
+    "title": "MuddyWater (MOIS) \u2014 RustyWater Rust-based RAT + Small Sieve Telegram C2 Active (Feb 2026)",
+    "source": "CloudSEK",
+    "url": "https://www.cloudsek.com/blog/a-threat-actor-landscape-assessment-of-ics-ot-targeting-in-the-2026-iran-us-conflict-and-the-scale-of-the-risk",
+    "publishedAt": "2026-03-05T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "MuddyWater (MOIS Tier 1) confirmed as MOIS initial access broker. New Rust-based RAT (RustyWater) deployed Feb 2026. Abuses RMM tools (Syncro, PDQ Connect) installed by 3rd-party integrators on OT networks. Small Sieve backdoor uses Telegram Bot API for C2 \u2014 persists via Outlook/Microsoft registry run key. Telecom, O&G, critical infrastructure sectors targeted.",
+    "analystNote": "Rust binary detection is harder than Python/PowerShell payloads. Telegram C2 is difficult to block without impacting legitimate use. Priority detection: Telegram API outbound from OT-adjacent endpoints; high-entropy DNS subdomain queries; unauthorized Syncro/PDQ Connect on OT network segments.",
+    "updatedAt": "2026-03-22T09:03:00.000Z"
+  },
+  {
+    "id": "af-043",
+    "priority": "MEDIUM",
+    "title": "APT33/Elfin (IRGC) \u2014 Tickler Backdoor Active, Azure C2, Energy/O&G Targeting",
+    "source": "CloudSEK / Microsoft Aug 2024 / Palo Alto Unit 42",
+    "url": "https://www.cloudsek.com/blog/a-threat-actor-landscape-assessment-of-ics-ot-targeting-in-the-2026-iran-us-conflict-and-the-scale-of-the-risk",
+    "publishedAt": "2026-03-05T00:00:00.000Z",
+    "vendors": [
+      "Microsoft Azure",
+      "Microsoft 365"
+    ],
+    "cves": [],
+    "otRelevance": "APT33 (IRGC) conducting high-volume password spray against U.S. electric utilities and O&G operators. Tickler backdoor (multi-stage, Azure-based C2) persists via Run key named SharePoint.exe. Historical lineage includes TRITON/TRISIS \u2014 first ICS safety system malware. AnyDesk deployed for persistent OT-adjacent remote access. AzureHound/Roadtools for Azure AD recon.",
+    "analystNote": "TRITON/TRISIS lineage means APT33 has documented willingness to target Safety Instrumented Systems (SIS). Tickler detection requires AAD/M365 sign-in log visibility. Priority IOC: SharePoint.exe in Windows Run registry key; AnyDesk without IT authorization on OT workstations. Palo Alto Unit 42 confirmed 60+ hacktivist groups activated post-Feb 28.",
+    "updatedAt": "2026-03-22T09:03:00.000Z"
+  },
+  {
+    "id": "af-044",
+    "priority": "MEDIUM",
+    "title": "MuddyWater (MOIS) \u2014 RustyWater RAT: Rust-Based RAT + Full TTP Profile",
+    "source": "CloudSEK",
+    "url": "https://www.cloudsek.com/blog/a-threat-actor-landscape-assessment-of-ics-ot-targeting-in-the-2026-iran-us-conflict-and-the-scale-of-the-risk",
+    "publishedAt": "2026-03-05T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "domain": "BOTH",
+    "otRelevance": "MuddyWater (MOIS Tier 1) deploying RustyWater \u2014 a new Rust-based RAT using C2 domains mimicking Dropbox and WordPress. Full TTP stack: Small Sieve backdoor (Telegram Bot API C2, Outlook registry run key), Mori backdoor (DNS tunneling), PowGoop DLL side-loader (disguised as Google Update). Confirmed initial access broker within MOIS \u2014 shares access with other Iranian groups. OT-adjacent risk: MOIS brokers have been observed pivoting through IT networks to reach engineering workstations and historian servers.",
+    "analystNote": "Watch for: Telegram API outbound from internal endpoints; high-entropy DNS subdomain queries; Syncro/PDQ Connect RMM tools installed by 3rd-party IT integrators on OT networks; Outlook registry run key persistence. Block RustyWater C2 indicators at DNS/firewall. Treat any unauthorized RMM tool on OT-adjacent hosts as a potential MuddyWater foothold.",
+    "updatedAt": "2026-03-22T09:03:00.000Z"
+  },
+  {
+    "id": "af-045",
+    "priority": "MEDIUM",
+    "title": "APT33/Elfin \u2014 Tickler Backdoor Active; Azure C2; Energy/O&G Targeting",
+    "source": "CloudSEK / Microsoft / Palo Alto Unit 42",
+    "url": "https://www.cloudsek.com/blog/a-threat-actor-landscape-assessment-of-ics-ot-targeting-in-the-2026-iran-us-conflict-and-the-scale-of-the-risk",
+    "publishedAt": "2026-03-05T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "domain": "BOTH",
+    "otRelevance": "APT33/Elfin (IRGC, Tier 1 \u2014 group associated with TRITON/TRISIS safety system malware in 2017) actively deploying Tickler backdoor. Multi-stage malware using Azure-based C2, persists via Run key named SharePoint.exe. Concurrent use of AzureHound/Roadtools for Azure AD recon. Primary targets: Energy, Oil & Gas, Aerospace, Defense Industrial Base, Electric Utilities. 60+ hacktivist groups activated within hours of Feb 28 strikes (Unit 42).",
+    "analystNote": "Detection: High-volume distributed Azure/M365 login attempts; SharePoint.exe Run registry key (unusual process name + persistence method); AnyDesk on OT-adjacent workstations without IT authorization. APT33 has confirmed historical capability to access OT safety systems (TRITON). Treat any APT33 IT foothold as a potential OT pivot precursor.",
+    "updatedAt": "2026-03-22T09:03:00.000Z"
+  },
+  {
+    "id": "af-046",
+    "priority": "MEDIUM",
+    "title": "Claroty Team82: 82% of CPS Attacks Used Remote Access Protocols; 66% Targeted HMIs/SCADA",
+    "source": "Claroty Team82 / Industrial Cyber",
+    "url": "https://industrialcyber.co/reports/claroty-reports-82-of-cps-attacks-used-remote-access-protocols-as-hacktivists-target-hmis-and-scada-at-scale/",
+    "publishedAt": "2026-03-19T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "domain": "OT",
+    "otRelevance": "Claroty Team82 analysis of 200+ CPS incidents: 82% leveraged remote access protocols to reach internet-facing assets; 66% involved direct compromise of HMIs and SCADA systems. Sectors: Energy, Water, Manufacturing, Healthcare. Primary threat actors: politically/socially motivated groups affiliated with Russia and Iran. Attack profile: low-tech, scale-targeted \u2014 exploiting default/weak credentials on exposed systems, not expensive exploits. HMI compromise = attacker controls operator view of field devices. SCADA compromise = unauthorized setpoint changes, valve commands, circuit breaker operations.",
+    "analystNote": "Validates Operation Epic Fury ICS/PLC screenshot claims (March 2). Monitor RDP, VNC, TeamViewer, AnyDesk sessions to any OT/ICS asset. Alert on first-time-seen remote access tools on OT networks. Audit internet-facing HMIs immediately \u2014 40,000+ U.S. ICS devices remain internet-exposed (Forescout 2024).",
+    "updatedAt": "2026-03-23T04:06:00.000Z"
+  },
+  {
+    "id": "af-047",
+    "priority": "HIGH",
+    "title": "Symantec/Carbon Black: Iranian Backdoors Installed on U.S. Networks in Late February; ISAC Joint Advisory",
+    "source": "Axios / Symantec / Carbon Black",
+    "url": "https://www.axios.com/2026/03/17/iran-us-israel-cyberattacks-critical-infrastructure",
+    "publishedAt": "2026-03-18T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "domain": "BOTH",
+    "otRelevance": "Symantec and Carbon Black found evidence that Iranian hackers installed backdoors on the networks of several U.S. companies in late February \u2014 coinciding with Phase 1 activation (Feb 28 airstrikes). A consortium of industry-specific ISACs jointly issued advisory warning companies to prepare for digital retaliation. Confirms Phase 1 pre-positioned backdoors are documented by multiple vendors. ISAC advisory signals cross-sector coordination at the highest preparedness level.",
+    "analystNote": "Confirmed: Phase 1 access is real, not speculative. Organizations should treat any Feb 28 \u2013 present anomalous authentication or lateral movement as a potential Phase 1 foothold. Priority: review EDR telemetry for Feb 28 + first week of March across all enterprise and OT-adjacent systems.",
+    "updatedAt": "2026-03-23T04:06:00.000Z"
+  },
+  {
+    "id": "af-048",
+    "priority": "HIGH",
+    "title": "Handala (MOIS) \u2014 Cartel Bounties for Physical Violence; Hybrid Cyber-Physical Threat Confirmed",
+    "source": "U.S. Department of Justice",
+    "url": "https://www.justice.gov/opa/pr/justice-department-disrupts-iranian-cyber-enabled-psychological-operations",
+    "publishedAt": "2026-03-20T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "domain": "BOTH",
+    "otRelevance": "DOJ seizure press release documents: on or about March 1, 2026, Handala_Team@outlook[.]com offered bounties to Mexican cartel partners to commit acts of violence against Handala targets. Handala is not a pure cyber actor \u2014 confirmed willingness to use kinetic proxies for physical harm. Threat profile escalates to hybrid cyber-physical operations. Handala_Team@outlook[.]com is an active C2/coordination channel, not just a communications address. All 4 MOIS domains seized (March 20); Telegram channel remains active.",
+    "analystNote": "Block: handala-hack[.]to (seized), handala-redwanted[.]to (seized), justicehomeland[.]org (seized), karmabelow80[.]org (seized), Handala_Team@outlook[.]com. Physical security teams should be briefed \u2014 hybrid threat profile means cyber incidents may be coordinated with physical access attempts.",
+    "updatedAt": "2026-03-23T15:05:00.000Z"
+  },
+  {
+    "id": "af-049",
+    "priority": "HIGH",
+    "title": "Operation Epic Fury \u2014 Phase 4 Window Opens ~March 25; Diplomatic Pause Holding",
+    "source": "Flashpoint / SOCRadar / Euronews / ISW",
+    "url": "https://www.politico.com/news/2026/03/23/donald-trump-iran-talks-00839682",
+    "publishedAt": "2026-03-24T00:00:00.000Z",
+    "vendors": [],
+    "cves": [],
+    "domain": "BOTH",
+    "otRelevance": "Operation Epic Fury formally named by Flashpoint (March 19), SOCRadar, and Euronews as tracking label for Iran-US/Israel cyber operations. Phase 4 (retaliation execution) window opens approximately March 25 \u2014 5-day diplomatic pause (Trump/Witkoff) is holding as of March 24 but Iran still officially denying talks. ICS/PLC access claims surfaced March 2 (SOCRadar). Iran pre-positioned capabilities confirmed active. Highest-risk sectors: Energy/Electric, O&G pipelines, Gulf desalination infrastructure. Iran internal crackdown (IRGC surveillance, internet blackouts) historically correlates with increased external cyber aggression.",
+    "analystNote": "Phase 4 watch posture: heighten monitoring now. SOC teams should be on elevated watch for energy/OT sectors beginning March 25. Coordinate with ISAC contacts for early warning. Diplomatic outcome does not negate pre-positioned access.",
+    "updatedAt": "2026-03-24T04:06:00.000Z"
+  },
+  {
+    "id": "af-050",
+    "priority": "MEDIUM",
+    "title": "CVE-2026-20963 (SharePoint RCE) \u2014 CISA/Microsoft Discrepancy on Active Exploitation",
+    "source": "SecurityWeek / CISA / Microsoft",
+    "url": "https://www.securityweek.com/microsoft-sharepoint-rce-flaw-exploited-in-attacks/",
+    "publishedAt": "2026-03-20T00:00:00.000Z",
+    "vendors": [
+      "Microsoft"
+    ],
+    "cves": [
+      "CVE-2026-20963"
+    ],
+    "domain": "IT",
+    "otRelevance": "SharePoint RCE \u2014 CISA added to KEV March 19 citing active exploitation; Microsoft updated advisory but still does NOT confirm active exploitation (exploitability assessment: less likely). Discrepancy between CISA and Microsoft assessments. Relevant as APT33 IT\u2192OT pivot vector via enterprise SharePoint compromise before lateral movement to OT-adjacent networks.",
+    "analystNote": "Maintain in tracker but reduce urgency from HIGH to MEDIUM until Microsoft confirms exploitation. Patch per standard SharePoint update schedule. If APT33 indicators are present in the environment, treat as HIGH.",
+    "updatedAt": "2026-03-24T04:06:00.000Z"
+  },
+  {
+    "id": "af-051",
+    "title": "Fatimion Cyber Team (FAD Team) \u2014 Wiper Malware Capability Confirmed by Unit 42",
+    "summary": "Unit 42 (March 26) significantly upgrades Fatimion Cyber Team assessment: group is now confirmed to focus on wiper malware and permanent data destruction, not just DDoS/defacement. Also known as FAD Team and Iran Resistance Hub. Previously confirmed: global SQL injection campaign (Flashpoint), DDoS against Kuwait News Agency, Bahrain News Agency disruption, attacks on Qatari energy/media. MITRE TTPs updated: T1498, T1491.002, T1190, T1041, T1485.",
+    "source": "Unit 42, Dark Reading/Flashpoint, SecurityWeek (March 2026)",
+    "publishedAt": "2026-03-26T00:00:00.000Z",
+    "updatedAt": "2026-03-27T20:00:00.000Z",
+    "priority": "HIGH",
+    "tags": [
+      "iran",
+      "fatimion",
+      "fad-team",
+      "wiper",
+      "hacktivist",
+      "ttp-update"
+    ],
+    "vendors": [],
+    "cves": [],
+    "otRelevance": "MEDIUM - Group targets critical infrastructure including energy sector. Wiper capability escalates risk profile significantly from hacktivist-tier to destructive operations.",
+    "domain": "BOTH"
+  }
+]

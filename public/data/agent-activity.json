@@ -1,0 +1,887 @@
+[
+  {
+    "id": "act-54",
+    "at": "2026-07-14T05:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 BLOCKADE DAY, Hormuz traffic at 1-month low, US strikes 6 coastal sites",
+    "detail": "Completed 2026-07-14 morning CONVERGED pull (A+B tracks). US naval blockade resumes at 3 PM CDT. Hormuz traffic at 1-month low (14 ships Sunday). US struck coastal defense systems across 6 Iranian sites. Trump: US will be 'guardian' of Hormuz. Iran refuses passage. No new CISA ICS advisories. 121 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "blockade",
+      "hormuz",
+      "iran-war"
+    ]
+  },
+  {
+    "id": "act-53",
+    "at": "2026-07-13T05:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Schneider PowerChute, 7 ICS advisories July 7, Iran-US war continues",
+    "detail": "Completed 2026-07-13 morning CONVERGED pull (A+D tracks). New: Schneider PowerChute Serial Shutdown ICSA-26-190-02. WaterISAC confirms 7 ICS advisories on July 7 (not 6). Iran-US war: full-scale exchange continues, Islamabad Talks failed July 12-13. FBI arrests CA teen for electricity infrastructure threats. 121 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "schneider",
+      "powerchute",
+      "iran-war",
+      "islamabad-talks"
+    ]
+  },
+  {
+    "id": "act-52",
+    "at": "2026-07-12T05:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Islamabad Talks failed, full-scale exchange continues, no diplomatic off-ramp",
+    "detail": "Completed 2026-07-12 morning CONVERGED pull (A+C tracks). Islamabad Talks failed July 12 \u2014 primary diplomatic channel gone. Full-scale exchange continues: US strikes after Iran fires on civilian vessel, Iran striking US assets across Middle East. Ceasefire broken less than 3 weeks into 60-day memorandum. No new CISA ICS advisories. 120 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "iran-war",
+      "islamabad-talks",
+      "failed",
+      "no-off-ramp"
+    ]
+  },
+  {
+    "id": "act-51",
+    "at": "2026-07-11T05:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Iran rebuilding nuclear facilities (CNN), Trump 1,000 missiles threat",
+    "detail": "Completed 2026-07-11 morning CONVERGED pull (A+B tracks). CNN Exclusive: satellite imagery shows Iran may be rebuilding nuclear facilities. Trump threatens 1,000 missiles 'locked and loaded.' Mediators still working to de-escalate. No new CISA ICS advisories. 119 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "iran",
+      "nuclear",
+      "trump",
+      "missiles"
+    ]
+  },
+  {
+    "id": "act-50",
+    "at": "2026-07-10T05:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Iran-US war Day 4, 6,000 sailors stranded, talks continue",
+    "detail": "Completed 2026-07-10 morning CONVERGED pull (A+D tracks). Iran-US war Day 4: second straight night of attacks, 6,000 sailors stranded in Persian Gulf, 13 vessels transited Hormuz. Technical talks continue alongside strikes. Khamenei to be buried. No new CISA ICS advisories. 119 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "iran-war",
+      "day-4",
+      "hormuz"
+    ]
+  },
+  {
+    "id": "act-49",
+    "at": "2026-07-09T05:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Digi serial auth bypass, Iran-US war Day 3, Hydro-Qu\u00e9bec EV backend",
+    "detail": "Completed 2026-07-09 morning CONVERGED pull (A+C tracks). New CISA advisories: Digi serial device server auth bypass (third serial-to-Ethernet vendor this month), Siemens Mendix, Hydro-Qu\u00e9bec EV charging. Iran-US war Day 3: IRGC strikes US bases, US hits 90 targets, Brent $78. 119 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "digi",
+      "serial",
+      "iran-war",
+      "hydro-quebec",
+      "ev"
+    ]
+  },
+  {
+    "id": "act-48",
+    "at": "2026-07-06T14:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Trump Hormuz ultimatum, Iran threatens infrastructure strikes",
+    "detail": "Completed 2026-07-06 morning CONVERGED pull (A+B tracks). No new CISA ICS advisories. Geopolitical escalation: Trump 48-hour Hormuz ultimatum, Iran threatens energy/desalination infrastructure strikes. Phase 7 escalation signal. KEV overdue list unchanged.",
+    "tags": [
+      "intel",
+      "converged",
+      "hormuz",
+      "iran",
+      "ultimatum",
+      "phase-7"
+    ]
+  },
+  {
+    "id": "act-48",
+    "at": "2026-07-06T11:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Trump 48-hour Hormuz ultimatum, Iran threatens desalination strikes",
+    "detail": "Completed 2026-07-06 morning CONVERGED pull (A+B tracks). No new CISA advisories or KEV. Geopolitical escalation: Trump issued 48-hour ultimatum to Iran over Strait of Hormuz. Iran threatens to close Strait and strike desalination facilities. Phase 7 escalating. 113 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "hormuz",
+      "iran",
+      "trump",
+      "ultimatum",
+      "desalination",
+      "phase-7"
+    ]
+  },
+  {
+    "id": "act-48",
+    "at": "2026-07-06T01:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Catch-up CONVERGED pull \u2014 SharePoint KEV overdue, PTC Windchill CVSS 9.3, 6 ICS advisories July 2",
+    "detail": "Completed 2026-07-05 catch-up CONVERGED pull (A+D tracks) after 4-day gap. SharePoint CVE-2026-45659 KEV overdue since July 4 (actively exploited). PTC Windchill confirmed CVSS 9.3. CISA released 6 ICS advisories July 2 (Mitsubishi MELSOFT + others). 117 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "catch-up",
+      "sharepoint",
+      "kev",
+      "ptc",
+      "windchill",
+      "mitsubishi"
+    ]
+  },
+  {
+    "id": "act-49",
+    "at": "2026-07-06T00:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "CONVERGED pull \u2014 Trump Hormuz ultimatum, Iran escalation, CISA 6 advisories July 2, CubeSpace satellite",
+    "detail": "Completed 2026-07-05 CONVERGED pull (A+C tracks). Major geopolitical: Trump 48-hour Hormuz ultimatum, Iran threatens infrastructure strikes. CISA 6 ICS advisories July 2. CubeSpace satellite reaction wheel firmware vuln. Dragos confirms LLMs democratizing OT attacks. 115 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "hormuz",
+      "iran",
+      "escalation",
+      "cisa",
+      "cubespace",
+      "satellite"
+    ]
+  },
+  {
+    "id": "act-48",
+    "at": "2026-07-06T00:15:00Z",
+    "type": "alert",
+    "severity": "critical",
+    "title": "\ud83d\udd34 PHASE 7 ESCALATION \u2014 Trump 48-hour Hormuz ultimatum, Iran threatens desalination/energy strikes",
+    "detail": "Trump issued 48-hour ultimatum to Iran over Strait of Hormuz. Iran doubled down, threatening to close Strait and strike energy facilities and desalination plants critical for drinking water. Phase 7 escalates from STALLED to ACTIVE/ESCALATING. Assess OT asset exposure in Middle East region immediately.",
+    "tags": [
+      "hormuz",
+      "iran",
+      "ultimatum",
+      "desalination",
+      "energy",
+      "phase-7",
+      "escalation",
+      "critical"
+    ]
+  },
+  {
+    "id": "act-47",
+    "at": "2026-07-01T06:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 FUXA SCADA auth bypass, Iran attacks on Israel surged, SimpleHelp KEV tomorrow",
+    "detail": "Completed 2026-07-01 morning CONVERGED pull (A+C tracks). New: FUXA SCADA/HMI CVE-2026-13207 auth bypass (CISA July 15 webinar). Iran cyberattacks on Israel surged in 2026 per Israeli cyber chief. Iran/Russia/China targeting water systems. SimpleHelp KEV due July 2. 112 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "fuxa",
+      "scada",
+      "iran",
+      "water",
+      "simplehelp",
+      "kev"
+    ]
+  },
+  {
+    "id": "act-47",
+    "at": "2026-07-01T05:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 7 new ICS advisories June 30, SimpleHelp KEV due tomorrow",
+    "detail": "Completed 2026-07-01 morning CONVERGED pull (A+C tracks). CISA published 7 ICS advisories June 30: Delta Electronics, Stonefly, B&R, Schneider (x2), Frangoteam, Mitsubishi. SimpleHelp CVE-2026-48558 KEV due July 2. Daktronics 3 vulns confirmed. 107 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "july",
+      "cisa",
+      "simplehelp",
+      "kev",
+      "daktronics"
+    ]
+  },
+  {
+    "id": "act-47",
+    "at": "2026-07-01T00:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Evening CONVERGED pull \u2014 CISA June 30 advisory batch: FUXA, Delta PLC, StoneFly, B&R",
+    "detail": "Completed 2026-06-30 evening CONVERGED pull. CISA released new advisory batch today: FUXA SCADA/HMI CVE-2026-13207 (auth bypass), Delta DVP12SE PLC unpatched Modbus TCP, StoneFly root access, B&R XZ Utils CVE-2025-31115. 111 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "FUXA",
+      "Delta",
+      "StoneFly",
+      "B&R",
+      "CISA",
+      "June 30"
+    ]
+  },
+  {
+    "id": "act-46",
+    "at": "2026-06-30T05:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 SimpleHelp KEV due July 2, Daktronics unauth root, 8 ICS advisories June 25",
+    "detail": "Completed 2026-06-30 morning CONVERGED pull (A+B tracks). New KEV: SimpleHelp CVE-2026-48558 due July 2. Daktronics DMP-5000/8000 unauth root access. CISA released 8 ICS advisories June 25 (WaterISAC confirmed). 107 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "simplehelp",
+      "daktronics",
+      "kev",
+      "july-2"
+    ]
+  },
+  {
+    "id": "act-45",
+    "at": "2026-06-29T05:05:00Z",
+    "type": "alert",
+    "severity": "critical",
+    "title": "PTC Windchill CVE-2026-12569 confirmed exploited in wild \u2014 KEV overdue since June 28",
+    "detail": "SecurityWeek reports first-ever exploitation of PTC Windchill/FlexPLM CVE-2026-12569 discovered in the wild. Unauthenticated RCE via improper input validation. KEV due date was June 28 \u2014 now overdue AND actively exploited. Patch immediately.",
+    "tags": [
+      "PTC",
+      "Windchill",
+      "CVE-2026-12569",
+      "KEV",
+      "overdue",
+      "exploited in wild",
+      "ACT_NOW"
+    ]
+  },
+  {
+    "id": "act-44",
+    "at": "2026-06-28T03:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Evening CONVERGED pull \u2014 Schneider PowerLogic P7, EmberAI competitive context, KEV June 28 reminder",
+    "detail": "Completed 2026-06-27 evening CONVERGED pull (A+D tracks). Light pull: Schneider PowerLogic P7 ICSA-26-176-07 (multiple CVEs, reboot required). EmberAI competitive details: 5PB daily telemetry, 600+ protocols. Iran search rate-limited. 104 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "schneider",
+      "powerlogic",
+      "emberai",
+      "kev-reminder"
+    ]
+  },
+  {
+    "id": "act-43",
+    "at": "2026-06-26T16:10:00Z",
+    "type": "alert",
+    "severity": "critical",
+    "title": "NEW KEV June 28 deadline: PTC Windchill CVE-2026-12569 (unauth RCE) + Cisco UCM CVE-2026-20230 (SSRF\u2192root)",
+    "detail": "CISA KEV updated June 25: PTC Windchill/FlexPLM CVE-2026-12569 (unauth RCE, improper input validation) due June 28. Cisco UCM CVE-2026-20230 (SSRF\u2192file write\u2192root) also due June 28. Both new KEV entries with Sunday deadlines. PTC manages OT engineering data; Cisco UCM is enterprise voice infrastructure adjacent to OT.",
+    "tags": [
+      "PTC",
+      "Windchill",
+      "Cisco",
+      "UCM",
+      "KEV",
+      "June 28 deadline",
+      "RCE",
+      "SSRF",
+      "ACT_NOW"
+    ]
+  },
+  {
+    "id": "act-42",
+    "at": "2026-06-26T07:20:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Netlogon RCE exploited, ScadaBR CVSS 9.1, KEV deadline day",
+    "detail": "Completed 2026-06-26 morning CONVERGED pull (A+D tracks). Windows Netlogon RCE + BlueHammer/RedSun now all exploited. ScadaBR CVSS 9.1 unauth RCE. B&R Linux kernel. Cal Water OT confirmed not breached. 101 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "netlogon",
+      "scadabr",
+      "B&R",
+      "kev-deadline"
+    ]
+  },
+  {
+    "id": "act-41",
+    "at": "2026-06-26T07:20:00Z",
+    "type": "alert",
+    "severity": "critical",
+    "title": "Windows Netlogon RCE actively exploited + BlueHammer confirmed \u2014 OT EWS/AD at risk TODAY",
+    "detail": "BleepingComputer June 25: Windows Netlogon RCE now exploited in attacks. BlueHammer (CVE-2026-33825) and RedSun (CVE-2026-41091) both confirmed exploited. EWS, Active Directory, Windows-based historians in OT environments are in the active exploitation window. Patch immediately.",
+    "tags": [
+      "Windows",
+      "Netlogon",
+      "RCE",
+      "BlueHammer",
+      "RedSun",
+      "EWS",
+      "OT",
+      "actively exploited",
+      "ACT_NOW"
+    ]
+  },
+  {
+    "id": "act-40",
+    "at": "2026-06-25T23:20:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Evening CONVERGED pull \u2014 Lantronix/Ubiquiti KEV due tomorrow, FortiBleed 86,644 corrected",
+    "detail": "Completed 2026-06-25 evening pull (A+C tracks). Lantronix EDS5000 CVE-2025-67038 + Ubiquiti UniFi CVE-2026-34908/09/10 all on KEV due June 26 (tomorrow) \u2014 actively exploited. FortiBleed count corrected to 86,644. 98 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "lantronix",
+      "ubiquiti",
+      "kev",
+      "act_now",
+      "fortibleed"
+    ]
+  },
+  {
+    "id": "act-39",
+    "at": "2026-06-25T23:20:00Z",
+    "type": "alert",
+    "severity": "critical",
+    "title": "ACT_NOW \u2014 Lantronix EDS5000 + Ubiquiti UniFi KEV due JUNE 26 (tomorrow) \u2014 actively exploited OT attack surface",
+    "detail": "CISA KEV: CVE-2025-67038 (Lantronix EDS5000, due June 26) + CVE-2026-34908/09/10 (Ubiquiti UniFi OS, due June 26). All actively exploited. Lantronix: command injection on serial-to-Ethernet OT bridges. Ubiquiti: max-severity UniFi OS flaws. Isolate internet-facing devices immediately. Patch or remove.",
+    "tags": [
+      "lantronix",
+      "EDS5000",
+      "ubiquiti",
+      "UniFi",
+      "KEV",
+      "June 26 deadline",
+      "ACT_NOW",
+      "OT",
+      "actively exploited"
+    ]
+  },
+  {
+    "id": "act-38",
+    "at": "2026-06-25T11:20:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Splunk exploitation confirmed, ABB Freelance missed advisory, PTC Windchill RCE",
+    "detail": "Completed 2026-06-25 morning CONVERGED pull (A+B tracks). Splunk CVE-2026-20253 exploitation confirmed by PSIRT. ABB Freelance ICSA-26-162-01 (June 11, previously missed) added. PTC Windchill CVE-2026-12569 critical RCE. 96 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "splunk",
+      "ABB",
+      "freelance",
+      "PTC",
+      "windchill"
+    ]
+  },
+  {
+    "id": "act-37",
+    "at": "2026-06-25T11:20:00Z",
+    "type": "alert",
+    "severity": "critical",
+    "title": "Splunk CVE-2026-20253: PSIRT confirms exploitation \u2014 ABB Freelance OT console hijack (ICSA-26-162-01)",
+    "detail": "Two critical updates: (1) Splunk PSIRT confirmed limited exploitation of CVE-2026-20253 in June 2026 \u2014 KEV overdue since June 21, now confirmed active exploitation; (2) ABB Freelance DCS ICSA-26-162-01 (June 11) allows attackers to hijack OT operator consoles \u2014 previously missed advisory now logged.",
+    "tags": [
+      "splunk",
+      "kev",
+      "exploitation confirmed",
+      "ABB",
+      "freelance",
+      "DCS",
+      "OT console",
+      "act_now"
+    ]
+  },
+  {
+    "id": "act-36",
+    "at": "2026-06-25T03:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Evening CONVERGED pull \u2014 Iran 60+ cyber groups AI tools, satellite targeting, Digital Hormuz",
+    "detail": "Completed 2026-06-24 evening CONVERGED pull (A+E tracks). No new CISA ICS advisories. Key geopolitical context: Tehran 60+ affiliated cyber groups with AI tools; Iran-linked groups targeting satellite/space infrastructure; 'Digital Hormuz' strategic doctrine emerging. Threat actor posture unchanged.",
+    "tags": [
+      "intel",
+      "converged",
+      "iran",
+      "AI",
+      "satellite",
+      "digital-hormuz"
+    ]
+  },
+  {
+    "id": "act-35",
+    "at": "2026-06-24T07:20:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Siemens SINEC INS RCE, Hubbell Aclara unauth reboot, SIPROTEC 5",
+    "detail": "Completed 2026-06-24 morning CONVERGED pull (A track; E rate-limited). New June 23 advisory batch: Siemens SINEC INS RCE (ICSA-26-174-01), Hubbell Aclara Metrum CVE-2026-1840 (unauth reboot), SIPROTEC 5 file upload, WinCC key exposure. 94 intel feed entries.",
+    "tags": [
+      "intel",
+      "converged",
+      "siemens",
+      "hubbell",
+      "aclara",
+      "SINEC",
+      "SIPROTEC"
+    ]
+  },
+  {
+    "id": "act-34",
+    "at": "2026-06-24T07:20:00Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "Siemens SINEC INS critical RCE (ICSA-26-174-01) + Hubbell Aclara unauth device reboot (CVE-2026-1840)",
+    "detail": "Two new high-severity OT advisories from June 23 batch: (1) SINEC INS command injection \u2192 RCE on industrial network management plane; (2) Hubbell Aclara Metrum firmware <2.1.0.105 allows unauthenticated remote reboot of utility OT devices. Both PLAN_PATCH.",
+    "tags": [
+      "siemens",
+      "SINEC",
+      "hubbell",
+      "aclara",
+      "RCE",
+      "reboot",
+      "utility",
+      "plan_patch"
+    ]
+  },
+  {
+    "id": "act-33",
+    "at": "2026-06-23T11:10:00Z",
+    "type": "alert",
+    "severity": "critical",
+    "title": "ACT_NOW \u2014 FBI/CISA/NSA/EPA/DOE: Active exploitation of internet-connected OT fluid monitoring devices",
+    "detail": "Joint advisory (FBI, CISA, NSA, EPA, DOE, US Cyber Command CNMF) confirms ongoing active exploitation of internet-connected OT devices monitoring fuel and industrial liquids. Targets include automated tank gauges, fuel monitoring systems, and liquid level sensors at fuel depots, gas stations, chemical facilities. Immediate action: isolate all internet-facing fluid/fuel monitoring OT devices. Source: FBI.gov/Cybersecurity Dive June 2026.",
+    "tags": [
+      "FBI",
+      "CISA",
+      "NSA",
+      "DOE",
+      "EPA",
+      "OT",
+      "fuel monitoring",
+      "tank gauge",
+      "ACT_NOW",
+      "joint advisory",
+      "active exploitation"
+    ]
+  },
+  {
+    "id": "act-32",
+    "at": "2026-06-23T09:20:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 White House AI EO, FBI/CISA/EPA/DOE joint advisory, Schneider enriched",
+    "detail": "Completed 2026-06-23 morning CONVERGED pull. Key: White House AI Security EO (CWE-306/284/693 hardening); FBI/CISA/NSA/EPA/DOE joint advisory (water/energy OT suspected, details pending); Schneider MiCOM P437/P634 versions confirmed. 90 intel feed entries. Dashboard updated.",
+    "tags": [
+      "intel",
+      "converged",
+      "whitehouse",
+      "EO",
+      "FBI",
+      "CISA",
+      "DOE",
+      "EPA",
+      "schneider"
+    ]
+  },
+  {
+    "id": "act-31",
+    "at": "2026-06-23T09:20:00Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "FBI/CISA/NSA/EPA/DOE joint advisory \u2014 suspected water/energy OT targeting \u2014 enrich urgently",
+    "detail": "Multi-agency joint advisory published ~June 15-16. EPA and DOE signatories alongside CNMF indicate water sector and/or energy sector OT targeting. Full advisory content not yet extracted. Treat as HIGH pending enrichment \u2014 similar signature pattern to prior water sector ICS advisories.",
+    "tags": [
+      "FBI",
+      "CISA",
+      "NSA",
+      "EPA",
+      "DOE",
+      "joint advisory",
+      "water",
+      "energy",
+      "OT",
+      "pending"
+    ]
+  },
+  {
+    "id": "act-30",
+    "at": "2026-06-22T09:20:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Palo Alto/Fortinet active exploitation, FortiBleed",
+    "detail": "Completed 2026-06-22 morning CONVERGED pull (A+C tracks). Key: active exploitation of Palo Alto+Fortinet VPN (IBM X-Force June 19); FortiBleed 74K credential leak (CISA). No new CISA ICS advisories. Dragos YIR live tomorrow.",
+    "tags": [
+      "intel",
+      "converged",
+      "fortinet",
+      "paloalto",
+      "fortibleed",
+      "VPN"
+    ]
+  },
+  {
+    "id": "act-29",
+    "at": "2026-06-22T09:20:00Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "ACT_NOW \u2014 Palo Alto + Fortinet VPN actively exploited (IBM X-Force) + FortiBleed 74K creds",
+    "detail": "IBM X-Force (June 19): broad active exploitation campaigns against Palo Alto and Fortinet secure access. Attackers accessing internal network enclaves \u2014 direct IT/OT boundary threat. Simultaneously: 74K Fortinet credentials exposed in FortiBleed, CISA warning issued. Rotate credentials and audit access immediately.",
+    "tags": [
+      "fortinet",
+      "paloalto",
+      "FortiBleed",
+      "VPN",
+      "exploitation",
+      "IT/OT boundary",
+      "act_now"
+    ]
+  },
+  {
+    "id": "act-28",
+    "at": "2026-06-21T10:20:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull \u2014 Moxa NPort root RCE (CVE-2026-10829), Splunk KEV due today",
+    "detail": "Completed 2026-06-21 morning CONVERGED pull (A+B tracks). No new CISA ICS advisories since June 18 batch. Key: Moxa NPort CVE-2026-10829 root RCE patched; Splunk KEV CVE-2026-20253 due today; Dragos/Accenture deal now includes Phosphorus.",
+    "tags": [
+      "intel",
+      "converged",
+      "moxa",
+      "nport",
+      "splunk",
+      "kev"
+    ]
+  },
+  {
+    "id": "act-27",
+    "at": "2026-06-21T10:20:00Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "Moxa NPort root RCE (CVE-2026-10829) \u2014 patch available, widely deployed in OT",
+    "detail": "Moxa NPort device servers vulnerable to root RCE and format string bugs via web service. Full root control possible. NPort bridges serial industrial equipment to Ethernet \u2014 patch immediately, isolate web interface from untrusted segments.",
+    "tags": [
+      "moxa",
+      "nport",
+      "rce",
+      "root",
+      "OT",
+      "plan_patch"
+    ]
+  },
+  {
+    "id": "act-26",
+    "at": "2026-06-20T16:03:00Z",
+    "type": "alert",
+    "severity": "critical",
+    "title": "ACT_NOW: CVE-2026-20253 Splunk Enterprise KEV \u2014 due June 21 (tomorrow), UNC6508 exploiting",
+    "detail": "Splunk Enterprise missing auth vulnerability (CWE-306) on CISA KEV \u2014 unauthenticated file creation/truncation via PostgreSQL sidecar endpoint. Due date June 21 2026 (tomorrow). China-linked UNC6508 actively exploiting. Relevant to OT SOCs and IT/OT boundary SIEM deployments. Apply Splunk SVD-2026-0603 mitigations immediately.",
+    "tags": [
+      "splunk",
+      "kev",
+      "act_now",
+      "UNC6508",
+      "China",
+      "SIEM",
+      "critical"
+    ]
+  },
+  {
+    "id": "act-25",
+    "at": "2026-06-20T10:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED pull complete \u2014 Accenture/Dragos acquisition + SYLVANITE handoff confirmed",
+    "detail": "Completed 2026-06-20 morning CONVERGED pull (A+E tracks). Top findings: Accenture acquires Dragos+runZero+NetRise; SYLVANITE\u2192VOLTZITE handoff confirmed by Dragos IR; Schneider CVE-2026-4827; Mitsubishi FX5-ENET/IP no-patch DoS. Dashboard payload 2026-06-20-001 written.",
+    "tags": [
+      "intel",
+      "converged",
+      "dragos",
+      "accenture",
+      "schneider",
+      "mitsubishi"
+    ]
+  },
+  {
+    "id": "act-24",
+    "at": "2026-06-20T10:15:00Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "Accenture acquires Dragos \u2014 largest OT security consolidation in history",
+    "detail": "June 18, 2026: Accenture acquiring majority stake in Dragos plus all of runZero and NetRise. Significant industry event affecting OT threat intelligence landscape and Dragos product/feed access model going forward.",
+    "tags": [
+      "dragos",
+      "accenture",
+      "industry",
+      "acquisition"
+    ]
+  },
+  {
+    "id": "act-23",
+    "at": "2026-06-19T17:55:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "CONVERGED intel pull complete \u2014 Rockwell MNRF DoS advisory (ICSA-26-167-03)",
+    "detail": "Completed 2026-06-19 CONVERGED pull. Critical finding: ICSA-26-167-03 (Rockwell CompactLogix 5370/ControlLogix 5570 CIP DoS \u2192 MNRF) and ICSA-26-167-05 (FLEX I/O auth bypass). Dashboard payload 2026-06-19-001 written. Manufacturing sector elevated to HIGH.",
+    "tags": [
+      "intel",
+      "converged",
+      "cisa",
+      "rockwell",
+      "mnrf"
+    ]
+  },
+  {
+    "id": "act-22",
+    "at": "2026-06-19T17:55:00Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "Rockwell Logix 5370/5570 CIP DoS \u2014 Major NonRecoverable Fault risk (ICSA-26-167-03)",
+    "detail": "CISA advisory ICSA-26-167-03 (published June 16): crafted CIP message crashes CompactLogix 5370 / ControlLogix 5570 into MNRF \u2014 full controller lockup, manual recovery required. Sectors: automotive, food & beverage, water treatment. Urgency: PLAN_PATCH. Verify CIP segmentation now.",
+    "tags": [
+      "rockwell",
+      "cip",
+      "dos",
+      "mnrf",
+      "manufacturing",
+      "water",
+      "plan_patch"
+    ]
+  },
+  {
+    "id": "act-21",
+    "at": "2026-06-01T09:10:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning intel pull complete (CONVERGED) \u2014 no new CISA batch beyond May 28",
+    "detail": "Completed 2026-06-01 morning CONVERGED pull. No new CISA ICS advisories beyond May 28 bundle. KEV CVE-2026-42897 remains overdue. Dashboard payload 2026-06-01-001 written.",
+    "tags": [
+      "intel",
+      "converged",
+      "cisa"
+    ]
+  },
+  {
+    "id": "act-20",
+    "at": "2026-06-01T09:10:00Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "Overdue KEV: CVE-2026-42897 (Exchange) remains ACT_NOW",
+    "detail": "CVE-2026-42897 remains KEV-listed and urgent; due date passed 2026-05-29. Treat as overdue until confirmed mitigated.",
+    "tags": [
+      "kev",
+      "act_now",
+      "exchange",
+      "overdue"
+    ]
+  },
+  {
+    "id": "act-19",
+    "at": "2026-06-01T00:58:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Evening catch-up intel pull completed (post rate-limit)",
+    "detail": "Completed 2026-05-31 evening catch-up pull: core Brave queries ran successfully after earlier 429. No major posture change; Claroty Claire product announcement noted. Dashboard payload 2026-05-31-002 written.",
+    "tags": [
+      "intel",
+      "converged",
+      "catch-up",
+      "brave"
+    ]
+  },
+  {
+    "id": "act-18",
+    "at": "2026-05-31T08:05:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Early CONVERGED intel pull completed (CISA direct triage; Brave rate-limited)",
+    "detail": "Completed 2026-05-31 early pull. Enriched ICSA-26-148-05: CP Plus NVR CVE-2026-6824 (CVSS 8.4). Updated dashboard payload 2026-05-31-001. Note: Brave Search returned 429 rate-limit during this cycle; core non-CISA sources deferred.",
+    "tags": [
+      "intel",
+      "converged",
+      "cisa",
+      "rate-limit"
+    ]
+  },
+  {
+    "id": "act-17",
+    "at": "2026-05-31T08:05:00Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "Overdue KEV: CVE-2026-42897 (Exchange) due date passed",
+    "detail": "CVE-2026-42897 remains KEV-listed and ACT_NOW; due date (2026-05-29) has passed. Treat as overdue until confirmed mitigated in IT/OT boundary environments.",
+    "tags": [
+      "kev",
+      "act_now",
+      "exchange",
+      "overdue"
+    ]
+  },
+  {
+    "id": "act-16",
+    "at": "2026-05-30T08:20:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning intel pull complete \u2014 new CVSS 8.4 NVR advisory",
+    "detail": "CONVERGED pull completed. Enriched CISA ICSA-26-148-05 (CP Plus NVR) with CVE-2026-6824 CVSS 8.4 (PLAN_PATCH). KEV carry-over risk: CVE-2026-42897 if not remediated by prior due date.",
+    "tags": [
+      "intel_pull",
+      "cisa",
+      "icsa-26-148-05",
+      "nvr",
+      "kev-carryover"
+    ]
+  },
+  {
+    "id": "act-15",
+    "at": "2026-05-29T18:20:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Midday CONVERGED intel pull completed",
+    "detail": "Completed 2026-05-29 CONVERGED pull (A + C tracks). New CISA May 28 ICSA-26-148-* bundle surfaced; enriched ABB EIBPORT CVE-2021-22291 (CVSS 8.0). Dashboard payload 2026-05-29-001 written.",
+    "tags": [
+      "intel",
+      "converged",
+      "cisa",
+      "icsa-26-148"
+    ]
+  },
+  {
+    "id": "act-14",
+    "at": "2026-05-29T18:20:00Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "KEV deadline day: CVE-2026-42897 due 2026-05-29",
+    "detail": "CVE-2026-42897 remains KEV-listed and ACT_NOW; remediation due today. Prioritize Exchange mitigation in IT/OT boundary environments.",
+    "tags": [
+      "kev",
+      "act_now",
+      "exchange",
+      "deadline"
+    ]
+  },
+  {
+    "id": "act-13",
+    "at": "2026-05-28T08:16:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Morning CONVERGED intel pull completed",
+    "detail": "Completed 2026-05-28 morning pull (core + advisory tracks A and B). Enriched ABB ICSA-26-146-03/06 CVEs and updated dashboard payload 2026-05-28-001.",
+    "tags": [
+      "intel",
+      "heartbeat",
+      "converged",
+      "advisory-enrichment"
+    ]
+  },
+  {
+    "id": "act-12",
+    "at": "2026-05-28T08:16:00Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "ACT_NOW remains: CVE-2026-42897 KEV due 2026-05-29",
+    "detail": "CVE-2026-42897 remains KEV-listed and urgent for IT/OT boundary environments. Deadline is now 1 day out.",
+    "tags": [
+      "kev",
+      "act_now",
+      "exchange",
+      "deadline"
+    ]
+  },
+  {
+    "id": "act-11",
+    "at": "2026-05-27T22:33:28Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Afternoon intel pull completed",
+    "detail": "Completed 2026-05-27 afternoon CONVERGED pull (A+E tracks), updated daily intel log and dashboard payload.",
+    "tags": [
+      "intel",
+      "heartbeat",
+      "ot"
+    ]
+  },
+  {
+    "id": "act-10",
+    "at": "2026-05-27T22:33:28Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "ACT_NOW KEV remains active: CVE-2026-42897",
+    "detail": "CVE-2026-42897 remains KEV-listed and urgent (action due 2026-05-29). Prioritize mitigation in IT/OT boundary infrastructure.",
+    "tags": [
+      "kev",
+      "act_now",
+      "exchange",
+      "ot"
+    ]
+  },
+  {
+    "id": "act-9",
+    "at": "2026-05-27T10:39:49Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "New KEV: CVE-2026-42897 (Microsoft Exchange Server XSS)",
+    "detail": "CVE-2026-42897: Microsoft Exchange Server Cross-Site Scripting Vulnerability, CVSS 8.1 (HIGH), actively exploited, KEV listed with action due 2026-05-29. Requires patching.",
+    "tags": [
+      "intel",
+      "kev",
+      "Microsoft",
+      "ACT_NOW"
+    ]
+  },
+  {
+    "id": "act-8",
+    "at": "2026-05-27T10:39:03Z",
+    "type": "alert",
+    "severity": "high",
+    "title": "Iran cyber intrusions targeting US critical infrastructure ongoing",
+    "detail": "Weak authentication, exposed ICS environments heighten concerns over Iranian cyber intrusions into US critical infrastructure. Multiple reports indicate Iran-linked hacking groups targeting utilities, water systems, transportation networks, and operational technology.",
+    "tags": [
+      "intel",
+      "nation-state",
+      "OT"
+    ]
+  },
+  {
+    "id": "act-7",
+    "at": "2026-05-26T02:25:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Daily threat intel pull completed",
+    "detail": "Completed daily threat intel pull for 2026-05-26. Found multiple CISA advisories, Dragos OT/ICS intel, Iran cyber activity, and two new KEV Microsoft Defender vulnerabilities. Generated dashboard payload.",
+    "tags": [
+      "intel",
+      "daily pull"
+    ]
+  },
+  {
+    "id": "act-6",
+    "at": "2026-05-19T07:15:00Z",
+    "type": "intel_pull",
+    "severity": "info",
+    "title": "Daily Intel Pull Completed",
+    "detail": "Completed morning pull for May 19. No new high-severity CVEs. Monitoring remains on Hormuz connectivity and Water Sector HMI exposures.",
+    "tags": [
+      "intel",
+      "OT",
+      "Hormuz",
+      "WaterSector"
+    ]
+  }
+]

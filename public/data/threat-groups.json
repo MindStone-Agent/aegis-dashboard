@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Handala",
+    "aliases": [
+      "Handala Hack Team"
+    ],
+    "nexus": "Iran (MOIS \u2014 Ministry of Intelligence and Security)",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-03-26",
+    "targetSectors": [
+      "Manufacturing / MedTech",
+      "Defense Industrial Base",
+      "Critical Infrastructure"
+    ],
+    "ttps": [
+      "T1486 \u2014 Data Encrypted for Impact (destructive wipe via MDM)",
+      "T1072 \u2014 Software Deployment Tools (Microsoft Intune MDM abuse)",
+      "T1059 \u2014 Command and Scripting Interpreter",
+      "T0826 \u2014 Loss of Availability (manufacturing/shipping disruption)",
+      "Hacktivist information operations \u2014 faketivist cover for state operations",
+      "Hybrid cyber-physical: cartel recruitment for physical violence against targets"
+    ],
+    "confidence": "HIGH",
+    "notes": "MARCH 26 UPDATE: Executed Lockheed Martin data breach TODAY \u2014 leaked engineer data 6 days after 4 domain seizures and days after leadership decapitation. Autonomous cell model confirmed fully operational. 4 domain seizures + 2 leadership killings = did NOT halt operations. Stryker MDM wiper March 11. FBI domains seized March 20. Lockheed breach March 26. Telegram still active. IOCs: handala-hack[.]to, handala-redwanted[.]to, justicehomeland[.]org, karmabelow80[.]org (SEIZED), Handala_Team@outlook[.]com.",
+    "updatedAt": "2026-03-26T20:40:00.000Z"
+  },
+  {
+    "name": "VOLTZITE",
+    "nexus": "China (PRC \u2014 Volt Typhoon nexus)",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-03-17",
+    "targetSectors": [
+      "Electric",
+      "Pipeline",
+      "Water",
+      "Communications"
+    ],
+    "ttps": [
+      "T0886 - Remote Services exploitation via VPN/edge device zero-days (Fortinet, Cisco, NETGEAR, Zyxel)",
+      "T0817 - Drive-by Compromise via ICS vendor portals",
+      "T0819 - Exploit Public-Facing Application (Siemens S7 series vulnerabilities)",
+      "T0843 - Program Download to modify PLC ladder logic",
+      "T0836 - Modify Control Logic in Siemens/GE PLCs",
+      "T0840 - Network Connection Enumeration via OPC-UA scanning (port 4840)",
+      "T0800 - Activate Firmware Update Mode for persistence",
+      "Living off the land (LOTL) \u2014 no custom malware, native tools only"
+    ],
+    "confidence": "HIGH",
+    "notes": "Most significant China-nexus OT threat. Confirmed: exfiltrating operational/sensor data from U.S. energy and pipeline networks. Confirmed: manipulating engineering workstations to determine what process conditions would trigger shutdowns. SYLVANITE provides initial footholds; VOLTZITE conducts deeper OT operations. Long-dwell, LOTL tradecraft makes detection extremely difficult. Intelligence confidence elevated following Dragos 2026 YIR and corroborating CISA attribution.",
+    "updatedAt": "2026-03-19T03:01:00.000Z"
+  },
+  {
+    "name": "ELECTRUM",
+    "nexus": "Russia (GRU Sandworm Unit 74455)",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-04-01",
+    "targetSectors": [
+      "Electric",
+      "Distributed Energy",
+      "Pipeline",
+      "Defense Industrial Base"
+    ],
+    "ttps": [
+      "T0817 - Drive-by Compromise targeting utility sector employees",
+      "T0862 - Supply Chain Compromise via ICS software update mechanisms",
+      "T0832 - Manipulation of View \u2014 HMI display falsification",
+      "T0881 - Service Stop targeting protection relays",
+      "T0813 - Denial of Control via SCADA flooding attacks",
+      "T0840 - Network Connection Enumeration via OPC-UA scanning",
+      "ASPX webshells on Exchange servers",
+      "Low-frequency DNS anomalies for C2 communication"
+    ],
+    "confidence": "HIGH",
+    "notes": "Responsible for 2015/2016 Ukraine power grid attacks and CRASHOVERRIDE/Industroyer malware. Targeted distributed energy systems in Poland (late 2025) with deliberate operational impact attempts. APRIL 1 UPDATE: Dragos April 1 OT Threat Landscape blog confirms 'continued activity by ELECTRUM, KAMACITE, VOLTZITE, and BAUXITE' \u2014 status updated from SILENT to ACTIVE. Previously assessed as covert pre-positioning Feb 28-Apr 1. Watch for: ASPX webshells on Exchange servers, low-frequency DNS anomalies. Group likely building capability for disruption operations tied to geopolitical timeline.",
+    "updatedAt": "2026-04-01T18:08:00.000Z"
+  },
+  {
+    "name": "KAMACITE",
+    "nexus": "Russia (FSB-affiliated)",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-04-01",
+    "targetSectors": [
+      "Electric",
+      "Oil & Gas",
+      "Chemical"
+    ],
+    "ttps": [
+      "T0865 - Spearphishing Attachment targeting OT engineers (NERC CIP-themed lures)",
+      "T0866 - Exploitation of Remote Services (Citrix, VPN)",
+      "T0846 - Remote System Discovery via PLC enumeration",
+      "T0863 - User Execution via malicious engineering project files",
+      "T0853 - Scripting exploitation of automation platforms",
+      "T0877 - I/O Module Discovery for impact planning",
+      "Historian server vulnerability exploitation for process intelligence gathering"
+    ],
+    "confidence": "MEDIUM",
+    "notes": "Initial access and enablement group \u2014 establishes persistent footholds for handoff to ELECTRUM. Recent campaign targeting North American electric utilities uses spearphishing lures themed around NERC CIP compliance documentation and ICS vendor security bulletins. Demonstrated specific targeting of GE Vernova EMS platforms and Honeywell Experion DCS. APRIL 1 UPDATE: Dragos confirms continued KAMACITE activity alongside ELECTRUM \u2014 status updated from PREPOSITIONING to ACTIVE.",
+    "updatedAt": "2026-04-01T18:08:00.000Z"
+  },
+  {
+    "name": "SYLVANITE",
+    "nexus": "China (PRC \u2014 VOLTZITE initial access broker)",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-03-18",
+    "targetSectors": [
+      "Electric",
+      "Pipeline",
+      "Water",
+      "Communications"
+    ],
+    "ttps": [
+      "T0817 - Drive-by Compromise via exposed industrial HMIs",
+      "T0806 - Brute Force against internet-facing OT/SCADA interfaces and VPNs",
+      "T0819 - Exploit Public-Facing Application (edge devices)",
+      "T0804 - Block Reporting Message to suppress detection",
+      "Establishing persistent footholds on edge devices for VOLTZITE handoff"
+    ],
+    "confidence": "HIGH",
+    "notes": "China-nexus initial access broker \u2014 confirmed in Dragos 2026 OT/ICS Year in Review. SYLVANITE establishes footholds via edge device exploitation and hands them to VOLTZITE for deeper OT operations. The SYLVANITE \u2192 VOLTZITE handoff model indicates operational security discipline and division of labor. Disrupting SYLVANITE's initial access may be more tractable than hunting VOLTZITE post-handoff. NOTE: Some demo data incorrectly attributed SYLVANITE as 'Unknown/Criminal' \u2014 Dragos attribution is China-nexus.",
+    "updatedAt": "2026-03-19T03:01:00.000Z"
+  },
+  {
+    "name": "PYROXENE",
+    "nexus": "Iran (MOIS-affiliated)",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-03-02",
+    "targetSectors": [
+      "Petroleum",
+      "Chemical",
+      "Water",
+      "Electric"
+    ],
+    "ttps": [
+      "T0865 - Spearphishing Attachment with ICS-themed lures",
+      "T0877 - I/O Module Discovery targeting PLCs",
+      "T0806 - Brute Force authentication against engineering workstations",
+      "T0836 - Modify Control Logic targeting safety instrumented systems (SIS)",
+      "T0856 - Spoof Reporting Message to hide process manipulation",
+      "Hacktivist-aligned information operations and screenshot sharing"
+    ],
+    "confidence": "MEDIUM",
+    "notes": "Execution phase confirmed. Newly identified in Dragos 2026 YIR. Iran (MOIS) affiliation \u2014 overlaps with APT33/Magnallium activity clusters. Status elevated from SILENT to ACTIVE following Iran-US conflict escalation (Feb 28, 2026 U.S. strikes). Previously targeted UAE petrochemical facility. Demonstrated interest in safety instrumented systems (SIS) for potential sabotage capability. IDF struck Iranian energy infrastructure and killed Intel Minister Khatib on March 18 \u2014 Iran-US conflict escalation confirmed destructive execution phase (Stryker/Intune). Assess PYROXENE and PAPAGALLO elevated from pre-positioning to potential execution posture \u2014 pending Dragos confirmation. 7-14 day retaliation window active following MOIS Director Khatib killing and South Pars energy strikes.",
+    "updatedAt": "2026-03-20T05:09:00.000Z"
+  },
+  {
+    "name": "AZURITE",
+    "nexus": "Unknown (Dragos April 1, 2026 disclosure)",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-04-01",
+    "targetSectors": [
+      "Semiconductor",
+      "Defense Industrial Base",
+      "Aerospace",
+      "Manufacturing"
+    ],
+    "ttps": [
+      "T0862 - Supply Chain Compromise via ERP/MES vendor software",
+      "T0817 - Drive-by Compromise via industrial software forums",
+      "T0832 - Manipulation of View in MES reporting systems",
+      "T0846 - Remote System Discovery targeting manufacturing networks",
+      "T0852 - Screen Capture for IP theft from engineering workstations",
+      "T0849 - Masquerading as legitimate ICS vendor processes"
+    ],
+    "confidence": "MEDIUM",
+    "notes": "APRIL 1 DISCLOSURE: Dragos publicly disclosed AZURITE as a new OT threat group on April 1, 2026. Targets OT engineering workstations for operational data exfiltration and long-term persistent access. Leverages internet-facing infrastructure vulnerabilities for initial access. Status updated to ACTIVE per Dragos disclosure. Origin/nexus pending further Dragos attribution reporting.",
+    "updatedAt": "2026-04-01T18:08:00.000Z"
+  },
+  {
+    "name": "Cyber Islamic Resistance",
+    "nexus": "Iran-aligned",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-03-24",
+    "targetSectors": [
+      "Government",
+      "Critical Infrastructure",
+      "Media"
+    ],
+    "ttps": [
+      "DDoS",
+      "Reconnaissance",
+      "Website defacement"
+    ],
+    "confidence": "MEDIUM",
+    "notes": "New group identified in Resecurity multi-domain phase analysis (March 24, 2026). Conducting DDoS, recon, and defacement synchronized with kinetic operations. Low-to-medium impact tier individually \u2014 threat is volume and coordination with other groups creating attacker-favorable noise.",
+    "updatedAt": "2026-03-26T13:11:00.000Z"
+  },
+  {
+    "name": "Fatimion Cyber Team",
+    "nexus": "Iran-aligned",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-03-26",
+    "targetSectors": [
+      "Government",
+      "Critical Infrastructure",
+      "Energy",
+      "Media",
+      "Financial Services"
+    ],
+    "ttps": [
+      "T1498 - Network Denial of Service (DDoS)",
+      "T1491.002 - External Defacement",
+      "T1190 - Exploit Public-Facing Application (SQL injection)",
+      "T1041 - Data Exfiltration (PII leaks)",
+      "T1485 - Data Destruction / Wiper Malware [Unit 42, March 26]"
+    ],
+    "confidence": "HIGH",
+    "notes": "Also known as FAD Team and Iran Resistance Hub. Significant TTP upgrade: Unit 42 (March 26) now assesses Fatimion/FAD Team as focused on WIPER MALWARE and permanent data destruction - major escalation beyond earlier DDoS/defacement characterization. Confirmed targets: Kuwait News Agency (DDoS), Bahrain News Agency (disabled), Qatari oil firm Gasco, Qatar Radio. Global SQL injection campaign confirmed by Flashpoint with PII leaks from multiple countries. Part of Operation Epic Fury response coalition. Synchronized with physical operations per Resecurity.",
+    "updatedAt": "2026-03-27T20:00:00.000Z",
+    "aliases": [
+      "FAD Team",
+      "Iran Resistance Hub",
+      "Fatimiyoun Cyber Team"
+    ],
+    "domain": "BOTH"
+  },
+  {
+    "name": "Cyber Fattah",
+    "aliases": [
+      "Iranian Cyber Team"
+    ],
+    "nexus": "Iran-aligned",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-03-27",
+    "targetSectors": [
+      "Government",
+      "Media",
+      "Finance",
+      "Energy"
+    ],
+    "ttps": [
+      "T1498 \u2014 Network Denial of Service (DDoS campaigns)",
+      "T1491.002 \u2014 Defacement: External Defacement (website defacement)",
+      "T1595 \u2014 Active Scanning (reconnaissance against CI targets)",
+      "T1592 \u2014 Gather Victim Host Information (target profiling)",
+      "T1041 \u2014 Exfiltration Over C2 Channel (data theft \u2014 confirmed GNET March 23)"
+    ],
+    "confidence": "MEDIUM",
+    "notes": "MARCH 27 UPDATE: Energy sector targeting confirmed \u2014 Industrial Cyber reports Cyber Fattah attacks detected against energy infrastructure in Jordan (same country as today's confirmed water treatment ICS Level 1 breach; potential connection unconfirmed). Self-identifies as 'Iranian Cyber Team.' Operates alongside Cyber Islamic Resistance and Fatimion Cyber Team as part of coordinated Iran-aligned hacktivist coalition. TTPs updated with MITRE ATT&CK IDs based on Resecurity, GNET, and Industrial Cyber sourcing (March 23-27, 2026). Individual impact tier: low-to-medium. Coalition impact: higher via noise-layer coverage of deeper operations.",
+    "updatedAt": "2026-03-27T20:05:00.000Z"
+  },
+  {
+    "name": "Dragonfly",
+    "nexus": "Russia (FSB)",
+    "status": "ACTIVE",
+    "lastActivityDate": "2025-12-29",
+    "targetSectors": [
+      "Energy / Electric",
+      "Grid / Transmission",
+      "Manufacturing"
+    ],
+    "ttps": [
+      "T0839 Module Firmware",
+      "T0836 Modify Parameter",
+      "T0857 System Firmware"
+    ],
+    "confidence": "HIGH",
+    "notes": "CERT-PL + Team Cymru (March 30, 2026): Hard brick of Hitachi RTU560 on Polish power grid via default creds + corrupted ELF firmware. Moxa NPort lockout in same campaign. Dragos compares case 3 TTP to TRISIS/TRITON class \u2014 I/O falsification + persistence.",
+    "updatedAt": "2026-03-30T14:15:00Z"
+  },
+  {
+    "name": "BAUXITE",
+    "aliases": [],
+    "nexus": "Iran (suspected \u2014 Dragos attribution)",
+    "status": "ACTIVE",
+    "lastActivityDate": "2026-04-01",
+    "targetSectors": [
+      "Water",
+      "Energy",
+      "Oil & Gas",
+      "Critical Infrastructure"
+    ],
+    "ttps": [
+      "T0819 - Exploit Public-Facing Application (internet-exposed OT devices)",
+      "T0877 - I/O Module Discovery targeting PLCs and HMIs",
+      "T0862 - Supply Chain Compromise",
+      "Internet-exposed PLC/HMI exploitation"
+    ],
+    "confidence": "MEDIUM",
+    "notes": "APRIL 1 DISCLOSURE: Confirmed active by Dragos April 1, 2026 OT Threat Landscape blog alongside ELECTRUM, KAMACITE, and VOLTZITE. Iran-nexus group targeting internet-exposed OT devices \u2014 PLCs, HMIs, engineering workstations. IOCONTROL/CyberAv3ngers-adjacent TTPs. Previously identified in Dragos 2025 reporting as targeting internet-accessible OT/ICS devices in critical infrastructure sectors. Attribution confidence MEDIUM \u2014 awaiting further Dragos reporting.",
+    "updatedAt": "2026-04-01T18:08:00Z"
+  }
+]

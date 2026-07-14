@@ -1,0 +1,43 @@
+[
+  {
+    "date": "2026-07-14",
+    "sourcesChecked": [
+      "NPR",
+      "Fox News",
+      "Axios",
+      "NYT",
+      "AP News",
+      "CNN",
+      "ABC News",
+      "Wikipedia"
+    ],
+    "sourceCount": 8,
+    "topFindings": [
+      {
+        "rank": 1,
+        "description": "BLOCKADE ACTIVE \u2014 4 PM ET. Trump scraps 20% shipping fee, but blockade proceeds. Targeted: Iran-only (ships to/from Iranian ports or carrying Iranian cargo). Strait 'open to ALL ship traffic except for Iran.' IRGC disabled 2 supertankers today.",
+        "source": "NPR / Fox News / Axios / CNN"
+      },
+      {
+        "rank": 2,
+        "description": "US completed 3rd consecutive night of strikes \u2014 5-hour mission targeting coastal defense, missile/drone sites, maritime capabilities. First-ever offensive sea drone operation against Iranian naval installation.",
+        "source": "CNBC / NYT"
+      },
+      {
+        "rank": 3,
+        "description": "Schneider PowerChute Serial Shutdown (ICSA-26-190-02) \u2014 UPS management software for OT servers. WaterISAC confirms 7 ICS advisories on July 7.",
+        "source": "CISA / WaterISAC"
+      }
+    ],
+    "alertsTriggered": [
+      {
+        "title": "BLOCKADE ACTIVE \u2014 Iran-only (not full Strait closure) \u2014 20% fee scrapped \u2014 IRGC disabled 2 supertankers today",
+        "severity": "HIGH",
+        "triggeredAt": "2026-07-14T18:00:00Z",
+        "domain": "BOTH"
+      }
+    ],
+    "logFilePath": "intel/daily/2026-07-14.md",
+    "createdAt": "2026-07-14T18:00:00Z"
+  }
+]

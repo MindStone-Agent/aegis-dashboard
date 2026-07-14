@@ -1,0 +1,450 @@
+[
+  {
+    "id": "inv-001-2026-voltzite-elec",
+    "scenarioName": "VOLTZITE Intrusion: Regional Electric Utility SCADA Pre-Positioning",
+    "sector": "Electric",
+    "stage": "LATERAL_MOVEMENT",
+    "status": "ACTIVE",
+    "hypotheses": [
+      {
+        "hypothesis": "VOLTZITE has established persistent access on at least one engineering workstation within the utility's SCADA network segment via exploitation of CVE-2024-43647 (Siemens S7 authentication bypass)",
+        "confidence": "HIGH",
+        "notes": "Corroborated by IDS alerts showing anomalous S7comm traffic patterns consistent with VOLTZITE scanning TTPs. Engineering workstation EW-047 shows unusual process creation events."
+      },
+      {
+        "hypothesis": "Adversary is conducting passive network reconnaissance of the OT network topology prior to capability deployment",
+        "confidence": "HIGH",
+        "notes": "NetFlow analysis shows systematic sweep of OPC-UA port 4840 across SCADA subnet from suspected compromised host. Pattern consistent with T0840 (Network Connection Enumeration)."
+      },
+      {
+        "hypothesis": "KAMACITE served as the initial access broker, establishing the foothold that VOLTZITE is now exploiting for OT-specific operations",
+        "confidence": "MEDIUM",
+        "notes": "Timeline of initial spearphishing campaign matches KAMACITE TTP profile. Hand-off to VOLTZITE for ICS-specific operations is a documented operational pattern for this adversary pair."
+      },
+      {
+        "hypothesis": "Target asset is the substation automation system using Siemens SICAM A8000 RTUs for grid monitoring and control",
+        "confidence": "MEDIUM",
+        "notes": "SCADA network map obtained from historian exfiltration shows SICAM A8000 RTUs at 3 substations. VOLTZITE has demonstrated specific interest in substation automation systems in prior campaigns."
+      },
+      {
+        "hypothesis": "The ultimate objective is capability pre-positioning for potential grid disruption, not immediate attack execution",
+        "confidence": "MEDIUM",
+        "notes": "Assessment based on VOLTZITE strategic doctrine. Group rarely executes immediate disruption \u2014 establishes durable access for potential future activation."
+      },
+      {
+        "hypothesis": "Exfiltrated data includes PLC ladder logic programs and network topology diagrams that would enable targeted ICS attack development",
+        "confidence": "LOW",
+        "notes": "Preliminary hypothesis based on adversary objective model. No direct evidence of data exfiltration confirmed yet. Requires forensic analysis of EW-047."
+      }
+    ],
+    "nextActions": [
+      "Conduct forensic acquisition of engineering workstation EW-047 (suspected compromised host)",
+      "Analyze IDS/IPS logs for S7comm anomalies in the 30-day window preceding alert trigger",
+      "Map all lateral movement paths from EW-047 to SCADA subnet using NetFlow data",
+      "Verify patch status of all Siemens S7-1500 PLCs against CVE-2024-43647",
+      "Request network segmentation audit: verify all SCADA-to-corporate network firewall rules",
+      "Engage Dragos incident response team for ICS-specific forensic support",
+      "Brief utility CISO and OT operations manager on investigation status",
+      "File voluntary CISA notification per ICS-CERT reporting guidelines"
+    ],
+    "analystNotes": "This investigation was initiated following an IDS alert on 2026-03-15 flagging anomalous Siemens S7comm traffic patterns originating from the engineering workstation subnet. The timing correlation with the publication of CVE-2024-43647 (Siemens S7-1500 authentication bypass, CVSS 9.8) on 2026-03-18 is highly concerning. The TTP fingerprint \u2014 particularly the methodical OPC-UA enumeration and S7comm anomalies \u2014 is consistent with VOLTZITE group behavior documented in Dragos WorldView reporting. Assessment: high-confidence intrusion in lateral movement phase targeting OT network.",
+    "createdAt": "2026-03-15T14:00:00.000Z",
+    "updatedAt": "2026-03-18T09:00:00.000Z"
+  },
+  {
+    "id": "inv-002-2026-kamacite-ems",
+    "scenarioName": "KAMACITE Spearphishing Campaign: EMS Platform Targeting",
+    "sector": "Electric",
+    "stage": "EXECUTION",
+    "status": "ACTIVE",
+    "hypotheses": [
+      {
+        "hypothesis": "KAMACITE delivered malicious payloads via spearphishing emails themed as NERC CIP compliance updates to at least 4 utility employees",
+        "confidence": "HIGH",
+        "notes": "Email telemetry confirms 4 employees at target utility received and opened malicious attachment mimicking a NERC CIP-013 supply chain security bulletin. Two showed successful payload execution indicators."
+      },
+      {
+        "hypothesis": "The initial payload installed a RAT with keylogging capability targeting EMS credentials",
+        "confidence": "MEDIUM",
+        "notes": "Malware sample retrieved from one compromised endpoint matches KAMACITE tooling profile. Includes credential harvesting module targeting common ICS historian and EMS login dialogs."
+      },
+      {
+        "hypothesis": "KAMACITE intends to harvest EMS authentication credentials for hand-off to ELECTRUM for subsequent OT operations",
+        "confidence": "MEDIUM",
+        "notes": "Consistent with established KAMACITE-ELECTRUM operational relationship. KAMACITE provides access; ELECTRUM executes OT-specific operations."
+      },
+      {
+        "hypothesis": "At least one compromised employee account has active access to the GE Vernova EMS platform",
+        "confidence": "LOW",
+        "notes": "Two of the four phishing victims are EMS operators based on HR directory analysis. Awaiting confirmation from Active Directory audit of their access levels."
+      }
+    ],
+    "nextActions": [
+      "Isolate and image two compromised endpoints for forensic analysis",
+      "Force password reset for all four phishing victim accounts",
+      "Audit Active Directory for accounts with EMS access touched by suspected compromised credentials",
+      "Submit malware samples to Dragos for ICS-specific threat intelligence enrichment",
+      "Review KAMACITE indicators of compromise against full email gateway logs (90-day window)"
+    ],
+    "analystNotes": "Phishing campaign detected via email security gateway alert on 2026-03-14. Initial triage confirmed KAMACITE lure documents. The NERC CIP-013 theme is a sophisticated social engineering choice \u2014 it targets OT engineers with a compliance-relevant topic that legitimizes document review. This investigation is at the EXECUTION stage \u2014 malware has executed on at least two endpoints but lateral movement into OT network segments has not yet been confirmed. Priority: contain before adversary establishes persistent access to EMS systems.",
+    "createdAt": "2026-03-14T16:00:00.000Z",
+    "updatedAt": "2026-03-17T11:00:00.000Z"
+  },
+  {
+    "id": "inv-003-2026-water-anon",
+    "scenarioName": "Anonymous Threat Actor: Municipal Water Treatment SCADA Probe",
+    "sector": "Water",
+    "stage": "INITIAL_ACCESS",
+    "status": "ACTIVE",
+    "hypotheses": [
+      {
+        "hypothesis": "Threat actor successfully authenticated to at least one internet-facing SCADA interface using default or previously exposed credentials",
+        "confidence": "MEDIUM",
+        "notes": "Authentication logs show successful login from IP 185.234.219.x (Tor exit node) to water treatment HMI web interface. Session lasted 4 minutes before being terminated by a watchdog timeout."
+      },
+      {
+        "hypothesis": "The intrusion attempt was opportunistic / automated rather than a targeted nation-state operation",
+        "confidence": "MEDIUM",
+        "notes": "IP address is associated with Shodan scanning infrastructure. Access pattern shows automated page navigation consistent with vulnerability scanning tools rather than manual adversary reconnaissance."
+      },
+      {
+        "hypothesis": "No process manipulation commands were issued during the 4-minute authenticated session",
+        "confidence": "HIGH",
+        "notes": "HMI audit log shows only read operations (GET requests to process data endpoints). No setpoint change commands recorded. Operator interface commands require secondary confirmation step that was not initiated."
+      }
+    ],
+    "nextActions": [
+      "Immediately require password change for all default-credential accounts on internet-facing HMI",
+      "Implement IP allowlisting for HMI remote access (restrict to known technician IPs)",
+      "Enable MFA on all remote access interfaces",
+      "Audit all HMI audit logs for any setpoint modification commands in past 30 days",
+      "File notification with WaterISAC and CISA ICS-CERT per water sector incident reporting guidelines"
+    ],
+    "analystNotes": "Low-severity initial access incident. The 4-minute authenticated session did not result in confirmed process manipulation. However, successful authentication to an operational HMI is a critical control failure regardless of what actions the adversary took. The use of a Tor exit node prevents definitive attribution to SYLVANITE or any other tracked group. Tracking as a separate investigation from the SYLVANITE campaign advisory \u2014 insufficient evidence to confirm group linkage.",
+    "createdAt": "2026-03-08T20:00:00.000Z",
+    "updatedAt": "2026-03-09T08:00:00.000Z"
+  },
+  {
+    "id": "inv-004-2026-foxboro-refinery",
+    "scenarioName": "Schneider EcoStruxure Foxboro Exploitation: Petroleum Refinery Incident",
+    "sector": "Petroleum",
+    "stage": "PERSISTENCE",
+    "status": "ACTIVE",
+    "hypotheses": [
+      {
+        "hypothesis": "Threat actor exploited CVE-2024-8891 (Foxboro DCS RCE) to achieve code execution on the DCS engineering workstation at the refinery",
+        "confidence": "HIGH",
+        "notes": "Forensic analysis of DCS EWS confirms presence of a backdoor service 'svchost32.exe' with creation timestamp matching exploitation window. Hash matches CloudSEK published IoC for CVE-2024-8891 exploitation."
+      },
+      {
+        "hypothesis": "The adversary has established persistent access via a web shell on the FoxAPI server component",
+        "confidence": "HIGH",
+        "notes": "IIS logs on DCS EWS show repeated POST requests to /FoxAPI/upload endpoint outside of normal maintenance hours. File system audit confirms new .aspx files in the FoxAPI web root."
+      },
+      {
+        "hypothesis": "The DCS EWS has network connectivity to the process historian, enabling lateral movement to additional ICS components",
+        "confidence": "MEDIUM",
+        "notes": "Network topology review shows DCS EWS has bidirectional connectivity to OSIsoft PI historian \u2014 a common but risky configuration. Historian could serve as pivot point to DCS controller network."
+      },
+      {
+        "hypothesis": "Attribution to PYROXENE group based on petroleum sector focus and Foxboro DCS targeting history",
+        "confidence": "LOW",
+        "notes": "Speculative \u2014 PYROXENE has historically targeted petroleum sector DCS but was assessed as SILENT since January 2026. Could be a copycat, opportunistic actor using publicly disclosed CVE, or PYROXENE resuming operations. Requires further indicator analysis."
+      }
+    ],
+    "nextActions": [
+      "Isolate DCS EWS from network pending full forensic investigation",
+      "Remove identified web shell files and backdoor service from compromised host",
+      "Audit all accounts and processes with access to OSIsoft PI historian",
+      "Engage Schneider Electric ICS CERT for incident support and forensic guidance",
+      "Review all DCS controller change logs for any unauthorized logic modifications",
+      "Submit adversary artifacts to Dragos and CloudSEK for threat intelligence enrichment"
+    ],
+    "analystNotes": "Active compromise confirmed. The refinery has been notified and ICS incident response is in progress. DCS EWS has been isolated from the corporate network but remains connected to the process control network to avoid disruption to refinery operations during the investigation. The CVE-2024-8891 exploitation window (no patch available from Schneider Electric for 45 days) makes this investigation particularly time-sensitive \u2014 other Foxboro DCS deployments at this refinery and industry peers remain exposed.",
+    "createdAt": "2026-03-16T09:00:00.000Z",
+    "updatedAt": "2026-03-18T10:30:00.000Z"
+  },
+  {
+    "id": "inv-005-2026-iran-us-ot",
+    "scenarioName": "Iran-US Conflict \u2014 Multi-Sector OT Impact Assessment",
+    "sector": "Multi-Sector (Electric, Oil & Gas, Water, Manufacturing)",
+    "status": "ACTIVE",
+    "stage": "LATERAL_MOVEMENT",
+    "createdAt": "2026-03-17T00:00:00.000Z",
+    "updatedAt": "2026-03-19T15:00:00.000Z",
+    "hypotheses": [
+      {
+        "hypothesis": "Iranian actors are executing retaliatory cyber operations against U.S. critical infrastructure OT/ICS following Operation Epic Fury (Feb 28 U.S. strikes)",
+        "confidence": "HIGH",
+        "notes": "Confirmed: Symantec/Carbon Black identified Iranian-installed backdoors on U.S. company networks (late Feb 2026). ISACs issued multi-sector advisory. ICS/PLC screenshots shared as proof of access (Operation Epic Fury, March 2). PYROXENE and Iran-aligned hacktivists showing operational alignment."
+      },
+      {
+        "hypothesis": "Iran-nexus group (likely PYROXENE) has achieved persistent OT-level access in water or petroleum sector",
+        "confidence": "MEDIUM",
+        "notes": "ICS/PLC screenshot claims from Operation Epic Fury \u2014 some may be influence-driven, others indicate legitimate access. Z-Pentest SCADA/ICS compromise claims unverified per Tenable. No confirmed OT operational impact yet."
+      },
+      {
+        "hypothesis": "Pre-positioned access is being held for a second-wave escalation trigger (further U.S./Israeli strikes)",
+        "confidence": "MEDIUM",
+        "notes": "Historical Iran playbook \u2014 demonstrate capability, then hold. ELECTRUM silent since Feb 28. IDF struck South Pars natural gas field and Asaluyeh processing hub (March 18); IDF killed Iranian Intelligence Minister Khatib (March 18). Retaliation calculus has shifted significantly."
+      },
+      {
+        "hypothesis": "Iranian actors will prioritize soft targets (water utilities, small O&G operators) with limited cybersecurity budgets over hardened major infrastructure",
+        "confidence": "MEDIUM",
+        "notes": "Per KSAT reporting: experts assess Iranian hackers will aim for quick victories at weakest links in American cybersecurity. Water plants and healthcare frequently targeted for ease of access and psychological impact. Consistent with PYROXENE historical targeting."
+      }
+    ],
+    "nextActions": [
+      "Fetch full Tenable article \u2014 confirm 5 CVEs exploited by Iranian actors and vendor attribution",
+      "Cross-reference ISAC advisory sector list with Purdue Level 2-3 exposure surface at client sites",
+      "Monitor ERCOT/NERC for grid incident alerts following IDF strikes on Iranian energy infrastructure",
+      "Verify patch status of CVE-2021-22681 (Rockwell Logix) at all electric/manufacturing clients before March 26 federal deadline"
+    ],
+    "analystNotes": "Real-world investigation opened 2026-03-17. Escalation update 2026-03-19: IDF struck Iranian energy infrastructure (South Pars, Asaluyeh) and confirmed kill of Intelligence Minister Khatib on March 18. Iranian retaliation posture is elevated. No confirmed U.S. OT operational impact as of 2026-03-19 1600 UTC \u2014 but the threat window is widening. This investigation is being tracked in parallel with the demo scenarios."
+  },
+  {
+    "id": "inv-006-2026-litellm-supply-chain",
+    "scenarioName": "LiteLLM Supply Chain Attack \u2014 AI Infrastructure Credential Theft & Iran-Specific Wiper",
+    "sector": "IT / AI Infrastructure",
+    "stage": "EXECUTION",
+    "status": "ACTIVE",
+    "priority": "CRITICAL",
+    "statusNote": "Attribution Revised \u2014 nation-state nexus upgraded MODERATE-HIGH (2026-03-27)",
+    "hypotheses": [
+      {
+        "hypothesis": "TeamPCP compromised LiteLLM's CI/CD pipeline via a poisoned Trivy GitHub Action, exfiltrating PyPI publishing credentials and publishing two malicious package versions",
+        "confidence": "HIGH",
+        "notes": "Confirmed by Socket.dev analysis. Malicious versions 1.82.7 and 1.82.8 have been removed from PyPI. Attack vector is CI/CD supply chain poisoning, not typosquatting."
+      },
+      {
+        "hypothesis": "Organizations running LiteLLM 1.82.7 or 1.82.8 had environment variables, SSH keys, cloud credentials (AWS/GCP/Azure), Kubernetes tokens, and database passwords exfiltrated to attacker infrastructure",
+        "confidence": "HIGH",
+        "notes": "Payload confirmed as credential stealer targeting environment variables and secrets. Exfiltration via encrypted channel to attacker-controlled domain. Any org that pip-installed affected versions should assume full credential compromise."
+      },
+      {
+        "hypothesis": "Anthropic and OpenAI API load spikes and forced re-auth events (March 24-25) are caused by mass credential rotation by affected organizations, not a direct attack on provider infrastructure",
+        "confidence": "HIGH",
+        "notes": "[operator] reported repeated OAuth re-auth across Claude instances on March 24-25. Timing matches mass rotation event. Provider infrastructure itself is not compromised \u2014 the load is from thousands of orgs simultaneously rotating API keys and re-establishing sessions."
+      },
+      {
+        "hypothesis": "TeamPCP is NOT a purely financially motivated threat actor \u2014 the Iran-specific destructive payload indicates geopolitical motivation",
+        "confidence": "HIGH",
+        "notes": "REVISED 2026-03-27 based on Aikido Security deep-dive. Malware branches on target locale at runtime: Tehran TZ or Farsi locale \u2192 deploy 'kamikaze' DaemonSet wiper across all Kubernetes nodes OR execute 'rm -rf / --no-preserve-root' on non-K8s hosts. Iranian systems receive destruction, not credential theft. This is not financially motivated behavior. Classic adversary-of-Iran pattern: skip monetization, go straight to destroy. Nation-state nexus upgraded from LOW to MODERATE-HIGH."
+      },
+      {
+        "hypothesis": "CanisterWorm backdoor installed on non-Iranian targets provides persistent access post-compromise",
+        "confidence": "HIGH",
+        "notes": "Confirmed by Aikido Security analysis. Backdoor installed on all non-Iranian targets following credential theft. C2 infrastructure details (domain/IP) not yet publicly released \u2014 IOCs pending further analysis."
+      },
+      {
+        "hypothesis": "The Iran Phase 4 timeline overlap is not coincidental \u2014 this supply chain attack is connected to the broader Iran-US conflict escalation",
+        "confidence": "MEDIUM",
+        "notes": "Previously assessed LOW probability. Revised to MODERATE after Aikido findings. The malware's Iran-specific kill switch, combined with publication timing (March 24-25, within Phase 4 window), is convergent. The supply chain vector targeting AI/cloud infrastructure at scale is consistent with pre-positioning doctrine."
+      },
+      {
+        "hypothesis": "Attribution candidates: Israel (MODERATE), United States (LOW-MODERATE) \u2014 formal government attribution unlikely",
+        "confidence": "MEDIUM",
+        "notes": "Israel: highest motivation, precedent for similar supply chain ops, timeline aligns with Phase 3-4 operations. U.S.: possible but preference is precision ops over mass supply chain. Both have operational incentives to stay silent. No government or major vendor has issued formal attribution."
+      },
+      {
+        "hypothesis": "[platform] is not affected \u2014 LiteLLM is not installed in this environment",
+        "confidence": "HIGH",
+        "notes": "Confirmed via pip show litellm \u2014 not installed. [platform] routes directly to provider APIs without a LiteLLM proxy layer. No credential exposure. No wiper risk."
+      }
+    ],
+    "nextActions": [
+      "OPEN \u2014 Obtain CanisterWorm C2 IOCs (beacon domain/IP) from Aikido or Socket.dev for hunting rules",
+      "Monitor for formal government or vendor attribution \u2014 Israel/U.S. both have incentives to stay silent",
+      "Watch for scope data on Iranian infrastructure targeted \u2014 was this targeted AI R&D or broad geographic spray?",
+      "Advise any clients using LiteLLM to audit installed versions and rotate all credentials if 1.82.7 or 1.82.8 were ever installed",
+      "Monitor for follow-on attacks using stolen credentials \u2014 cloud account takeover, API abuse, data exfiltration",
+      "Track TeamPCP prior campaign history \u2014 first-seen actor handle, any prior operations linked to this group"
+    ],
+    "analystNotes": "MAJOR UPDATE 2026-03-27: Aikido Security published deep-dive revealing two previously unknown payload components \u2014 an Iran-specific destructive wiper (Tehran TZ/Farsi locale trigger \u2192 Kubernetes kamikaze DaemonSet wiper or full disk rm -rf) and a persistent CanisterWorm backdoor on non-Iranian targets. This fundamentally changes the threat profile. TeamPCP is no longer assessed as a financially motivated criminal group. The Iran-locale kill switch is a geopolitical kill switch \u2014 an adversary of Iran weaponizing a supply chain attack. Motivation assessment revised from FINANCIAL to GEOPOLITICAL (anti-Iran). Nation-state nexus upgraded from LOW to MODERATE-HIGH. Candidate attribution: Israel MODERATE, U.S. LOW-MODERATE. Iran Phase 4 timing overlap is now assessed as non-coincidental. Original credential stealer (all targets) and CanisterWorm backdoor (non-Iranian targets) remain active threats. MindStone confirmed clean. Key outstanding gap: CanisterWorm C2 IOCs needed for detection engineering.",
+    "timeline": [
+      {
+        "at": "2026-03-24T00:00:00.000Z",
+        "event": "Malicious LiteLLM 1.82.7 and 1.82.8 published to PyPI via compromised CI/CD pipeline",
+        "significance": "critical"
+      },
+      {
+        "at": "2026-03-24T00:00:00.000Z",
+        "event": "Socket.dev detects and reports malicious packages; PyPI removes both versions",
+        "significance": "high"
+      },
+      {
+        "at": "2026-03-24T00:00:00.000Z",
+        "event": "Mass API key rotation begins across affected orgs \u2014 Anthropic/OpenAI load spikes",
+        "significance": "medium"
+      },
+      {
+        "at": "2026-03-25T00:00:00.000Z",
+        "event": "[operator] reports repeated OAuth re-auth events across Claude instances (forced re-auth from Anthropic-side session invalidation cascade)",
+        "significance": "medium"
+      },
+      {
+        "at": "2026-03-25T13:00:00.000Z",
+        "event": "MindStone confirmed NOT affected. INV-006 opened.",
+        "significance": "medium"
+      },
+      {
+        "at": "2026-03-27T00:00:00.000Z",
+        "event": "MAJOR: Aikido Security publishes deep-dive \u2014 Iran-specific wiper and CanisterWorm backdoor confirmed. Attribution profile fundamentally revised.",
+        "significance": "critical"
+      }
+    ],
+    "createdAt": "2026-03-25T13:00:00.000Z",
+    "updatedAt": "2026-03-27T01:00:00.000Z"
+  },
+  {
+    "id": "inv-007-2026-handala-lockheed",
+    "scenarioName": "Handala Breach: Lockheed Martin Engineer Data Leaked \u2014 Defense Industrial Base Targeting",
+    "sector": "Defense Industrial Base / IT",
+    "stage": "EXECUTION",
+    "status": "ACTIVE",
+    "hypotheses": [
+      {
+        "hypothesis": "Handala (MOIS-controlled) successfully exfiltrated PII and employment data for at least 28 Lockheed Martin engineers working on Israeli military projects",
+        "confidence": "HIGH",
+        "status": "confirmed",
+        "notes": "Cybernews reporting confirms actual data released: names, ID numbers, passport details, places of residence, and service bases. Data published to Handala leak site on March 26, 2026 \u2014 within 24 hours of the March 25 Telegram threat. Multiple secondary sources (HookPhish, RedPacket) confirmed breach occurred at 07:35 UTC March 26. NOTE (2026-03-26): Lockheed Martin issued a non-committal statement acknowledging reports but neither confirming nor denying a breach. RedPacketSecurity flagged verification alert: Handala has a history of including unverified/fabricated victim claims. Data specificity (named individuals, home addresses, service bases) makes complete fabrication unlikely but not impossible. Hypothesis confidence maintained at HIGH pending independent verification."
+      },
+      {
+        "hypothesis": "The breach was pre-positioned before the March 18-20 FBI domain seizures, not in response to them",
+        "confidence": "HIGH",
+        "status": "confirmed",
+        "notes": "The FBI seized 4 Handala MOIS domains on March 18. MOIS Director Khatib was killed March 18. CTSD Chief Panjaki was killed March 20. Yet Handala announced and executed the Lockheed breach on March 25-26 \u2014 6-7 days later. Pre-positioned access is the only operationally consistent explanation. The cell autonomy model is confirmed operational."
+      },
+      {
+        "hypothesis": "Handala is operating in 'silent execution mode' \u2014 reduced public blog activity since January 2026 correlates with higher operational tempo, not suppression",
+        "confidence": "MEDIUM",
+        "status": "open",
+        "notes": "Halcyon reported markedly reduced Handala public blog posts since January 2026 \u2014 historically, this pattern correlates with active operational execution rather than inactivity. The Lockheed breach is consistent with this assessment."
+      },
+      {
+        "hypothesis": "The targeting of Lockheed Martin engineers working on Israeli military projects signals intent to intimidate defense contractors and degrade U.S.-Israel defense industrial cooperation",
+        "confidence": "MEDIUM",
+        "status": "open",
+        "notes": "Publishing PII including home addresses and service bases for named engineers is an intimidation vector beyond intelligence value. The message to Lockheed employees 'give them 48 hours to leave Israel' suggests this is partly a psychological operation targeting contractor workforce willingness to work in Israel."
+      },
+      {
+        "hypothesis": "The Lockheed breach represents capability testing ahead of more operationally significant targets \u2014 CyberAv3ngers may be the kinetic-capable follow-on",
+        "confidence": "LOW",
+        "status": "open",
+        "notes": "Speculative. Handala specializes in data theft and psychological operations; CyberAv3ngers (IRGC-CEC) carries the ICS/OT destructive capability (IOCONTROL). Pattern: Handala demonstrates access and creates psychological pressure, IRGC-aligned actors execute disruptive/destructive ops. No confirmed coordination, but consistent with historical operational pattern."
+      }
+    ],
+    "nextActions": [
+      "URGENT \u2014 Assess Lockheed denial: verify data authenticity independently. Determine if data is fabricated, recycled from prior breach, or genuine new breach",
+      "Monitor Handala Telegram for follow-on threat communications \u2014 pattern of 48h warnings before execution is now confirmed",
+      "ACTIVE \u2014 Lockheed issued non-committal statement (not a denial). Cross-reference published engineer names/data against public sources to assess data authenticity",
+      "Assess whether leaked engineer data includes any SCADA/ICS-adjacent project information",
+      "Watch for additional DIB targets being named by Handala in next 24-48 hours",
+      "Advise any clients with Lockheed Martin or prime defense contractor relationships to review physical security posture for named personnel",
+      "Update INV-005-2026-iran-us-ot (Iran-US Conflict Assessment) with Lockheed breach as confirmed Phase 4 execution event",
+      "Check whether Handala has registered new domain following the 4 DOJ seizures \u2014 new domain would confirm infrastructure rebuild"
+    ],
+    "analystNotes": "Cell autonomy model confirmed. Domain seizures and leadership decapitation did not degrade operational capability. 48h warning \u2192 execution cycle is a confirmed Handala operational signature. Active hunting for pre-positioned MOIS indicators is the appropriate response posture \u2014 wait-and-see is no longer viable.",
+    "timeline": [
+      {
+        "at": "2026-01-01T00:00:00.000Z",
+        "event": "Handala reduces public blog post frequency \u2014 assessed as active operational execution mode (Halcyon)",
+        "significance": "medium"
+      },
+      {
+        "at": "2026-03-11T00:00:00.000Z",
+        "event": "Handala-MOIS executes Stryker device wiper via Microsoft Intune",
+        "significance": "high"
+      },
+      {
+        "at": "2026-03-18T00:00:00.000Z",
+        "event": "FBI seizes 4 Handala MOIS domains (handala-hack.to, handala-redwanted.to, justicehomeland.org, karmabelow80.org)",
+        "significance": "high"
+      },
+      {
+        "at": "2026-03-18T00:00:00.000Z",
+        "event": "IDF kills MOIS Intelligence Director Khatib in airstrike",
+        "significance": "critical"
+      },
+      {
+        "at": "2026-03-20T00:00:00.000Z",
+        "event": "IDF kills CTSD Chief Panjaki",
+        "significance": "critical"
+      },
+      {
+        "at": "2026-03-25T07:00:00.000Z",
+        "event": "Handala Telegram: 48-hour threat against Lockheed Martin \u2014 'give them 48 hours to leave Israel'",
+        "significance": "high"
+      },
+      {
+        "at": "2026-03-26T07:35:00.000Z",
+        "event": "Breach executed: 28 Lockheed Martin engineer PII published on Handala leak site",
+        "significance": "critical"
+      },
+      {
+        "at": "2026-03-26T21:38:00.000Z",
+        "event": "INV-007 opened by [analyst] \u2014 Lockheed breach documented as Phase 4 execution event",
+        "significance": "medium"
+      },
+      {
+        "at": "2026-03-26T22:00:00.000Z",
+        "event": "Lockheed Martin issues non-committal statement: 'We are aware of the reports and have policies and procedures in place to mitigate cyber threats.' \u2014 not a denial, not a confirmation (SC Media, March 26)",
+        "significance": "medium"
+      }
+    ],
+    "noteHistory": [
+      {
+        "at": "2026-03-26T21:38:00.000Z",
+        "note": "Investigation opened. This is the most significant Handala execution event since the Stryker/Intune wiper attack (March 11). The operational significance is not the Lockheed data itself \u2014 it's what the timing proves: domain seizures, leadership decapitation, and infrastructure disruption have NOT degraded Handala's ability to execute. The cell autonomy model is battle-proven. External cells with pre-positioned access are now operating independent of Tehran command and control. From a defender's perspective: assume any threat actor with pre-positioned access attributed to MOIS-controlled infrastructure will execute on a timeline driven by local cell decisions, not central coordination. Wait-and-see posture is no longer viable. Active hunting for pre-positioned MOIS-linked indicators is the appropriate response posture. The 48-hour warning \u2192 execution cycle is also now a confirmed Handala operational signature \u2014 if they issue another Telegram threat, take it as a 48-hour countdown, not bluster."
+      },
+      {
+        "at": "2026-03-26T22:30:00.000Z",
+        "note": "UPDATE \u2014 Lockheed Martin statement (per SC Media): 'We are aware of the reports and have policies and procedures in place to mitigate cyber threats to our business.' This is a non-committal corporate acknowledgment \u2014 NOT an explicit denial. RedPacketSecurity independently issued a verification alert on March 26 noting Handala has been reported as including unverified or fabricated victim claims. Correcting earlier notation: Lockheed did NOT state 'no data was stolen.' The actual posture: aware, non-confirming, non-denying. Three possibilities remain open: (1) Fabricated/recycled data \u2014 Handala has mixed legitimate and fabricated content before. (2) Real but limited breach \u2014 Lockheed avoiding specific scope confirmation. (3) Real breach under internal investigation. Assessment unchanged: data specificity (named engineers, home addresses, service bases) makes complete fabrication unlikely but not impossible. Independent verification is the key next action. Operational significance of the timing remains intact regardless of data authenticity."
+      }
+    ],
+    "indicators": [
+      {
+        "type": "actor",
+        "value": "Handala (Void Manticore, MOIS-affiliated)",
+        "confidence": "HIGH",
+        "addedAt": "2026-03-26T21:38:00.000Z"
+      },
+      {
+        "type": "email",
+        "value": "Handala_Team@outlook.com",
+        "confidence": "HIGH",
+        "addedAt": "2026-03-26T21:38:00.000Z"
+      },
+      {
+        "type": "domain",
+        "value": "handala-hack.to",
+        "confidence": "HIGH",
+        "addedAt": "2026-03-26T21:38:00.000Z"
+      },
+      {
+        "type": "domain",
+        "value": "handala-redwanted.to",
+        "confidence": "HIGH",
+        "addedAt": "2026-03-26T21:38:00.000Z"
+      },
+      {
+        "type": "domain",
+        "value": "justicehomeland.org",
+        "confidence": "HIGH",
+        "addedAt": "2026-03-26T21:38:00.000Z"
+      },
+      {
+        "type": "domain",
+        "value": "karmabelow80.org",
+        "confidence": "HIGH",
+        "addedAt": "2026-03-26T21:38:00.000Z"
+      }
+    ],
+    "relatedInvestigations": [
+      "inv-005-2026-iran-us-ot",
+      "inv-006-2026-litellm-supply-chain"
+    ],
+    "createdAt": "2026-03-26T21:38:00.000Z",
+    "updatedAt": "2026-03-26T22:30:00.000Z"
+  }
+]
